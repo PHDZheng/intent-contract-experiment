@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/intent-ir.schema.json",
+  "title": "Intent IR",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "compiled_through_round", "requirements"],
+  "properties": {
+    "version": {"const": 1},
+    "compiled_through_round": {"type": "integer", "minimum": 0},
+    "requirements": {"type": "array", "items": {"$ref": "#/$defs/requirement"}}
+  },
+  "$defs": {
+    "requirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "semantic_key", "modality", "statement", "value", "source_quote", "source_round", "instruction_sha256", "introduced_by", "status"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+        "semantic_key": {"type": "string", "minLength": 1},
+        "modality": {"enum": ["must", "should", "may", "unknown"]},
+        "statement": {"type": "string", "minLength": 1},
+        "value": {"type": ["string", "null"]},
+        "source_quote": {"type": "string", "minLength": 1},
+        "source_round": {"type": "integer", "minimum": 1},
+        "instruction_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "introduced_by": {"enum": ["add", "revise", "supersede", "mark_unknown"]},
+        "status": {"enum": ["active", "superseded"]},
+        "supersedes": {"type": "string"},
+        "superseded_by": {"type": "string"},
+        "superseded_round": {"type": "integer", "minimum": 1}
+      },
+      "allOf": [
+        {"if": {"properties": {"status": {"const": "superseded"}}}, "then": {"required": ["superseded_by", "superseded_round"]}},
+        {"if": {"properties": {"introduced_by": {"enum": ["revise", "supersede", "mark_unknown"]}}}, "then": {"required": ["supersedes"]}}
+      ]
+    }
+  }
+}

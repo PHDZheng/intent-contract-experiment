@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intent-compiler"
+version = "0.7.0"
+description = "Deterministic compiler for sequential software requirements"
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4.18"]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4"]
+
+[dependency-groups]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+intent-compile-round = "compile_round:main"
+intent-validate-delta = "validate_delta:main"
+intent-merge-ir = "merge_ir:main"
+intent-render-ir = "render_active_ir:main"
+intent-materialize-task = "materialize_task:main"
+intent-validate-task-copy = "validate_task_copy:main"
+
+[tool.setuptools]
+py-modules = ["clause_segments", "compile_round", "validate_delta", "merge_ir", "render_active_ir", "materialize_task", "validate_task_copy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

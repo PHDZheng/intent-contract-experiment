@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/intent-ir-v2.schema.json",
+  "title": "Intent IR v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "compiled_through_round", "clauses", "requirements"],
+  "properties": {
+    "version": {"type": "integer", "const": 2},
+    "compiled_through_round": {"type": "integer", "minimum": 0},
+    "clauses": {"type": "array", "items": {"$ref": "#/$defs/clause"}},
+    "requirements": {"type": "array", "items": {"$ref": "#/$defs/requirement"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "stringArray": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "fact": {
+      "type": "object", "additionalProperties": false, "required": ["key", "value"],
+      "properties": {"key": {"type": "string", "minLength": 1}, "value": {"type": "string", "minLength": 1}}
+    },
+    "factArray": {"type": "array", "items": {"$ref": "#/$defs/fact"}},
+    "clause": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "kind", "text", "source_round", "instruction_sha256", "start", "end", "requirement_ids"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "kind": {"type": "string", "enum": ["normative", "example", "context"]},
+        "text": {"type": "string", "minLength": 1},
+        "source_round": {"type": "integer", "minimum": 1},
+        "instruction_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "start": {"type": "integer", "minimum": 0},
+        "end": {"type": "integer", "minimum": 1},
+        "requirement_ids": {"type": "array", "items": {"$ref": "#/$defs/id"}}
+      }
+    },
+    "error": {
+      "type": "object", "additionalProperties": false,
+      "required": ["condition", "exit_code", "stdout", "stderr"],
+      "properties": {
+        "condition": {"type": "string", "minLength": 1},
+        "exit_code": {"type": ["integer", "null"]},
+        "stdout": {"type": ["string", "null"]},
+        "stderr": {"type": ["string", "null"]}
+      }
+    },
+    "example": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "input", "output", "notes"],
+      "properties": {
+        "name": {"type": "string"}, "input": {"type": "string"},
+        "output": {"type": "string"}, "notes": {"type": "string"}
+      }
+    },
+    "spec": {
+      "type": "object", "additionalProperties": false,
+      "required": ["summary", "interface", "input_schema", "output_schema", "preconditions", "algorithm", "formulas", "defaults", "ordering", "formatting", "edge_cases", "errors", "examples", "integration", "invariants", "notes"],
+      "properties": {
+        "summary": {"type": "string", "minLength": 1},
+        "interface": {"$ref": "#/$defs/factArray"},
+        "input_schema": {"$ref": "#/$defs/factArray"},
+        "output_schema": {"$ref": "#/$defs/factArray"},
+        "preconditions": {"$ref": "#/$defs/stringArray"},
+        "algorithm": {"$ref": "#/$defs/stringArray"},
+        "formulas": {"$ref": "#/$defs/factArray"},
+        "defaults": {"$ref": "#/$defs/factArray"},
+        "ordering": {"$ref": "#/$defs/stringArray"},
+        "formatting": {"$ref": "#/$defs/factArray"},
+        "edge_cases": {"$ref": "#/$defs/stringArray"},
+        "errors": {"type": "array", "items": {"$ref": "#/$defs/error"}},
+        "examples": {"type": "array", "items": {"$ref": "#/$defs/example"}},
+        "integration": {"$ref": "#/$defs/factArray"},
+        "invariants": {"$ref": "#/$defs/stringArray"},
+        "notes": {"$ref": "#/$defs/stringArray"}
+      }
+    },
+    "requirement": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "semantic_key", "modality", "spec", "source_clause_ids", "evidence_clause_ids", "source_round", "instruction_sha256", "introduced_by", "status", "supersedes", "superseded_by", "superseded_round"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"},
+        "semantic_key": {"type": "string", "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)+$"},
+        "modality": {"type": "string", "enum": ["must", "should", "may", "unknown"]},
+        "spec": {"$ref": "#/$defs/spec"},
+        "source_clause_ids": {"type": "array", "items": {"$ref": "#/$defs/id"}, "minItems": 1},
+        "evidence_clause_ids": {"type": "array", "items": {"$ref": "#/$defs/id"}},
+        "source_round": {"type": "integer", "minimum": 1},
+        "instruction_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "introduced_by": {"type": "string", "enum": ["add", "revise", "supersede", "mark_unknown"]},
+        "status": {"type": "string", "enum": ["active", "superseded"]},
+        "supersedes": {"type": ["string", "null"]},
+        "superseded_by": {"type": ["string", "null"]},
+        "superseded_round": {"type": ["integer", "null"], "minimum": 1}
+      }
+    }
+  }
+}

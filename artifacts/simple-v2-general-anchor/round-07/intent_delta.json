@@ -1,0 +1,926 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r007-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r007-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r007-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-001",
+        "req-r007-002",
+        "req-r007-003",
+        "req-r007-004"
+      ]
+    },
+    {
+      "clause_id": "r007-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-001"
+      ]
+    },
+    {
+      "clause_id": "r007-c005",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-001",
+        "req-r007-002",
+        "req-r007-003",
+        "req-r007-004"
+      ]
+    },
+    {
+      "clause_id": "r007-c006",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r007-c007",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r007-001",
+        "req-r007-002",
+        "req-r007-003",
+        "req-r007-004"
+      ]
+    },
+    {
+      "clause_id": "r007-c008",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r007-002",
+        "req-r007-003",
+        "req-r007-004"
+      ]
+    },
+    {
+      "clause_id": "r007-c009",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r007-c010",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-005"
+      ]
+    },
+    {
+      "clause_id": "r007-c011",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r007-005",
+        "req-r007-006"
+      ]
+    },
+    {
+      "clause_id": "r007-c012",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r007-c013",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-005"
+      ]
+    },
+    {
+      "clause_id": "r007-c014",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r007-c015",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-005",
+        "req-r007-006",
+        "req-r007-007",
+        "req-r007-008"
+      ]
+    },
+    {
+      "clause_id": "r007-c016",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-006",
+        "req-r007-007",
+        "req-r007-008"
+      ]
+    },
+    {
+      "clause_id": "r007-c017",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-006",
+        "req-r007-007",
+        "req-r007-008",
+        "req-r007-009"
+      ]
+    },
+    {
+      "clause_id": "r007-c018",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r007-c019",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r007-010"
+      ]
+    }
+  ],
+  "instruction_sha256": "36a650ec3318654c889cb1cfea780b74dbd67b385179bd594950320913bd7376",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r007-001",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.step_io_mapping",
+      "source_clause_ids": [
+        "r007-c003",
+        "r007-c004",
+        "r007-c005",
+        "r007-c007"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each configured step, resolve inputs in the exact order declared for its type.",
+          "For manifest, resolve no inputs, ignore dir for lineage-node and edge construction, and resolve output from the output field.",
+          "Resolve the output field for every non-terminal mapped type.",
+          "For verify, set output to null and treat the step as terminal."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest scans a directory but the directory is not modeled as a file input node.",
+          "Verify has no output."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"manifest\",\"dir\":\"output_dir\",\"output\":\"manifest.json\"}",
+            "name": "manifest step mapping",
+            "notes": "The dir value is ignored by lineage graph construction.",
+            "output": "{\"index\":1,\"type\":\"manifest\",\"inputs\":[],\"output\":\"manifest.json\"}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "ingest",
+            "value": "input = field file; output = field output."
+          },
+          {
+            "key": "transform",
+            "value": "inputs = fields input then recipe; output = field output."
+          },
+          {
+            "key": "profile",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "compare",
+            "value": "inputs = fields left then right; output = field output."
+          },
+          {
+            "key": "manifest",
+            "value": "inputs = empty array []; output = field output. The dir field is not a lineage input."
+          },
+          {
+            "key": "verify",
+            "value": "inputs = fields file then checksum; output = none."
+          },
+          {
+            "key": "validate",
+            "value": "inputs = fields input then schema; output = field output."
+          },
+          {
+            "key": "drift",
+            "value": "inputs = fields baseline then current; output = field output."
+          }
+        ],
+        "integration": [
+          {
+            "key": "supported_step_types",
+            "value": "ingest, transform, profile, compare, manifest, verify, validate, drift"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "A manifest step has no lineage inputs and retains its output.",
+          "The manifest dir value is never treated as an input node."
+        ],
+        "notes": [
+          "The ingest mapping continues to use the field named file as specified by the active lineage contract."
+        ],
+        "ordering": [
+          "Within a step, inputs are ordered as listed: transform input,recipe; compare left,right; verify file,checksum; validate input,schema; drift baseline,current.",
+          "Manifest inputs are exactly the empty array []."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Map each supported pipeline step type to its exact lineage input fields and optional output field, treating manifest as an output-only step with no lineage inputs."
+      },
+      "target_id": "req-r005-007"
+    },
+    {
+      "id": "req-r007-002",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.nodes",
+      "source_clause_ids": [
+        "r007-c003",
+        "r007-c005",
+        "r007-c007",
+        "r007-c008"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve each step's inputs and output using the active lineage step-I/O mapping.",
+          "Collect every resolved input path and every non-null output path.",
+          "Deduplicate paths by exact string equality.",
+          "For each unique path, set type to file and produced_by to its producing step index, or null if it is only an external input.",
+          "For a manifest step, include its output path with produced_by set to the manifest step index, but do not include its dir value.",
+          "Do not create an output node for a step whose output is null."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A path mentioned only as a resolved input has produced_by=null.",
+          "A verify step contributes its file and checksum inputs but no output node.",
+          "A pipeline containing only {\"type\":\"manifest\",\"dir\":\"output_dir\",\"output\":\"manifest.json\"} has exactly one node: manifest.json with produced_by=1."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"manifest\",\"dir\":\"output_dir\",\"output\":\"manifest.json\"}",
+            "name": "manifest-only nodes",
+            "notes": "No output_dir node is emitted.",
+            "output": "[{\"id\":\"manifest.json\",\"type\":\"file\",\"produced_by\":1}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r007-001 to resolve inputs and outputs."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Each exact resolved path occurs at most once in nodes.",
+          "Every node's type is file.",
+          "A manifest dir value is not a lineage node.",
+          "A manifest output remains a lineage node."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "nodes",
+            "value": "Array containing one object per unique resolved input or non-null output path across all analyzed steps."
+          },
+          {
+            "key": "nodes[].id",
+            "value": "String file path."
+          },
+          {
+            "key": "nodes[].type",
+            "value": "Literal string file."
+          },
+          {
+            "key": "nodes[].produced_by",
+            "value": "The 1-based index of the step producing the path, or null when no analyzed step produces it."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one file node for every resolved lineage input or output path, excluding manifest dir values while retaining manifest output nodes."
+      },
+      "target_id": "req-r005-008"
+    },
+    {
+      "id": "req-r007-003",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.edges",
+      "source_clause_ids": [
+        "r007-c003",
+        "r007-c005",
+        "r007-c007",
+        "r007-c008"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve each step's inputs and output using the active lineage step-I/O mapping.",
+          "For a step with a non-null output, emit one edge for each resolved input path, setting from to the input, to to the output, and step to the 1-based step index.",
+          "For a step with no resolved inputs, emit no edges.",
+          "For a step with null output, emit no edges.",
+          "Because manifest inputs are [], emit no edge for a manifest step."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest has an output but zero inputs, so its edge count is zero.",
+          "Verify has inputs but no output, so its edge count is zero.",
+          "A manifest-only pipeline produces an empty edges array."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"manifest\",\"dir\":\"output_dir\",\"output\":\"manifest.json\"}",
+            "name": "manifest-only edges",
+            "notes": "No edge is drawn from output_dir.",
+            "output": "[]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "edge_count_per_step",
+            "value": "output is null ? 0 : length(resolved inputs)"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r007-001 to resolve inputs and outputs."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every edge corresponds to exactly one resolved input of an output-producing step.",
+          "No manifest step produces an edge.",
+          "The manifest dir value never appears in an edge."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "edges",
+            "value": "Array of dependency-edge objects."
+          },
+          {
+            "key": "edges[].from",
+            "value": "String resolved input path."
+          },
+          {
+            "key": "edges[].to",
+            "value": "String output path."
+          },
+          {
+            "key": "edges[].step",
+            "value": "1-based index of the represented step."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one dependency edge from each resolved step input to that step's output, with no edges for manifest or other steps lacking inputs or outputs."
+      },
+      "target_id": "req-r005-009"
+    },
+    {
+      "id": "req-r007-004",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.steps",
+      "source_clause_ids": [
+        "r007-c003",
+        "r007-c005",
+        "r007-c007",
+        "r007-c008"
+      ],
+      "spec": {
+        "algorithm": [
+          "Traverse configured steps in configuration order.",
+          "Assign index 1 to the first step and increment by one.",
+          "Copy the step type.",
+          "Resolve inputs and output using the active lineage step-I/O mapping.",
+          "For manifest, set inputs to [] and output to the value of its output field; do not copy dir into inputs.",
+          "For verify or another mapped terminal step with no output, use output=null."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A no-output step remains present with output=null.",
+          "A manifest step remains present with inputs=[] despite having a dir field."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"manifest\",\"dir\":\"output_dir\",\"output\":\"manifest.json\"}",
+            "name": "manifest-only step summary",
+            "notes": "The output is retained and dir is omitted from inputs.",
+            "output": "[{\"index\":1,\"type\":\"manifest\",\"inputs\":[],\"output\":\"manifest.json\"}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "index",
+            "value": "zero_based_configuration_position + 1"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "mapping",
+            "value": "Use req-r007-001."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The steps array contains exactly one entry per configured step.",
+          "Every manifest summary has inputs=[] and retains its output path."
+        ],
+        "notes": [],
+        "ordering": [
+          "Input arrays retain the order prescribed by the step-type mapping.",
+          "The steps array remains ordered by index under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "steps",
+            "value": "Array containing one summary per configured pipeline step."
+          },
+          {
+            "key": "steps[].index",
+            "value": "1-based integer step index."
+          },
+          {
+            "key": "steps[].type",
+            "value": "String pipeline step type."
+          },
+          {
+            "key": "steps[].inputs",
+            "value": "Array of resolved input path strings; exactly [] for manifest."
+          },
+          {
+            "key": "steps[].output",
+            "value": "Output path string, or null when the step has no output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one complete lineage summary for each configured pipeline step, representing manifest with an empty inputs array and its output path."
+      },
+      "target_id": "req-r005-010"
+    },
+    {
+      "id": "req-r007-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.temporal_interface_and_layout",
+      "source_clause_ids": [
+        "r007-c010",
+        "r007-c011",
+        "r007-c013",
+        "r007-c015"
+      ],
+      "spec": {
+        "algorithm": [
+          "Process rows sequentially in their current order.",
+          "For each row, compute the selected function's result using its active temporal-function requirement.",
+          "Append the result under the column named by as without otherwise changing existing columns or row order."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"temporal\",\"column\":\"price\",\"function\":\"diff\",\"as\":\"price_diff\"}",
+            "name": "price difference",
+            "notes": "Appends price_diff using sequential price differences.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "temporal"
+          },
+          {
+            "key": "column",
+            "value": "String name of the source numeric column."
+          },
+          {
+            "key": "function",
+            "value": "One of diff, cumsum, pct_change."
+          },
+          {
+            "key": "as",
+            "value": "String name of the new output column."
+          }
+        ],
+        "integration": [
+          {
+            "key": "recipe_execution",
+            "value": "Runs as one operation in the ordered transform recipe chain."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The transform does not reorder rows.",
+          "Exactly one output column is appended."
+        ],
+        "notes": [],
+        "ordering": [
+          "Current dataset row order defines sequential position, previous-row relationships, and cumulative order.",
+          "Preserve current row order and append as after every existing column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "New column appended after all existing columns."
+          },
+          {
+            "key": "rows",
+            "value": "One output row per current input row."
+          }
+        ],
+        "preconditions": [
+          "The named source column contains the numeric values used by the selected temporal function."
+        ],
+        "summary": "Provide a temporal transform that processes a numeric source column in current row order and appends a diff, cumsum, or pct_change result column."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r007-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "temporal.diff",
+      "source_clause_ids": [
+        "r007-c011",
+        "r007-c015",
+        "r007-c016",
+        "r007-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Initialize the diff sequence with no previous value.",
+          "Process source cells in current row order.",
+          "For the first row, emit empty string; if its source is non-empty, retain that value as the previous value for the next row.",
+          "For an empty source cell, emit empty string and reset the sequence so no previous value is available to the next row.",
+          "For a non-empty source cell when no previous value is available, emit empty string and retain the current value as the previous value.",
+          "For a non-empty source cell when a previous value is available, compute current-previous, format the result with formatFloat, emit it, and retain current as the next previous value."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The first row emits empty string.",
+          "An empty source cell emits empty string and resets the sequence.",
+          "The row immediately after an empty source cell emits empty string even when its own source is non-empty."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"temporal\",\"column\":\"price\",\"function\":\"diff\",\"as\":\"price_diff\"}",
+            "name": "diff recipe",
+            "notes": "The first price_diff cell is empty.",
+            "output": ""
+          }
+        ],
+        "formatting": [
+          {
+            "key": "numeric_result",
+            "value": "formatFloat(current - previous)"
+          },
+          {
+            "key": "missing_result",
+            "value": "Empty string."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "difference",
+            "value": "current - previous"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "function",
+            "value": "diff"
+          },
+          {
+            "key": "source",
+            "value": "Values from the temporal source column in current row order."
+          }
+        ],
+        "integration": [
+          {
+            "key": "temporal_operation",
+            "value": "Used when req-r007-005 selects function=diff."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "A difference is computed only when both the current source and the immediately preceding sequence source are available."
+        ],
+        "notes": [],
+        "ordering": [
+          "Evaluate rows in current order."
+        ],
+        "output_schema": [
+          {
+            "key": "result",
+            "value": "formatFloat(current - previous), or empty string when no immediately preceding sequence value is available."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute sequential differences, emitting empty output at the start of a sequence and after an empty source cell."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r007-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "temporal.cumsum",
+      "source_clause_ids": [
+        "r007-c015",
+        "r007-c016",
+        "r007-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Initialize the cumulative sum to zero.",
+          "Process source cells in current row order.",
+          "For a non-empty source cell, add its numeric value to the running sum and emit formatFloat(running sum).",
+          "For an empty source cell, emit empty string and leave the running sum unchanged.",
+          "Continue subsequent non-empty rows from the unchanged running sum."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "An empty source cell produces empty output but does not reset or otherwise affect the running state."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "numeric_result",
+            "value": "formatFloat(running_sum)"
+          },
+          {
+            "key": "empty_source_result",
+            "value": "Empty string."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "running_sum",
+            "value": "running_sum_i = running_sum_before_i + current_i for each non-empty source cell"
+          },
+          {
+            "key": "cumulative_value",
+            "value": "sum of all non-empty source values from the first row through the current row"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "function",
+            "value": "cumsum"
+          },
+          {
+            "key": "source",
+            "value": "Values from the temporal source column in current row order."
+          }
+        ],
+        "integration": [
+          {
+            "key": "temporal_operation",
+            "value": "Used when req-r007-005 selects function=cumsum."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Only non-empty source values contribute to the cumulative sum."
+        ],
+        "notes": [],
+        "ordering": [
+          "Accumulate in current row order."
+        ],
+        "output_schema": [
+          {
+            "key": "result",
+            "value": "formatFloat of the cumulative sum for a non-empty source cell; empty string for an empty source cell."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute a running sum over non-empty source values while emitting empty output for empty source cells without changing the accumulated state."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r007-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "temporal.pct_change",
+      "source_clause_ids": [
+        "r007-c015",
+        "r007-c016",
+        "r007-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Initialize the pct_change sequence with no previous value.",
+          "Process source cells in current row order.",
+          "For the first row, emit empty string; if its source is non-empty, retain that value as the previous value for the next row.",
+          "For an empty source cell, emit empty string and reset the sequence so no previous value is available to the next row.",
+          "For a non-empty source cell when no previous value is available, emit empty string and retain current as the next previous value.",
+          "For a non-empty source cell when previous equals zero, emit empty string and retain current as the next previous value.",
+          "Otherwise compute (current-previous)/previous, format it with formatFloat, emit it, and retain current as the next previous value."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The first row emits empty string.",
+          "If previous is zero, emit empty string.",
+          "An empty source cell emits empty string and resets the sequence.",
+          "The row immediately after an empty source cell emits empty string even when its own source is non-empty."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "numeric_result",
+            "value": "formatFloat((current - previous) / previous)"
+          },
+          {
+            "key": "missing_or_zero_denominator_result",
+            "value": "Empty string."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "pct_change",
+            "value": "(current - previous) / previous"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "function",
+            "value": "pct_change"
+          },
+          {
+            "key": "source",
+            "value": "Values from the temporal source column in current row order."
+          }
+        ],
+        "integration": [
+          {
+            "key": "temporal_operation",
+            "value": "Used when req-r007-005 selects function=pct_change."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Division is performed only when a previous sequence value exists and is nonzero."
+        ],
+        "notes": [],
+        "ordering": [
+          "Evaluate rows in current order."
+        ],
+        "output_schema": [
+          {
+            "key": "result",
+            "value": "formatFloat((current-previous)/previous), or empty string when unavailable or previous is zero."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute sequential fractional change, emitting empty output for the first row, after sequence resets, and whenever the previous value is zero."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r007-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "temporal.result_formatting",
+      "source_clause_ids": [
+        "r007-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "When a temporal function produces a numeric value, apply formatFloat to that value and store the resulting string.",
+          "When the applicable temporal function specifies no value for a row, store an empty string."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty source cells always serialize as empty output cells."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "numeric_value",
+            "value": "formatFloat(value)"
+          },
+          {
+            "key": "unavailable_value",
+            "value": "Empty string."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "numeric_serialization",
+            "value": "formatFloat(value)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "value",
+            "value": "A computed diff, cumulative sum, or percentage-change numeric value."
+          }
+        ],
+        "integration": [
+          {
+            "key": "consumers",
+            "value": "temporal diff, cumsum, and pct_change."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The same named formatFloat behavior used elsewhere in the active specification is used for temporal numeric results."
+        ],
+        "notes": [
+          "No new implementation-level definition of formatFloat is supplied by this round, so the named behavior is preserved verbatim."
+        ],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "numeric_result",
+            "value": "formatFloat(value)."
+          },
+          {
+            "key": "empty_result",
+            "value": "Literal empty string."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Serialize every numeric temporal result using formatFloat while representing unavailable temporal results as empty strings."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r007-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "temporal.missing_column_error",
+      "source_clause_ids": [
+        "r007-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate column against the current dataset header before processing rows.",
+          "Terminate when the named column is absent."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "The temporal source column does not exist in the current dataset.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "column",
+            "value": "The temporal source-column name."
+          }
+        ],
+        "integration": [
+          {
+            "key": "standard_error",
+            "value": "Uses the established invalid-recipe missing-column diagnostic."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "No temporal output is produced after this error."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail a temporal transform that references a source column absent from the current dataset."
+      },
+      "target_id": null
+    }
+  ],
+  "round": 7
+}

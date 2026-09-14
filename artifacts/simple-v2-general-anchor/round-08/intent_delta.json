@@ -1,0 +1,1380 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r008-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-001"
+      ]
+    },
+    {
+      "clause_id": "r008-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-002"
+      ]
+    },
+    {
+      "clause_id": "r008-c005",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c006",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-001"
+      ]
+    },
+    {
+      "clause_id": "r008-c007",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c008",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-002",
+        "req-r008-003",
+        "req-r008-004",
+        "req-r008-005"
+      ]
+    },
+    {
+      "clause_id": "r008-c009",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-003"
+      ]
+    },
+    {
+      "clause_id": "r008-c010",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-004"
+      ]
+    },
+    {
+      "clause_id": "r008-c011",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-004"
+      ]
+    },
+    {
+      "clause_id": "r008-c012",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-004"
+      ]
+    },
+    {
+      "clause_id": "r008-c013",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-005"
+      ]
+    },
+    {
+      "clause_id": "r008-c014",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c015",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-006",
+        "req-r008-008"
+      ]
+    },
+    {
+      "clause_id": "r008-c016",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c017",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-007",
+        "req-r008-008"
+      ]
+    },
+    {
+      "clause_id": "r008-c018",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c019",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r008-006",
+        "req-r008-007",
+        "req-r008-008"
+      ]
+    },
+    {
+      "clause_id": "r008-c020",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-009",
+        "req-r008-010"
+      ]
+    },
+    {
+      "clause_id": "r008-c021",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c022",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r008-011"
+      ]
+    },
+    {
+      "clause_id": "r008-c023",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c024",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-012"
+      ]
+    },
+    {
+      "clause_id": "r008-c025",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r008-012"
+      ]
+    },
+    {
+      "clause_id": "r008-c026",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r008-c027",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r008-013",
+        "req-r008-014",
+        "req-r008-015",
+        "req-r008-016"
+      ]
+    }
+  ],
+  "instruction_sha256": "4421849e538cd20e30b95dc9a634b7927a4fa5912ebd7627cb0e404ffc01c972",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r008-001",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.cli_interface",
+      "source_clause_ids": [
+        "r008-c003",
+        "r008-c006"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe quality --input <path> --output <path>"
+          },
+          {
+            "key": "--input",
+            "value": "Path to the CSV file to analyze."
+          },
+          {
+            "key": "--output",
+            "value": "Path for the quality report JSON file."
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the quality command with input CSV and quality-report output paths."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.csv_processing",
+      "source_clause_ids": [
+        "r008-c004",
+        "r008-c008"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the CSV file.",
+          "Determine the data-row count and columns from the CSV.",
+          "For each header column, compute completeness, consistency, uniqueness, and the resulting quality score.",
+          "Compute the overall scores and write the report."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A CSV having a header and zero data rows is valid and uses the metric-specific zero-row rules."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "input",
+            "value": "CSV file supplied by --input; its header defines the analyzed columns and subsequent records are data rows."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "The quality assessment has exactly three dimensions: completeness, consistency, and uniqueness."
+        ],
+        "notes": [],
+        "ordering": [
+          "Process columns in CSV header order."
+        ],
+        "output_schema": [
+          {
+            "key": "report",
+            "value": "JSON quality report written to --output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Read a CSV and compute column-level data-quality measurements across completeness, consistency, and uniqueness."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.completeness",
+      "source_clause_ids": [
+        "r008-c008",
+        "r008-c009"
+      ],
+      "spec": {
+        "algorithm": [
+          "Count the column's non-empty cells.",
+          "If total_rows is zero, return 1.0.",
+          "Otherwise divide non_empty_count by total_rows."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A column in a CSV with zero data rows has completeness 1.0."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "completeness",
+            "value": "total_rows == 0 ? 1.0 : non_empty_count / total_rows"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "non_empty_count",
+            "value": "Number of non-empty cells in the column."
+          },
+          {
+            "key": "total_rows",
+            "value": "Number of CSV data rows, excluding the header."
+          }
+        ],
+        "integration": [
+          {
+            "key": "quality_score",
+            "value": "Completeness is one of the three equally weighted per-column dimensions."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Only data rows participate in the denominator."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "completeness",
+            "value": "Floating-point column completeness score."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute each column's completeness as the fraction of data rows containing a non-empty cell."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.consistency_and_type_detection",
+      "source_clause_ids": [
+        "r008-c008",
+        "r008-c010",
+        "r008-c011",
+        "r008-c012"
+      ],
+      "spec": {
+        "algorithm": [
+          "Try parsing every non-empty value as an integer using strconv.ParseInt with base 10 and 64-bit size; if all succeed, detected_type is int.",
+          "Otherwise try parsing every non-empty value as a float using strconv.ParseFloat with 64-bit size; if all succeed, detected_type is float.",
+          "Otherwise detected_type is string.",
+          "For detected int, matching_count is the number of non-empty values that parse successfully as int.",
+          "For detected float, matching_count is the number of non-empty values that parse successfully as float.",
+          "For detected string, every non-empty value matches and consistency is always 1.0.",
+          "If non_empty_count is zero, set consistency to 1.0; otherwise divide matching_count by non_empty_count."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A mixture of integer strings and float-only strings such as \"1.5\" is detected as float when every value parses as float.",
+          "Because int or float is selected only when all non-empty values parse as that type, detected numeric columns have consistency 1.0.",
+          "String columns always have consistency 1.0.",
+          "A column with no non-empty values has consistency 1.0; its detected type follows the prescribed ordered all-non-empty-value tests because no separate type override is specified."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A column containing integer strings and values such as \"1.5\".",
+            "name": "mixed integer and float-only values",
+            "notes": "All such float-parseable values contribute to matching_count.",
+            "output": "detected_type is \"float\" when all non-empty values parse as float; consistency is matching_count / non_empty_count."
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "consistency",
+            "value": "non_empty_count == 0 ? 1.0 : matching_count / non_empty_count"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "The column's non-empty raw CSV strings."
+          },
+          {
+            "key": "integer_parser",
+            "value": "Go strconv.ParseInt with base 10 and 64-bit size."
+          },
+          {
+            "key": "float_parser",
+            "value": "Go strconv.ParseFloat with 64-bit size."
+          }
+        ],
+        "integration": [
+          {
+            "key": "quality_score",
+            "value": "Consistency is one of the three equally weighted per-column dimensions."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Only non-empty values participate in type detection and the consistency denominator."
+        ],
+        "notes": [],
+        "ordering": [
+          "Integer detection is attempted before float detection; string is the fallback."
+        ],
+        "output_schema": [
+          {
+            "key": "detected_type",
+            "value": "One of int, float, or string."
+          },
+          {
+            "key": "consistency",
+            "value": "Floating-point ratio of matching non-empty values to all non-empty values."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Detect each column as int, float, or string using ordered all-value parsing and compute consistency from values matching that detected type."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.uniqueness",
+      "source_clause_ids": [
+        "r008-c008",
+        "r008-c013"
+      ],
+      "spec": {
+        "algorithm": [
+          "Count non-empty cells.",
+          "Count distinct non-empty raw values.",
+          "If non_empty_count is zero, return 1.0.",
+          "Otherwise divide unique_count by non_empty_count."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A column with no non-empty values has uniqueness 1.0.",
+          "Empty values are excluded from both numerator and denominator."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "uniqueness",
+            "value": "non_empty_count == 0 ? 1.0 : unique_count / non_empty_count"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "unique_count",
+            "value": "Number of distinct non-empty raw cell values."
+          },
+          {
+            "key": "non_empty_count",
+            "value": "Number of non-empty cells in the column."
+          }
+        ],
+        "integration": [
+          {
+            "key": "quality_score",
+            "value": "Uniqueness is one of the three equally weighted per-column dimensions."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Uniqueness compares raw non-empty CSV strings."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "uniqueness",
+            "value": "Floating-point column uniqueness score."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute each column's uniqueness as the ratio of distinct non-empty raw values to all non-empty values."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.column_output_schema",
+      "source_clause_ids": [
+        "r008-c015",
+        "r008-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Emit all six fields for each column.",
+          "Compute quality_score as the arithmetic mean of the three dimension scores."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A complete, type-consistent, fully unique column named id detected as int.",
+            "name": "perfect integer column",
+            "notes": "Illustrates the required field names and values.",
+            "output": "{\"name\":\"id\",\"completeness\":1.0,\"consistency\":1.0,\"uniqueness\":1.0,\"quality_score\":1.0,\"detected_type\":\"int\"}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "scores",
+            "value": "JSON floating-point numbers."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "quality_score",
+            "value": "(completeness + consistency + uniqueness) / 3"
+          }
+        ],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Every column object contains name, completeness, consistency, uniqueness, quality_score, and detected_type."
+        ],
+        "notes": [],
+        "ordering": [
+          "The columns array is governed by CSV header ordering."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "Array containing one quality object per CSV header column."
+          },
+          {
+            "key": "columns[].name",
+            "value": "String column name."
+          },
+          {
+            "key": "columns[].completeness",
+            "value": "Floating-point completeness score."
+          },
+          {
+            "key": "columns[].consistency",
+            "value": "Floating-point consistency score."
+          },
+          {
+            "key": "columns[].uniqueness",
+            "value": "Floating-point uniqueness score."
+          },
+          {
+            "key": "columns[].quality_score",
+            "value": "Floating-point average of completeness, consistency, and uniqueness."
+          },
+          {
+            "key": "columns[].detected_type",
+            "value": "String int, float, or string."
+          }
+        ],
+        "preconditions": [
+          "The three dimension scores and detected type have been computed for the column."
+        ],
+        "summary": "Emit one complete quality object per CSV column, including the equally weighted average quality score."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.overall_scores",
+      "source_clause_ids": [
+        "r008-c017",
+        "r008-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Average completeness across all columns.",
+          "Average consistency across all columns.",
+          "Average uniqueness across all columns.",
+          "Average quality_score across all columns."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The instruction does not specify overall-score values when column_count is zero."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Per-column results represented by a report with overall completeness 0.95, consistency 1.0, uniqueness 0.8, and quality score 0.9166666666666666.",
+            "name": "overall score example",
+            "notes": "",
+            "output": "{\"overall_completeness\":0.95,\"overall_consistency\":1.0,\"overall_uniqueness\":0.8,\"overall_quality_score\":0.9166666666666666}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "overall_scores",
+            "value": "JSON floating-point numbers."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "overall_completeness",
+            "value": "sum(columns[].completeness) / column_count"
+          },
+          {
+            "key": "overall_consistency",
+            "value": "sum(columns[].consistency) / column_count"
+          },
+          {
+            "key": "overall_uniqueness",
+            "value": "sum(columns[].uniqueness) / column_count"
+          },
+          {
+            "key": "overall_quality_score",
+            "value": "sum(columns[].quality_score) / column_count"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "columns",
+            "value": "The complete array of per-column quality objects."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Each overall field averages the identically named dimension or quality_score across columns."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "overall_completeness",
+            "value": "Average of all columns' completeness scores."
+          },
+          {
+            "key": "overall_consistency",
+            "value": "Average of all columns' consistency scores."
+          },
+          {
+            "key": "overall_uniqueness",
+            "value": "Average of all columns' uniqueness scores."
+          },
+          {
+            "key": "overall_quality_score",
+            "value": "Average of all columns' quality_score values."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute each overall quality metric as the arithmetic mean of the corresponding per-column scores."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.report_output_schema",
+      "source_clause_ids": [
+        "r008-c015",
+        "r008-c017",
+        "r008-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Populate row_count and column_count from the parsed CSV.",
+          "Populate columns with the complete per-column objects required by the per-column output specification.",
+          "Populate all four overall score fields using the overall-score calculations."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A headered CSV with no data rows has row_count 0."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A 100-row, 5-column CSV.",
+            "name": "quality report",
+            "notes": "The displayed columns array demonstrates the required report shape.",
+            "output": "{\"row_count\":100,\"column_count\":5,\"columns\":[{\"name\":\"id\",\"completeness\":1.0,\"consistency\":1.0,\"uniqueness\":1.0,\"quality_score\":1.0,\"detected_type\":\"int\"}],\"overall_completeness\":0.95,\"overall_consistency\":1.0,\"overall_uniqueness\":0.8,\"overall_quality_score\":0.9166666666666666}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "column_count",
+            "value": "length(CSV header)"
+          },
+          {
+            "key": "row_count",
+            "value": "number of CSV records after the header"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "per_column_schema",
+            "value": "Use req-r008-006."
+          },
+          {
+            "key": "overall_scores",
+            "value": "Use req-r008-007."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The report contains row_count, column_count, columns, and all four overall score fields."
+        ],
+        "notes": [],
+        "ordering": [
+          "Top-level columns are emitted in CSV header order."
+        ],
+        "output_schema": [
+          {
+            "key": "row_count",
+            "value": "Integer number of CSV data rows, excluding the header."
+          },
+          {
+            "key": "column_count",
+            "value": "Integer number of CSV header columns."
+          },
+          {
+            "key": "columns",
+            "value": "Array of per-column quality objects containing name, completeness, consistency, uniqueness, quality_score, and detected_type."
+          },
+          {
+            "key": "overall_completeness",
+            "value": "Floating-point average completeness."
+          },
+          {
+            "key": "overall_consistency",
+            "value": "Floating-point average consistency."
+          },
+          {
+            "key": "overall_uniqueness",
+            "value": "Floating-point average uniqueness."
+          },
+          {
+            "key": "overall_quality_score",
+            "value": "Floating-point average per-column quality score."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit the quality report with row and column counts, per-column objects, and all four overall scores."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.column_ordering",
+      "source_clause_ids": [
+        "r008-c020"
+      ],
+      "spec": {
+        "algorithm": [
+          "Traverse header columns from left to right.",
+          "Emit each corresponding quality object without reordering."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "An input with no header is rejected before a report is emitted."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "header",
+            "value": "CSV column names from left to right."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "The position of every per-column object equals its source column's header position."
+        ],
+        "notes": [],
+        "ordering": [
+          "columns array order exactly matches CSV header order."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "Per-column objects in the same left-to-right order as the header."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Preserve CSV header order in the quality report's columns array."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.json_formatting",
+      "source_clause_ids": [
+        "r008-c020"
+      ],
+      "spec": {
+        "algorithm": [
+          "Encode the complete quality report as JSON.",
+          "Indent nested content using two spaces.",
+          "Terminate the document with a newline."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces."
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "document",
+            "value": "Complete quality report."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "The persisted quality report ends with a newline."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "output",
+            "value": "Indented JSON quality-report file."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Serialize quality reports as two-space-indented JSON followed by a trailing newline."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "quality.empty_csv_error",
+      "source_clause_ids": [
+        "r008-c022"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the input CSV.",
+          "If no header record exists, terminate with exit code 1 and the exact error message."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A header with zero following data rows is not this error; only absence of a header is an empty CSV."
+        ],
+        "errors": [
+          {
+            "condition": "The input CSV has no header.",
+            "exit_code": 1,
+            "stderr": "ERROR: empty CSV",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "missing_input",
+            "value": "A missing input file continues to use exit code 1 and stderr ERROR: file not found: <path> under req-r001-043."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "No quality report is successfully produced for a CSV without a header."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail quality with the exact empty-CSV diagnostic when the input contains no header."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r008-012",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r008-c024",
+        "r008-c025"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse seed and steps from JSON.",
+          "Execute steps sequentially in array order using the corresponding command behavior.",
+          "Dispatch ingest, transform, verify, manifest, profile, compare, drift, validate, and lineage steps using their established fields and semantics.",
+          "For a quality step, run the quality command using input and output from the step."
+        ],
+        "defaults": [
+          {
+            "key": "drift.threshold",
+            "value": "0.1 when threshold is omitted or equals 0."
+          }
+        ],
+        "edge_cases": [
+          "A drift-step threshold of 0 selects default 0.1, not a zero threshold."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"quality\",\"input\":\"data.csv\",\"output\":\"quality.json\"}",
+            "name": "quality pipeline step",
+            "notes": "Runs dpipe quality with the corresponding input and output paths.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline transform seed."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of step objects."
+          },
+          {
+            "key": "ingest",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "transform",
+            "value": "{type,input,recipe,output}"
+          },
+          {
+            "key": "verify",
+            "value": "{type,file,checksum}"
+          },
+          {
+            "key": "manifest",
+            "value": "{type,dir,output}"
+          },
+          {
+            "key": "profile",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "compare",
+            "value": "{type,left,right,key,output}"
+          },
+          {
+            "key": "drift",
+            "value": "{type,baseline,current,output,threshold?}"
+          },
+          {
+            "key": "validate",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "lineage",
+            "value": "{type,config,output}"
+          },
+          {
+            "key": "quality",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "quality_example",
+            "value": "{\"type\":\"quality\",\"input\":\"data.csv\",\"output\":\"quality.json\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling where applicable."
+          },
+          {
+            "key": "profile_step",
+            "value": "Runs dpipe profile."
+          },
+          {
+            "key": "compare_step",
+            "value": "Runs dpipe compare."
+          },
+          {
+            "key": "drift_step",
+            "value": "Runs dpipe drift with baseline, current, output, and effective threshold."
+          },
+          {
+            "key": "validate_step",
+            "value": "Runs dpipe validate with input, schema, and output."
+          },
+          {
+            "key": "lineage_step",
+            "value": "Runs dpipe lineage with config and output."
+          },
+          {
+            "key": "quality_step",
+            "value": "Runs dpipe quality with input and output."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Sequential execution, first-failure stopping, and terminal-status behavior remain unchanged."
+        ],
+        "notes": [],
+        "ordering": [
+          "The steps array order is pipeline execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read pipeline JSON containing a seed and ordered ingest, transform, verify, manifest, profile, compare, drift, validate, lineage, or quality steps."
+      },
+      "target_id": "req-r005-014"
+    },
+    {
+      "id": "req-r008-013",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.step_io_mapping",
+      "source_clause_ids": [
+        "r008-c027"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each configured step, resolve inputs in the exact order declared for its type.",
+          "For manifest, resolve no inputs, ignore dir for lineage-node and edge construction, and resolve output from the output field.",
+          "For quality, resolve a one-element inputs array from input and resolve output from output.",
+          "Resolve the output field for every non-terminal mapped type.",
+          "For verify, set output to null and treat the step as terminal."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest scans a directory but the directory is not modeled as a file input node.",
+          "Verify has no output."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"quality\",\"input\":\"data.csv\",\"output\":\"quality.json\"}",
+            "name": "quality step mapping",
+            "notes": "",
+            "output": "{\"inputs\":[\"data.csv\"],\"output\":\"quality.json\"}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "ingest",
+            "value": "input = field file; output = field output."
+          },
+          {
+            "key": "transform",
+            "value": "inputs = fields input then recipe; output = field output."
+          },
+          {
+            "key": "profile",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "compare",
+            "value": "inputs = fields left then right; output = field output."
+          },
+          {
+            "key": "manifest",
+            "value": "inputs = empty array []; output = field output. The dir field is not a lineage input."
+          },
+          {
+            "key": "verify",
+            "value": "inputs = fields file then checksum; output = none."
+          },
+          {
+            "key": "validate",
+            "value": "inputs = fields input then schema; output = field output."
+          },
+          {
+            "key": "drift",
+            "value": "inputs = fields baseline then current; output = field output."
+          },
+          {
+            "key": "quality",
+            "value": "input = field input; output = field output."
+          }
+        ],
+        "integration": [
+          {
+            "key": "supported_step_types",
+            "value": "ingest, transform, profile, compare, manifest, verify, validate, drift, quality"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "A manifest step has no lineage inputs and retains its output.",
+          "The manifest dir value is never treated as an input node.",
+          "A quality step uses input as its sole lineage input and output as its lineage output."
+        ],
+        "notes": [
+          "The ingest mapping continues to use the field named file as specified by the active lineage contract."
+        ],
+        "ordering": [
+          "Within a step, inputs are ordered as listed: transform input,recipe; compare left,right; verify file,checksum; validate input,schema; drift baseline,current.",
+          "Manifest inputs are exactly the empty array [].",
+          "Quality inputs contain only the input field."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Map each supported pipeline step type to its exact lineage input fields and optional output field, including quality and treating manifest as output-only."
+      },
+      "target_id": "req-r007-001"
+    },
+    {
+      "id": "req-r008-014",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.nodes",
+      "source_clause_ids": [
+        "r008-c027"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve each step's inputs and output using the active lineage step-I/O mapping.",
+          "Collect every resolved input path and every non-null output path.",
+          "Deduplicate paths by exact string equality.",
+          "For each unique path, set type to file and produced_by to its producing step index, or null if it is only an external input.",
+          "For a manifest step, include its output path but not its dir value.",
+          "For a quality step, include its input path and output path; set the quality output's produced_by to that step's index.",
+          "Do not create an output node for a step whose output is null."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A path mentioned only as a resolved input has produced_by=null.",
+          "A verify step contributes its file and checksum inputs but no output node.",
+          "A manifest output remains a node although manifest has no inputs."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Step 1 is {\"type\":\"quality\",\"input\":\"data.csv\",\"output\":\"quality.json\"}.",
+            "name": "quality nodes",
+            "notes": "Shown in lexicographic node order.",
+            "output": "[{\"id\":\"data.csv\",\"type\":\"file\",\"produced_by\":null},{\"id\":\"quality.json\",\"type\":\"file\",\"produced_by\":1}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r008-013 to resolve inputs and outputs."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Each exact resolved path occurs at most once in nodes.",
+          "Every node's type is file.",
+          "A manifest dir value is not a lineage node.",
+          "Quality input and output paths participate in node construction."
+        ],
+        "notes": [],
+        "ordering": [
+          "Nodes are sorted by id lexicographically under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "nodes",
+            "value": "Array containing one object per unique resolved input or non-null output path across all analyzed steps."
+          },
+          {
+            "key": "nodes[].id",
+            "value": "String file path."
+          },
+          {
+            "key": "nodes[].type",
+            "value": "Literal string file."
+          },
+          {
+            "key": "nodes[].produced_by",
+            "value": "The 1-based index of the step producing the path, or null when no analyzed step produces it."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one file node for every resolved lineage input or output path, including quality input and output paths while excluding manifest dir values."
+      },
+      "target_id": "req-r007-002"
+    },
+    {
+      "id": "req-r008-015",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.edges",
+      "source_clause_ids": [
+        "r008-c027"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve each step's inputs and output using the active lineage step-I/O mapping.",
+          "For a step with a non-null output, emit one edge for each resolved input path, setting from to the input, to to the output, and step to the 1-based step index.",
+          "For quality, emit one edge from its input field to its output field.",
+          "For a step with no resolved inputs, emit no edges.",
+          "For a step with null output, emit no edges.",
+          "Because manifest inputs are [], emit no edge for a manifest step."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest has an output but zero inputs, so its edge count is zero.",
+          "Verify has inputs but no output, so its edge count is zero.",
+          "Quality has one input and one output, so it produces exactly one edge."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Step 1 is {\"type\":\"quality\",\"input\":\"data.csv\",\"output\":\"quality.json\"}.",
+            "name": "quality edge",
+            "notes": "",
+            "output": "[{\"from\":\"data.csv\",\"to\":\"quality.json\",\"step\":1}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "edge_count_per_step",
+            "value": "output is null ? 0 : length(resolved inputs)"
+          },
+          {
+            "key": "quality_edge",
+            "value": "from=quality.input, to=quality.output, step=quality step index"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r008-013 to resolve inputs and outputs."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every edge corresponds to exactly one resolved input of an output-producing step.",
+          "No manifest step produces an edge.",
+          "Every quality step produces one input-to-output edge."
+        ],
+        "notes": [],
+        "ordering": [
+          "Edges are sorted by step ascending and then from lexicographically under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "edges",
+            "value": "Array of dependency-edge objects."
+          },
+          {
+            "key": "edges[].from",
+            "value": "String resolved input path."
+          },
+          {
+            "key": "edges[].to",
+            "value": "String output path."
+          },
+          {
+            "key": "edges[].step",
+            "value": "1-based index of the represented step."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one dependency edge from each resolved step input to its output, including the quality input-to-output edge and excluding manifest and terminal-step edges."
+      },
+      "target_id": "req-r007-003"
+    },
+    {
+      "id": "req-r008-016",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.steps",
+      "source_clause_ids": [
+        "r008-c027"
+      ],
+      "spec": {
+        "algorithm": [
+          "Traverse configured steps in configuration order.",
+          "Assign index 1 to the first step and increment by one.",
+          "Copy the step type.",
+          "Resolve inputs and output using the active lineage step-I/O mapping.",
+          "For manifest, set inputs to [] and retain its output field.",
+          "For quality, set inputs to an array containing its input field and set output to its output field.",
+          "For verify or another mapped terminal step with no output, use output=null."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A no-output step remains present with output=null.",
+          "A manifest step remains present with inputs=[] despite having a dir field."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"quality\",\"input\":\"data.csv\",\"output\":\"quality.json\"}",
+            "name": "quality step summary",
+            "notes": "",
+            "output": "[{\"index\":1,\"type\":\"quality\",\"inputs\":[\"data.csv\"],\"output\":\"quality.json\"}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "index",
+            "value": "zero_based_configuration_position + 1"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "mapping",
+            "value": "Use req-r008-013."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The steps array contains exactly one entry per configured step.",
+          "Every manifest summary has inputs=[] and retains its output path.",
+          "Every quality summary has inputs=[input] and output equal to the configured output field."
+        ],
+        "notes": [],
+        "ordering": [
+          "Input arrays retain the order prescribed by the step-type mapping.",
+          "The steps array is ordered by index ascending under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "steps",
+            "value": "Array containing one summary per configured pipeline step."
+          },
+          {
+            "key": "steps[].index",
+            "value": "1-based integer step index."
+          },
+          {
+            "key": "steps[].type",
+            "value": "String pipeline step type."
+          },
+          {
+            "key": "steps[].inputs",
+            "value": "Array of resolved input path strings; exactly [] for manifest and [input] for quality."
+          },
+          {
+            "key": "steps[].output",
+            "value": "Output path string, or null when the step has no output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one complete lineage summary for every configured step, including quality summaries with input and output paths and manifest summaries with empty inputs."
+      },
+      "target_id": "req-r007-004"
+    }
+  ],
+  "round": 8
+}

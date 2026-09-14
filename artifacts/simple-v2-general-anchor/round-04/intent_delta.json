@@ -1,0 +1,1412 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r004-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-001"
+      ]
+    },
+    {
+      "clause_id": "r004-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-002"
+      ]
+    },
+    {
+      "clause_id": "r004-c005",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c006",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r004-003"
+      ]
+    },
+    {
+      "clause_id": "r004-c007",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c008",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-003"
+      ]
+    },
+    {
+      "clause_id": "r004-c009",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-003",
+        "req-r004-005"
+      ]
+    },
+    {
+      "clause_id": "r004-c010",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c011",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-004"
+      ]
+    },
+    {
+      "clause_id": "r004-c012",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-005"
+      ]
+    },
+    {
+      "clause_id": "r004-c013",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c014",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r004-006",
+        "req-r004-008"
+      ]
+    },
+    {
+      "clause_id": "r004-c015",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-006"
+      ]
+    },
+    {
+      "clause_id": "r004-c016",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-006"
+      ]
+    },
+    {
+      "clause_id": "r004-c017",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-007"
+      ]
+    },
+    {
+      "clause_id": "r004-c018",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-006"
+      ]
+    },
+    {
+      "clause_id": "r004-c019",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-008"
+      ]
+    },
+    {
+      "clause_id": "r004-c020",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c021",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-009"
+      ]
+    },
+    {
+      "clause_id": "r004-c022",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c023",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r004-010"
+      ]
+    },
+    {
+      "clause_id": "r004-c024",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-011"
+      ]
+    },
+    {
+      "clause_id": "r004-c025",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c026",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-012",
+        "req-r004-013"
+      ]
+    },
+    {
+      "clause_id": "r004-c027",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r004-012"
+      ]
+    },
+    {
+      "clause_id": "r004-c028",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-012"
+      ]
+    },
+    {
+      "clause_id": "r004-c029",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-013"
+      ]
+    },
+    {
+      "clause_id": "r004-c030",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r004-014"
+      ]
+    },
+    {
+      "clause_id": "r004-c031",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c032",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-015"
+      ]
+    },
+    {
+      "clause_id": "r004-c033",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r004-015",
+        "req-r004-016"
+      ]
+    },
+    {
+      "clause_id": "r004-c034",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-015"
+      ]
+    },
+    {
+      "clause_id": "r004-c035",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-016",
+        "req-r004-017"
+      ]
+    },
+    {
+      "clause_id": "r004-c036",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r004-c037",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r004-018"
+      ]
+    },
+    {
+      "clause_id": "r004-c038",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r004-018"
+      ]
+    }
+  ],
+  "instruction_sha256": "2c02880b1965ec6d48c5940ae585fc11bf77092dc93eda87bdd80d8ccb60cdd3",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r004-001",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.cli_interface",
+      "source_clause_ids": [
+        "r004-c003"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe validate --input <path> --schema <path> --output <path>"
+          },
+          {
+            "key": "--input",
+            "value": "CSV data-file path."
+          },
+          {
+            "key": "--schema",
+            "value": "JSON validation-schema path."
+          },
+          {
+            "key": "--output",
+            "value": "JSON validation-report path."
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the validate command with input CSV, JSON schema, and report output paths."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.csv_processing",
+      "source_clause_ids": [
+        "r004-c004"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the CSV data and schema.",
+          "Evaluate all applicable schema, cell, uniqueness, missing-column, and strict-column rules.",
+          "Collect all violations rather than stopping after the first validation failure.",
+          "Write the report to --output."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "data",
+            "value": "CSV data file."
+          },
+          {
+            "key": "schema",
+            "value": "JSON schema definition."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Data violations are accumulated into the report."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "destination",
+            "value": "Complete violation report written to --output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Validate a CSV data file against a JSON schema and report every violation."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.schema_model",
+      "source_clause_ids": [
+        "r004-c006",
+        "r004-c008",
+        "r004-c009"
+      ],
+      "spec": {
+        "algorithm": [
+          "Interpret columns as an ordered JSON object so schema key order is available for missing-column ordering.",
+          "Apply constraints only according to their declared type and applicability."
+        ],
+        "defaults": [
+          {
+            "key": "required",
+            "value": "false"
+          },
+          {
+            "key": "unique",
+            "value": "false"
+          },
+          {
+            "key": "strict",
+            "value": "false"
+          }
+        ],
+        "edge_cases": [
+          "Empty values are excluded from type, pattern, enum, and unique checks; required handles empty values.",
+          "min and max apply only to int and float columns.",
+          "pattern applies only to string columns."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"columns\":{\"age\":{\"type\":\"int\",\"min\":0,\"max\":150,\"required\":true},\"email\":{\"type\":\"string\",\"pattern\":\"^[^@]+@[^@]+$\",\"unique\":true},\"status\":{\"type\":\"string\",\"enum\":[\"active\",\"inactive\"]}},\"strict\":false}",
+            "name": "validation schema",
+            "notes": "Defines three columns and disables strict extra-column checking.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "numeric_range",
+            "value": "min <= parsed value <= max for each supplied bound."
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "columns",
+            "value": "JSON object whose keys are schema column names and whose values are constraint objects."
+          },
+          {
+            "key": "columns.<name>.type",
+            "value": "Required string: int, float, or string; non-empty values must parse as that type."
+          },
+          {
+            "key": "columns.<name>.required",
+            "value": "Optional boolean; an empty value violates required when true."
+          },
+          {
+            "key": "columns.<name>.min,max",
+            "value": "Optional numeric inclusive bounds for numeric types."
+          },
+          {
+            "key": "columns.<name>.pattern",
+            "value": "Optional Go regular-expression string for non-empty string values."
+          },
+          {
+            "key": "columns.<name>.unique",
+            "value": "Optional boolean; duplicate non-empty raw values violate uniqueness when true."
+          },
+          {
+            "key": "columns.<name>.enum",
+            "value": "Optional array of allowed strings; compare each non-empty raw CSV string against the list."
+          },
+          {
+            "key": "strict",
+            "value": "Optional top-level boolean; when true, each CSV header absent from columns produces one strict violation."
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"columns\":{\"age\":{\"type\":\"int\",\"min\":0,\"max\":150,\"required\":true},\"email\":{\"type\":\"string\",\"pattern\":\"^[^@]+@[^@]+$\",\"unique\":true},\"status\":{\"type\":\"string\",\"enum\":[\"active\",\"inactive\"]}},\"strict\":false}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "type is required for every schema column."
+        ],
+        "notes": [],
+        "ordering": [
+          "Schema key order is significant for column_missing violations."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Use an object-keyed validation schema supporting typed column constraints and optional strict mode."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.column_rule_evaluation",
+      "source_clause_ids": [
+        "r004-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "Process present columns in CSV header order.",
+          "Type: for each non-empty value, require parsing according to int or float type; string values pass the type check.",
+          "Required: emit one violation for every empty cell when required is true.",
+          "Min and max: only after that cell's numeric type check passes, compare the parsed numeric value with each supplied inclusive bound and emit the applicable min or max violation.",
+          "Pattern: for string type, test every non-empty value against the declared Go regular expression and emit a violation when it does not match.",
+          "Enum: compare every non-empty raw CSV value to the allowed string list and emit a violation when absent.",
+          "Unique: track first occurrences of each non-empty raw value and emit a uniqueness violation for every second and later occurrence."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A numeric type failure prevents min and max evaluation for that cell.",
+          "Every empty required cell produces its own violation.",
+          "Unique ignores empty values and reports every occurrence after the first.",
+          "Unique violation output has row=null even though its message identifies first and repeated row positions."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "min_violation",
+            "value": "parsed_value < min"
+          },
+          {
+            "key": "max_violation",
+            "value": "parsed_value > max"
+          },
+          {
+            "key": "unique_violation",
+            "value": "occurrence_number >= 2 for the same non-empty raw string"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "int_parser",
+            "value": "Go strconv.ParseInt for each non-empty int cell."
+          },
+          {
+            "key": "float_parser",
+            "value": "Go strconv.ParseFloat for each non-empty float cell."
+          },
+          {
+            "key": "string_type",
+            "value": "Every non-empty raw CSV string satisfies the string type check."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Rule precedence within a column is type, required, min, max, pattern, enum, unique.",
+          "Rows for a single rule are evaluated in ascending CSV data-row position."
+        ],
+        "output_schema": [],
+        "preconditions": [
+          "The schema column exists in the CSV header."
+        ],
+        "summary": "Evaluate present schema columns using the prescribed parsing, applicability, and per-cell rule semantics."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.schema_coverage_rules",
+      "source_clause_ids": [
+        "r004-c009",
+        "r004-c012"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compare schema keys with CSV headers.",
+          "For each absent schema key, emit exactly one column_missing violation.",
+          "If strict is true, for each undeclared CSV header emit exactly one strict violation."
+        ],
+        "defaults": [
+          {
+            "key": "strict",
+            "value": "false; emit no strict violations."
+          }
+        ],
+        "edge_cases": [
+          "Coverage violations are column-level and therefore have row=null.",
+          "column_missing and strict violations have value=null."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Missing columns follow schema key order.",
+          "Strict extra columns follow CSV header order."
+        ],
+        "output_schema": [
+          {
+            "key": "column_missing",
+            "value": "One violation for each schema key absent from the CSV header."
+          },
+          {
+            "key": "strict",
+            "value": "When strict=true, one violation for each CSV header absent from the schema columns object."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Report missing schema columns and, in strict mode, undeclared CSV columns exactly once per column."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.violation_output_schema",
+      "source_clause_ids": [
+        "r004-c014",
+        "r004-c015",
+        "r004-c016",
+        "r004-c018"
+      ],
+      "spec": {
+        "algorithm": [
+          "Emit all five fields for every violation.",
+          "Use row=null for unique, column_missing, and strict.",
+          "Use value=null for required, column_missing, and strict.",
+          "For other rules, populate row with the applicable data-row position and value with the offending raw CSV string."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "unique has row=null but retains the duplicate raw value in value.",
+          "required has a numbered row but value=null."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "An age value abc occurs at data row 3 and fails int parsing.",
+            "name": "type violation report",
+            "notes": "",
+            "output": "{\"valid\":false,\"violations\":[{\"column\":\"age\",\"row\":3,\"rule\":\"type\",\"value\":\"abc\",\"message\":\"expected int, got \\\"abc\\\"\"}],\"summary\":{\"total_violations\":1,\"columns_checked\":2,\"rows_checked\":10}}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "normative_example",
+            "value": "{\"valid\":false,\"violations\":[{\"column\":\"age\",\"row\":3,\"rule\":\"type\",\"value\":\"abc\",\"message\":\"expected int, got \\\"abc\\\"\"}],\"summary\":{\"total_violations\":1,\"columns_checked\":2,\"rows_checked\":10}}"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Every violation contains column, row, rule, value, and message."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "valid",
+            "value": "Boolean report validity."
+          },
+          {
+            "key": "violations",
+            "value": "Array of violation objects."
+          },
+          {
+            "key": "violations[].column",
+            "value": "String column name."
+          },
+          {
+            "key": "violations[].row",
+            "value": "Integer data-row position or null."
+          },
+          {
+            "key": "violations[].rule",
+            "value": "One of type, required, min, max, pattern, enum, unique, column_missing, strict."
+          },
+          {
+            "key": "violations[].value",
+            "value": "Raw string value or null."
+          },
+          {
+            "key": "violations[].message",
+            "value": "String generated by the applicable exact message template."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit a typed violation array using the complete fixed rule vocabulary and prescribed null fields."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.violation_messages",
+      "source_clause_ids": [
+        "r004-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Substitute the declared type, raw offending value, bound, pattern, column name, or row numbers into the applicable template.",
+          "For enum, join allowed values in declaration order using exactly comma followed by one space."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "enum_values_separator",
+            "value": ", "
+          },
+          {
+            "key": "enum_example",
+            "value": "Allowed A, B, C with offending D produces: value \"D\" is not in allowed values [A, B, C]"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Message punctuation, quotation marks, parentheses, and spacing follow the templates exactly."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "type",
+            "value": "expected <type>, got \"<value>\""
+          },
+          {
+            "key": "required",
+            "value": "value is required"
+          },
+          {
+            "key": "min",
+            "value": "value <value> is below minimum <min>"
+          },
+          {
+            "key": "max",
+            "value": "value <value> exceeds maximum <max>"
+          },
+          {
+            "key": "pattern",
+            "value": "value \"<value>\" does not match pattern <pattern>"
+          },
+          {
+            "key": "enum",
+            "value": "value \"<value>\" is not in allowed values [<values>]"
+          },
+          {
+            "key": "unique",
+            "value": "duplicate value \"<value>\" (first at row <N>, repeated at row <M>)"
+          },
+          {
+            "key": "column_missing",
+            "value": "column \"<name>\" defined in schema but missing from data"
+          },
+          {
+            "key": "strict",
+            "value": "column \"<name>\" not defined in schema"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Generate exact rule-specific validation messages."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.summary_and_validity",
+      "source_clause_ids": [
+        "r004-c014",
+        "r004-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Count all violation entries.",
+          "Count intersections between schema column names and CSV headers.",
+          "Count CSV data rows.",
+          "Set valid from total_violations."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "With no violations, valid=true.",
+          "Missing schema columns do not contribute to columns_checked."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "One violation, two present schema columns, and ten data rows.",
+            "name": "invalid summary",
+            "notes": "valid is false.",
+            "output": "{\"total_violations\":1,\"columns_checked\":2,\"rows_checked\":10}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "valid",
+            "value": "total_violations == 0"
+          },
+          {
+            "key": "columns_checked",
+            "value": "count(schema column names present in CSV header)"
+          }
+        ],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "summary.total_violations",
+            "value": "Integer count of all emitted violations."
+          },
+          {
+            "key": "summary.columns_checked",
+            "value": "Integer count of schema columns present in the CSV header."
+          },
+          {
+            "key": "summary.rows_checked",
+            "value": "Integer count of CSV data rows, excluding the header."
+          },
+          {
+            "key": "valid",
+            "value": "Boolean true exactly when total_violations is zero."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Summarize validation counts and derive validity from the total violation count."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.violation_ordering",
+      "source_clause_ids": [
+        "r004-c021"
+      ],
+      "spec": {
+        "algorithm": [
+          "Emit violations for schema columns present in the CSV, grouped by CSV header order.",
+          "Then emit column_missing violations in schema key order.",
+          "Then emit strict violations in CSV header order.",
+          "Within the same column, order violations by fixed rule rank.",
+          "Within the same column and rule, sort numbered rows ascending and place null after all numbered rows."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Column category: present columns in CSV header order; column_missing in schema key order; strict in CSV header order.",
+          "Rule order: type, required, min, max, pattern, enum, unique, column_missing, strict.",
+          "Row order: integers ascending, then null."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Sort validation violations by column category, fixed rule rank, and row position."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.invalid_schema_error",
+      "source_clause_ids": [
+        "r004-c023"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse and validate the JSON schema before data validation.",
+          "Terminate when the schema is invalid."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "The validation JSON schema is invalid.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid schema: <path>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "missing_files",
+            "value": "Missing --input or --schema files use the active generic missing-input behavior: exit 1 and stderr ERROR: file not found: <path>."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail validate with an exact path-bearing diagnostic when its JSON schema is invalid."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "validate.json_formatting",
+      "source_clause_ids": [
+        "r004-c024"
+      ],
+      "spec": {
+        "algorithm": [
+          "Encode the complete validation report as JSON."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces"
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Serialize validation reports as two-space-indented JSON with a trailing newline."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-012",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.crossjoin_interface",
+      "source_clause_ids": [
+        "r004-c026",
+        "r004-c027",
+        "r004-c028"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the right-side CSV.",
+          "Resolve selected right columns in declaration order."
+        ],
+        "defaults": [
+          {
+            "key": "columns",
+            "value": "If omitted, select all right-side columns in right-header order."
+          }
+        ],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"crossjoin\",\"right\":\"other.csv\",\"columns\":[\"x\",\"y\"]}",
+            "name": "crossjoin recipe",
+            "notes": "Includes right columns x then y.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "crossjoin"
+          },
+          {
+            "key": "right",
+            "value": "Path to the right-side CSV file."
+          },
+          {
+            "key": "columns",
+            "value": "Optional ordered array of right-side column names to include."
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"crossjoin\",\"right\":\"other.csv\",\"columns\":[\"x\",\"y\"]}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "left_dataset",
+            "value": "The current transform dataset."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Explicit columns retain declaration order; default columns retain right-header order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Provide a crossjoin transform against another headered CSV with optional right-column selection."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-013",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "crossjoin.output_and_ordering",
+      "source_clause_ids": [
+        "r004-c026",
+        "r004-c029"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each left row in current order, iterate every right row in right file order.",
+          "Concatenate the complete left row with the selected cells of each right row.",
+          "Emit one output row for every left/right pair."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "If either side has zero data rows, output has zero data rows."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "row_count",
+            "value": "left_rows * right_rows"
+          }
+        ],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "No left/right pair is omitted or duplicated."
+        ],
+        "notes": [],
+        "ordering": [
+          "Left rows are the outer loop in current order.",
+          "Right rows are the inner loop in right file order."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "All current left columns in existing order, followed by selected right columns in resolved order."
+          },
+          {
+            "key": "row_count",
+            "value": "left row count multiplied by right row count."
+          }
+        ],
+        "preconditions": [
+          "The left current dataset and right CSV have been read."
+        ],
+        "summary": "Emit the Cartesian product with left-major, right-minor row order and deterministic column layout."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-014",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "crossjoin.invalid_right_column_error",
+      "source_clause_ids": [
+        "r004-c030"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate every selected columns entry against the right CSV header before producing the product.",
+          "Terminate on an absent selected column."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "A selected right-side column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "missing_right_file",
+            "value": "Uses the active generic missing-input behavior: exit 1 and stderr ERROR: file not found: <path>."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail crossjoin when an explicitly selected right-side column is absent."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-015",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.checkpoint_interface",
+      "source_clause_ids": [
+        "r004-c032",
+        "r004-c033",
+        "r004-c034"
+      ],
+      "spec": {
+        "algorithm": [
+          "Dispatch each row to the selected algorithm.",
+          "Append the computed value under as."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"checkpoint\",\"as\":\"ckpt\",\"algorithm\":\"row_hash\"}",
+            "name": "row-hash checkpoint",
+            "notes": "Appends ckpt as the last column.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "checkpoint"
+          },
+          {
+            "key": "as",
+            "value": "Name of the new column."
+          },
+          {
+            "key": "algorithm",
+            "value": "row_hash or row_number."
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"checkpoint\",\"as\":\"ckpt\",\"algorithm\":\"row_hash\"}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve original columns and rows; append as last column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "New last column containing the selected checkpoint representation."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append a checkpoint fingerprint column using row_hash or row_number."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-016",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "checkpoint.row_hash",
+      "source_clause_ids": [
+        "r004-c033",
+        "r004-c035"
+      ],
+      "spec": {
+        "algorithm": [
+          "Concatenate all raw cell values in current column order with the literal | character between adjacent cells.",
+          "Compute SHA-256 over the exact concatenated bytes.",
+          "Lowercase-hex encode the digest and retain its first 8 characters."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty cells contribute empty strings while separators between cells remain."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"checkpoint\",\"as\":\"ckpt\",\"algorithm\":\"row_hash\"}",
+            "name": "row_hash recipe",
+            "notes": "Hashes all current cells using | separators.",
+            "output": ""
+          }
+        ],
+        "formatting": [
+          {
+            "key": "result",
+            "value": "Exactly 8 lowercase hexadecimal characters."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "hash_input",
+            "value": "value(column1) + \"|\" + value(column2) + ..."
+          },
+          {
+            "key": "checkpoint",
+            "value": "lowercase_hex(SHA-256(hash_input))[0:8]"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "algorithm",
+            "value": "row_hash"
+          },
+          {
+            "key": "cells",
+            "value": "All cell values in current header order."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Current header order determines the hash input."
+        ],
+        "output_schema": [
+          {
+            "key": "checkpoint",
+            "value": "First 8 characters of the lowercase hexadecimal SHA-256 digest."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute checkpoint row_hash from all pipe-separated cells and emit the first eight lowercase digest characters."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-017",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "checkpoint.row_number",
+      "source_clause_ids": [
+        "r004-c035"
+      ],
+      "spec": {
+        "algorithm": [
+          "Traverse the current dataset in its existing order.",
+          "For the row at zero-based index i, append decimal(i+1)."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The first data row receives \"1\"."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "result",
+            "value": "Base-10 positive integer string with no decimal point."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "row_number",
+            "value": "current_zero_based_index + 1"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "algorithm",
+            "value": "row_number"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Row numbering does not reorder rows."
+        ],
+        "notes": [],
+        "ordering": [
+          "Number rows in current dataset order."
+        ],
+        "output_schema": [
+          {
+            "key": "checkpoint",
+            "value": "Decimal string of the row's 1-based position."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute checkpoint row_number as the row's one-based current position string."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r004-018",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r004-c037",
+        "r004-c038"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse seed and steps from JSON.",
+          "Execute steps sequentially in array order using corresponding command behavior.",
+          "Dispatch ingest, transform, verify, manifest, profile, compare, and drift steps using their established fields and semantics.",
+          "For validate, run the validate command using input, schema, and output from the step."
+        ],
+        "defaults": [
+          {
+            "key": "drift.threshold",
+            "value": "0.1 when threshold is omitted or equals 0."
+          }
+        ],
+        "edge_cases": [
+          "A drift-step threshold of 0 selects default 0.1, not a zero threshold."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"validate\",\"input\":\"data.csv\",\"schema\":\"schema.json\",\"output\":\"report.json\"}",
+            "name": "validate pipeline step",
+            "notes": "Runs dpipe validate with the corresponding paths.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline transform seed."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of step objects."
+          },
+          {
+            "key": "ingest",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "transform",
+            "value": "{type,input,recipe,output}"
+          },
+          {
+            "key": "verify",
+            "value": "{type,file,checksum}"
+          },
+          {
+            "key": "manifest",
+            "value": "{type,dir,output}"
+          },
+          {
+            "key": "profile",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "compare",
+            "value": "{type,left,right,key,output}"
+          },
+          {
+            "key": "drift",
+            "value": "{type,baseline,current,output,threshold?}"
+          },
+          {
+            "key": "validate",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "validate_example",
+            "value": "{\"type\":\"validate\",\"input\":\"data.csv\",\"schema\":\"schema.json\",\"output\":\"report.json\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling where applicable."
+          },
+          {
+            "key": "profile_step",
+            "value": "Runs dpipe profile."
+          },
+          {
+            "key": "compare_step",
+            "value": "Runs dpipe compare."
+          },
+          {
+            "key": "drift_step",
+            "value": "Runs dpipe drift with baseline, current, output, and effective threshold."
+          },
+          {
+            "key": "validate_step",
+            "value": "Runs dpipe validate with input, schema, and output."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Active sequential pipeline execution, first-failure stopping, and terminal-status behavior remain unchanged."
+        ],
+        "notes": [],
+        "ordering": [
+          "steps array order is pipeline execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read pipeline JSON containing a seed and ordered ingest, transform, verify, manifest, profile, compare, drift, or validate steps."
+      },
+      "target_id": "req-r003-024"
+    }
+  ],
+  "round": 4
+}

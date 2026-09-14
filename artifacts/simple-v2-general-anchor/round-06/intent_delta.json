@@ -1,0 +1,1007 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r006-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-001",
+        "req-r006-002"
+      ]
+    },
+    {
+      "clause_id": "r006-c004",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c005",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-003"
+      ]
+    },
+    {
+      "clause_id": "r006-c006",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c007",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-004",
+        "req-r006-005",
+        "req-r006-001"
+      ]
+    },
+    {
+      "clause_id": "r006-c008",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c009",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-006"
+      ]
+    },
+    {
+      "clause_id": "r006-c010",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c011",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r006-004",
+        "req-r006-005",
+        "req-r006-006"
+      ]
+    },
+    {
+      "clause_id": "r006-c012",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c013",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-007"
+      ]
+    },
+    {
+      "clause_id": "r006-c014",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r006-007"
+      ]
+    },
+    {
+      "clause_id": "r006-c015",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c016",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-007"
+      ]
+    },
+    {
+      "clause_id": "r006-c017",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c018",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-008",
+        "req-r006-009"
+      ]
+    },
+    {
+      "clause_id": "r006-c019",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c020",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-010"
+      ]
+    },
+    {
+      "clause_id": "r006-c021",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r006-c022",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r006-011"
+      ]
+    }
+  ],
+  "instruction_sha256": "4c5607c13cff1a9d18aa0cb486794184f80e11084f95e27c3a798eb9a0f8e360",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r006-001",
+      "modality": "must",
+      "operation": "supersede",
+      "semantic_key": "global.determinism_contract",
+      "source_clause_ids": [
+        "r006-c003",
+        "r006-c007"
+      ],
+      "spec": {
+        "algorithm": [
+          "Use the specified stable ordering, canonical formatting, byte-level hashing, and deterministic PRNG rules for ordinary command outputs.",
+          "Permit manifest generated_at to vary with actual generation time.",
+          "Permit an audit log written through --audit to vary with actual execution timestamp, measured duration, success or error outcome, file sizes, and the existing log entries to which the new entry is appended."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The audit log is execution metadata and is not byte-identical across repeated audited executions.",
+          "Manifest generated_at remains a wall-clock-time exception."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "audit_timestamp",
+            "value": "UTC format 2006-01-02T15:04:05Z."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "scope",
+            "value": "All dpipe commands, including pipeline and lineage."
+          },
+          {
+            "key": "audit_behavior",
+            "value": "Governed by the active audit requirements."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Ordinary command result files remain byte-identical for identical commands, inputs, configurations, and seeds except for manifest generated_at.",
+          "Audit metadata truthfully represents and accumulates actual executions rather than being forced to deterministic values."
+        ],
+        "notes": [],
+        "ordering": [
+          "Audit entries accumulate in execution order because each new entry is appended to an existing valid audit array."
+        ],
+        "output_schema": [
+          {
+            "key": "deterministic_outputs",
+            "value": "All corresponding output files other than the stated manifest and audit exceptions."
+          },
+          {
+            "key": "manifest_exception",
+            "value": "The generated_at field reflects wall-clock generation time."
+          },
+          {
+            "key": "audit_exception",
+            "value": "When --audit is present, the audit log is updated after every execution and records the actual UTC start timestamp, measured duration_ms, outcome, and accumulated prior entries."
+          }
+        ],
+        "preconditions": [
+          "The command, ordinary inputs, configuration, and seed are identical between runs."
+        ],
+        "summary": "Produce byte-identical command outputs for repeated equivalent executions except for manifest generation time and execution audit metadata, whose timestamp, duration, and append history reflect each actual execution."
+      },
+      "target_id": "req-r001-042"
+    },
+    {
+      "id": "req-r006-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "audit.cli_interface_and_trigger",
+      "source_clause_ids": [
+        "r006-c003"
+      ],
+      "spec": {
+        "algorithm": [
+          "Record the execution start time for audit metadata.",
+          "Run the requested dpipe command.",
+          "Determine whether it completed without error and capture its error message when it did not.",
+          "After command completion, construct and persist one audit entry at the supplied path, including for failed executions."
+        ],
+        "defaults": [
+          {
+            "key": "--audit",
+            "value": "Optional; when omitted, no audit entry is required."
+          }
+        ],
+        "edge_cases": [
+          "Command failure does not suppress audit logging."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "commands",
+            "value": "Applies globally to ingest, transform, verify, manifest, pipeline, profile, compare, drift, validate, lineage, and any other dpipe command."
+          }
+        ],
+        "interface": [
+          {
+            "key": "flag",
+            "value": "--audit <path>"
+          },
+          {
+            "key": "scope",
+            "value": "Any dpipe command."
+          },
+          {
+            "key": "path",
+            "value": "JSON audit-log file to update."
+          }
+        ],
+        "invariants": [
+          "When --audit is supplied, the execution is represented by one audit entry regardless of command success."
+        ],
+        "notes": [],
+        "ordering": [
+          "The command completes successfully or with error before the audit entry is appended or used to create the log."
+        ],
+        "output_schema": [
+          {
+            "key": "audit_effect",
+            "value": "Exactly one execution metadata entry is incorporated into the audit log for the invoked command."
+          }
+        ],
+        "preconditions": [
+          "The --audit flag is present."
+        ],
+        "summary": "Allow every dpipe command to accept --audit <path> and record one audit entry after the command finishes, whether it succeeds or fails."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "audit.log_update",
+      "source_clause_ids": [
+        "r006-c005"
+      ],
+      "spec": {
+        "algorithm": [
+          "If the audit path does not exist, create it as an array containing only the new entry.",
+          "If the path exists and its contents are a valid JSON array, append the new entry after all existing array elements and write the complete array back.",
+          "If the path exists but its contents are not a valid JSON array, overwrite it with an array containing only the new entry."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A missing file is created.",
+          "An existing valid empty array becomes a one-element array.",
+          "Invalid JSON and valid non-array JSON are both treated as not a valid JSON array and are overwritten."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "existing_audit_file",
+            "value": "The file at the --audit path, if it exists."
+          },
+          {
+            "key": "new_entry",
+            "value": "The audit entry for the completed execution."
+          }
+        ],
+        "integration": [
+          {
+            "key": "trigger",
+            "value": "Runs after an audited command completes, successfully or with error."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The persisted audit document is a JSON array.",
+          "Invalid prior contents are not retained."
+        ],
+        "notes": [],
+        "ordering": [
+          "For a valid existing array, preserve existing entry order and place the new entry last."
+        ],
+        "output_schema": [
+          {
+            "key": "audit_log",
+            "value": "A JSON array of audit entry objects."
+          }
+        ],
+        "preconditions": [
+          "A new audit entry has been constructed after command completion."
+        ],
+        "summary": "Create, append to, or replace the audit log according to the existing file's JSON-array validity."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "audit.entry_schema",
+      "source_clause_ids": [
+        "r006-c007",
+        "r006-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "Set command to the invoked command name.",
+          "Copy argument tokens other than the command name while removing the --audit token and its following path value.",
+          "Set timestamp from the UTC instant execution started.",
+          "Measure execution duration in whole milliseconds and store it as duration_ms.",
+          "Set success from whether the command completed without error.",
+          "Set error to null on success and to the command's error message on failure.",
+          "Resolve input_size and output_size using the primary-file mapping requirement."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Failed executions still contain all fields.",
+          "The audit flag and its value never appear in args."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "dpipe transform --input data.csv --recipe recipe.json --output out.csv --seed 42 --audit audit.json",
+            "name": "successful transform audit entry",
+            "notes": "The timestamp, duration, and sizes illustrate the required JSON types and field meanings.",
+            "output": "{\"command\":\"transform\",\"args\":[\"--input\",\"data.csv\",\"--recipe\",\"recipe.json\",\"--output\",\"out.csv\",\"--seed\",\"42\"],\"timestamp\":\"2024-01-15T10:30:00Z\",\"duration_ms\":45,\"success\":true,\"error\":null,\"input_size\":1024,\"output_size\":512}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "timestamp",
+            "value": "UTC ISO 8601 using the exact layout 2006-01-02T15:04:05Z."
+          },
+          {
+            "key": "duration_ms",
+            "value": "JSON integer."
+          },
+          {
+            "key": "success",
+            "value": "JSON boolean."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "duration_ms",
+            "value": "Execution duration expressed as an integer number of milliseconds."
+          },
+          {
+            "key": "success",
+            "value": "command completed without error"
+          },
+          {
+            "key": "error",
+            "value": "success ? null : command error message"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "invocation",
+            "value": "The invoked command name and command arguments."
+          },
+          {
+            "key": "start_time",
+            "value": "UTC time at which command execution started."
+          },
+          {
+            "key": "completion",
+            "value": "Command completion time and success or error outcome."
+          }
+        ],
+        "integration": [
+          {
+            "key": "primary_sizes",
+            "value": "Use req-r006-005."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every entry contains command, args, timestamp, duration_ms, success, error, input_size, and output_size."
+        ],
+        "notes": [],
+        "ordering": [
+          "args preserves the invocation order of all retained argument tokens."
+        ],
+        "output_schema": [
+          {
+            "key": "command",
+            "value": "String command name, such as ingest, transform, or manifest."
+          },
+          {
+            "key": "args",
+            "value": "Array of command-argument strings excluding the command name, --audit, and the --audit value."
+          },
+          {
+            "key": "timestamp",
+            "value": "String UTC execution-start timestamp."
+          },
+          {
+            "key": "duration_ms",
+            "value": "Integer execution duration in milliseconds."
+          },
+          {
+            "key": "success",
+            "value": "Boolean true exactly when the command completed without error."
+          },
+          {
+            "key": "error",
+            "value": "The command error-message string when success=false; null when success=true."
+          },
+          {
+            "key": "input_size",
+            "value": "Primary input byte size as an integer, or null when not applicable."
+          },
+          {
+            "key": "output_size",
+            "value": "Primary output byte size as an integer, or null when not applicable or execution failed."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit every audit entry with the complete command, argument, timing, outcome, error, and file-size field set."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "audit.primary_file_sizes",
+      "source_clause_ids": [
+        "r006-c007",
+        "r006-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "For transform, profile, validate, and ingest, obtain input_size from the file selected by --input.",
+          "For verify, obtain input_size from the file selected by --file.",
+          "For compare, obtain input_size from the file selected by --left.",
+          "For drift, obtain input_size from the file selected by --baseline.",
+          "For pipeline and lineage, obtain input_size from the file selected by --config.",
+          "For manifest and a command without an identifiable primary input, set input_size to null.",
+          "For a successful command whose primary output is named by --output, measure that file after execution and store its byte size.",
+          "For verify and pipeline, set output_size to null.",
+          "For any command without an applicable primary output, set output_size to null.",
+          "If execution failed, set output_size to null."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest input_size is null even though it scans a directory.",
+          "Verify output_size is null because verify creates no primary output file.",
+          "Pipeline output_size is null.",
+          "A failed command always has output_size=null even if a partial or prior file exists.",
+          "A command without an identifiable input has input_size=null."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A successful transform reads a 1024-byte --input and leaves a 512-byte --output.",
+            "name": "transform sizes",
+            "notes": "",
+            "output": "{\"input_size\":1024,\"output_size\":512}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "sizes",
+            "value": "JSON integer byte counts or null."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "input_size",
+            "value": "length in bytes of the designated primary input file"
+          },
+          {
+            "key": "output_size",
+            "value": "length in bytes of the designated primary output file after successful execution"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "transform/profile/validate/ingest input",
+            "value": "File named by --input."
+          },
+          {
+            "key": "verify input",
+            "value": "File named by --file."
+          },
+          {
+            "key": "compare input",
+            "value": "File named by --left."
+          },
+          {
+            "key": "drift input",
+            "value": "File named by --baseline."
+          },
+          {
+            "key": "pipeline/lineage input",
+            "value": "File named by --config."
+          },
+          {
+            "key": "manifest input",
+            "value": "No identifiable primary input."
+          },
+          {
+            "key": "ordinary output",
+            "value": "File named by --output for commands having a primary output."
+          }
+        ],
+        "integration": [
+          {
+            "key": "audit_entry",
+            "value": "Supplies input_size and output_size to req-r006-004."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Sizes are byte sizes, not row counts or character counts."
+        ],
+        "notes": [],
+        "ordering": [
+          "Measure an applicable output only after command execution."
+        ],
+        "output_schema": [
+          {
+            "key": "input_size",
+            "value": "Byte size of the designated primary input file, or null if not applicable."
+          },
+          {
+            "key": "output_size",
+            "value": "Byte size of the designated primary output file after execution, or null if not applicable or execution failed."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Populate audit input_size and output_size from each command's designated primary files, using null where no applicable file exists or output failed."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "audit.json_formatting",
+      "source_clause_ids": [
+        "r006-c009",
+        "r006-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "JSON-encode the complete audit entry array.",
+          "Indent nested values using two spaces.",
+          "Write one trailing newline after the closing array bracket."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A single entry is still represented inside an array."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "One successful transform entry.",
+            "name": "single-entry audit document",
+            "notes": "",
+            "output": "[\n  {\n    \"command\": \"transform\",\n    \"args\": [\"--input\", \"data.csv\", \"--recipe\", \"recipe.json\", \"--output\", \"out.csv\", \"--seed\", \"42\"],\n    \"timestamp\": \"2024-01-15T10:30:00Z\",\n    \"duration_ms\": 45,\n    \"success\": true,\n    \"error\": null,\n    \"input_size\": 1024,\n    \"output_size\": 512\n  }\n]\n"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces."
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline."
+          },
+          {
+            "key": "top_level_type",
+            "value": "JSON array."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "document",
+            "value": "Complete audit entry array after creation, append, or replacement."
+          }
+        ],
+        "integration": [
+          {
+            "key": "persistence",
+            "value": "Used whenever req-r006-003 writes the audit file."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The persisted audit file ends with a newline."
+        ],
+        "notes": [],
+        "ordering": [
+          "Array element order is preserved during serialization."
+        ],
+        "output_schema": [
+          {
+            "key": "audit_file",
+            "value": "Indented JSON array."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Serialize the complete audit log as a two-space-indented JSON array followed by a newline."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.impute_interface",
+      "source_clause_ids": [
+        "r006-c013",
+        "r006-c014",
+        "r006-c016"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve the named column.",
+          "Dispatch fill-value computation according to method.",
+          "Apply the computed fill value to empty cells using the impute computation and formatting requirements."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Only empty cells are candidates for replacement."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"impute\",\"column\":\"age\",\"method\":\"mean\"}",
+            "name": "mean imputation recipe",
+            "notes": "Fills empty age cells using the computed mean.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "impute"
+          },
+          {
+            "key": "column",
+            "value": "String name of the column to impute."
+          },
+          {
+            "key": "method",
+            "value": "mean, median, or mode."
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"impute\",\"column\":\"age\",\"method\":\"mean\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "recipe_execution",
+            "value": "Runs as one operation in the transform recipe chain."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The imputed column remains at its original position."
+        ],
+        "notes": [],
+        "ordering": [
+          "Preserve the current row order and column layout."
+        ],
+        "output_schema": [
+          {
+            "key": "dataset",
+            "value": "The current dataset with eligible empty cells in column replaced; no new column is introduced."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Provide an impute transform that fills empty cells in one existing column using a mean, median, or mode computed from that column's non-empty values."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "impute.computation",
+      "source_clause_ids": [
+        "r006-c018"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect every non-empty cell in the selected column and parse it as float64; the statistical set consists of the non-empty numeric values.",
+          "For mean, compute the arithmetic mean of the numeric values.",
+          "For median, sort numeric values ascending and compute the p=50 percentile using the profile command's linear interpolation algorithm.",
+          "For mode, count occurrences of each numeric value, select the greatest frequency, and break a frequency tie by choosing the smallest numeric value.",
+          "If the statistical set is non-empty, replace every empty source cell with the formatted fill value.",
+          "If no non-empty numeric values exist, leave every empty source cell unchanged.",
+          "Do not replace non-empty cells."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "With no non-empty numeric value, empty cells remain empty.",
+          "A single numeric value is the mean, median, and mode fill value.",
+          "Non-empty cells are not overwritten."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "mean",
+            "value": "sum(xi) / n"
+          },
+          {
+            "key": "median_index",
+            "value": "idx = 50 / 100 * (n - 1)"
+          },
+          {
+            "key": "median_interpolation",
+            "value": "If idx is integral, values[idx]; otherwise lower=floor(idx), upper=ceil(idx), frac=idx-lower, result=values[lower]+frac*(values[upper]-values[lower])."
+          },
+          {
+            "key": "mode",
+            "value": "arg min over numeric values among those having maximum occurrence count"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "source_values",
+            "value": "All non-empty values in the selected column, parsed as float64."
+          },
+          {
+            "key": "method",
+            "value": "mean, median, or mode."
+          }
+        ],
+        "integration": [
+          {
+            "key": "percentile_algorithm",
+            "value": "Uses the active profile percentile algorithm at p=50."
+          },
+          {
+            "key": "formatting",
+            "value": "Use req-r006-009 for each replacement string."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "All empty replacements within one impute operation use the same computed fill value."
+        ],
+        "notes": [
+          "The instruction requires float64 parsing but does not prescribe a separate command error for a non-empty value that fails parsing."
+        ],
+        "ordering": [
+          "Median values are sorted numerically ascending.",
+          "Numeric mode ties are broken by the smallest numeric value.",
+          "Rows and columns retain their existing order."
+        ],
+        "output_schema": [
+          {
+            "key": "fill_value",
+            "value": "A float64 statistical value when at least one non-empty numeric value exists."
+          },
+          {
+            "key": "empty_cell_result",
+            "value": "Formatted fill value when a fill value exists; otherwise the original empty string."
+          }
+        ],
+        "preconditions": [
+          "The selected column exists."
+        ],
+        "summary": "Compute impute fill values from float64-parsed non-empty cells using exact mean, profile-median, or deterministic numeric-mode semantics."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "impute.result_formatting",
+      "source_clause_ids": [
+        "r006-c018"
+      ],
+      "spec": {
+        "algorithm": [
+          "Evaluate formatFloat(fillValue).",
+          "Use the resulting string for every empty cell replaced by the impute operation."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "When no fill value exists, do not call for a replacement; leave empty cells unchanged."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "exact_rule",
+            "value": "formatFloat(fillValue)"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "replacement",
+            "value": "formatFloat(fillValue)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "value",
+            "value": "The computed mean, median, or mode float64 fill value."
+          }
+        ],
+        "integration": [
+          {
+            "key": "consumer",
+            "value": "req-r006-008."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every replacement created by the same impute operation has identical string formatting."
+        ],
+        "notes": [
+          "No implementation-level definition of formatFloat is supplied by this round, so its named behavior is preserved verbatim rather than inferred."
+        ],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "replacement",
+            "value": "The string formatFloat(fillValue)."
+          }
+        ],
+        "preconditions": [
+          "At least one non-empty numeric value exists and a fill value has been computed."
+        ],
+        "summary": "Serialize an impute fill value by applying formatFloat to the computed float64 value."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "impute.missing_column_error",
+      "source_clause_ids": [
+        "r006-c020"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate the column name against the current dataset header before computing statistics or modifying rows.",
+          "Terminate when the named column is absent."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "The impute column does not exist in the current dataset.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "column",
+            "value": "The impute column name."
+          }
+        ],
+        "integration": [
+          {
+            "key": "standard_error",
+            "value": "Uses the same exact missing-reference diagnostic as other transforms."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "No imputed output is produced after this error."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail an impute operation that references a column absent from the current dataset."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r006-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "pipeline.audit_scope",
+      "source_clause_ids": [
+        "r006-c022"
+      ],
+      "spec": {
+        "algorithm": [
+          "Execute the pipeline using its active sequential step semantics.",
+          "Treat the complete pipeline invocation as the audited command.",
+          "After the pipeline succeeds or fails, write one pipeline execution entry using the global audit behavior.",
+          "Do not propagate the pipeline-level --audit behavior to individual steps and do not record those steps separately."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "If a step fails and the pipeline stops, the single audit entry represents the failed pipeline execution rather than the failed step.",
+          "A successful multi-step pipeline still produces only one pipeline audit entry."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "pipeline_execution",
+            "value": "Preserves the active sequential execution, first-failure stopping, and terminal-status requirements."
+          },
+          {
+            "key": "audit_entry",
+            "value": "Uses the global audit log, schema, size, and formatting requirements; pipeline input_size is the --config file size and output_size is null."
+          }
+        ],
+        "interface": [
+          {
+            "key": "invocation",
+            "value": "dpipe pipeline --config <path> --audit <audit-path>"
+          }
+        ],
+        "invariants": [
+          "A pipeline-level --audit flag never causes automatic per-step audit entries."
+        ],
+        "notes": [],
+        "ordering": [
+          "The pipeline audit entry is written after the overall pipeline execution completes successfully or with error."
+        ],
+        "output_schema": [
+          {
+            "key": "audit_entries",
+            "value": "One entry representing command pipeline; no per-step audit entries caused by the pipeline-level flag."
+          }
+        ],
+        "preconditions": [
+          "The pipeline command itself is invoked with --audit."
+        ],
+        "summary": "When pipeline itself is invoked with --audit, record one audit entry for the pipeline execution and do not create audit entries for its individual steps."
+      },
+      "target_id": null
+    }
+  ],
+  "round": 6
+}

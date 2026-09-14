@@ -1,0 +1,2754 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r001-c001",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-001",
+        "req-r001-042"
+      ]
+    },
+    {
+      "clause_id": "r001-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c003",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-002"
+      ]
+    },
+    {
+      "clause_id": "r001-c005",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-003"
+      ]
+    },
+    {
+      "clause_id": "r001-c006",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-004"
+      ]
+    },
+    {
+      "clause_id": "r001-c007",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-005"
+      ]
+    },
+    {
+      "clause_id": "r001-c008",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-006"
+      ]
+    },
+    {
+      "clause_id": "r001-c009",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-007",
+        "req-r001-008",
+        "req-r001-009"
+      ]
+    },
+    {
+      "clause_id": "r001-c010",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c011",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-010"
+      ]
+    },
+    {
+      "clause_id": "r001-c012",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-011",
+        "req-r001-012",
+        "req-r001-013"
+      ]
+    },
+    {
+      "clause_id": "r001-c013",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-014"
+      ]
+    },
+    {
+      "clause_id": "r001-c014",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-015"
+      ]
+    },
+    {
+      "clause_id": "r001-c015",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-016"
+      ]
+    },
+    {
+      "clause_id": "r001-c016",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-016"
+      ]
+    },
+    {
+      "clause_id": "r001-c017",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r001-014"
+      ]
+    },
+    {
+      "clause_id": "r001-c018",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-017"
+      ]
+    },
+    {
+      "clause_id": "r001-c019",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-018",
+        "req-r001-019",
+        "req-r001-020",
+        "req-r001-021",
+        "req-r001-022"
+      ]
+    },
+    {
+      "clause_id": "r001-c020",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-023"
+      ]
+    },
+    {
+      "clause_id": "r001-c021",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-024"
+      ]
+    },
+    {
+      "clause_id": "r001-c022",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-025"
+      ]
+    },
+    {
+      "clause_id": "r001-c023",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-026"
+      ]
+    },
+    {
+      "clause_id": "r001-c024",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-027"
+      ]
+    },
+    {
+      "clause_id": "r001-c025",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-028"
+      ]
+    },
+    {
+      "clause_id": "r001-c026",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-029"
+      ]
+    },
+    {
+      "clause_id": "r001-c027",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r001-c028",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-031"
+      ]
+    },
+    {
+      "clause_id": "r001-c029",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-031",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r001-c030",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-032"
+      ]
+    },
+    {
+      "clause_id": "r001-c031",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-032",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r001-c032",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-033"
+      ]
+    },
+    {
+      "clause_id": "r001-c033",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-033",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r001-c034",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-034"
+      ]
+    },
+    {
+      "clause_id": "r001-c035",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c036",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-035"
+      ]
+    },
+    {
+      "clause_id": "r001-c037",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-036"
+      ]
+    },
+    {
+      "clause_id": "r001-c038",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c039",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-037"
+      ]
+    },
+    {
+      "clause_id": "r001-c040",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-038"
+      ]
+    },
+    {
+      "clause_id": "r001-c041",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c042",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-039"
+      ]
+    },
+    {
+      "clause_id": "r001-c043",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-040",
+        "req-r001-041"
+      ]
+    },
+    {
+      "clause_id": "r001-c044",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c045",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-042"
+      ]
+    },
+    {
+      "clause_id": "r001-c046",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r001-c047",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r001-044",
+        "req-r001-045",
+        "req-r001-046",
+        "req-r001-047"
+      ]
+    },
+    {
+      "clause_id": "r001-c048",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-048"
+      ]
+    }
+  ],
+  "instruction_sha256": "f3ec3da73b5c6e86c91ab93f4e67958376fcf0ea3994e0c93133c62a5e6c7497",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r001-001",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "tool.identity_and_role",
+      "source_clause_ids": [
+        "r001-c001"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read structured CSV data, apply configured transformation chains, and write results to output files."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "executable",
+            "value": "dpipe"
+          },
+          {
+            "key": "implementation_language",
+            "value": "Go"
+          },
+          {
+            "key": "program_type",
+            "value": "CLI"
+          }
+        ],
+        "invariants": [
+          "The tool operates as a command-line data pipeline."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Provide a Go CLI named dpipe for deterministic structured-data pipelines."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.cli_interface",
+      "source_clause_ids": [
+        "r001-c004"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe ingest --input <path> --schema <path> --output <path>"
+          },
+          {
+            "key": "--input",
+            "value": "CSV input path"
+          },
+          {
+            "key": "--schema",
+            "value": "JSON schema path"
+          },
+          {
+            "key": "--output",
+            "value": "valid-output CSV path"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the ingest command with required input, schema, and output paths."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.csv_and_schema_model",
+      "source_clause_ids": [
+        "r001-c005"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the CSV at --input.",
+          "Treat its first row as the header.",
+          "For every data row, validate values using the corresponding schema column declarations."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "CSV",
+            "value": "CSV file whose first row is the header."
+          },
+          {
+            "key": "schema.columns",
+            "value": "Array of column objects; fields shown are name, type, required, unique, min, max, and pattern as applicable."
+          },
+          {
+            "key": "schema.primary_key",
+            "value": "Array of key-column names."
+          },
+          {
+            "key": "supported_types",
+            "value": "int, float, string, datetime"
+          },
+          {
+            "key": "datetime_format",
+            "value": "RFC 3339"
+          },
+          {
+            "key": "normative_schema_example",
+            "value": "{\"columns\":[{\"name\":\"id\",\"type\":\"int\",\"required\":true,\"unique\":true},{\"name\":\"value\",\"type\":\"float\",\"required\":true,\"min\":0,\"max\":1000},{\"name\":\"label\",\"type\":\"string\",\"required\":false,\"pattern\":\"^[A-Z]\"},{\"name\":\"timestamp\",\"type\":\"datetime\",\"required\":true}],\"primary_key\":[\"id\"]}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "schema_source",
+            "value": "File supplied by --schema"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Only int, float, string, and RFC 3339 datetime are supported schema types."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read headered CSV and validate rows against the declared JSON schema model and supported types."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.column_constraints",
+      "source_clause_ids": [
+        "r001-c006"
+      ],
+      "spec": {
+        "algorithm": [
+          "For min/max, reject values outside [min,max].",
+          "For pattern, reject values that do not match the Go regular expression.",
+          "For unique, keep the first otherwise-valid occurrence in input order and reject later duplicates."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "All three constraint kinds are optional."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "range_predicate",
+            "value": "min <= value <= max, with either optional bound applied when present"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "unique",
+            "value": "Optional boolean; values among otherwise-valid rows must be unique per column."
+          },
+          {
+            "key": "min,max",
+            "value": "Optional numbers valid only for int and float columns; bounds are inclusive."
+          },
+          {
+            "key": "pattern",
+            "value": "Optional string valid only for string columns; interpreted as a Go regular expression."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Duplicate detection follows input file order and occurs after all other validations pass."
+        ],
+        "output_schema": [
+          {
+            "key": "unique_rejection_reason",
+            "value": "duplicate value for unique column: <name>"
+          },
+          {
+            "key": "range_rejection_reason",
+            "value": "value out of range for column <name>: <value>"
+          },
+          {
+            "key": "pattern_rejection_reason",
+            "value": "value does not match pattern for column <name>: <value>"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Enforce optional unique, numeric range, and string-pattern constraints with exact rejection reasons."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.validation_order",
+      "source_clause_ids": [
+        "r001-c007"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each row perform required/type checks.",
+          "Then perform range checks.",
+          "Then perform pattern checks.",
+          "After steps 1-3 have been applied to all rows, check uniqueness across rows still valid.",
+          "During uniqueness checking retain the first occurrence and reject subsequent duplicates."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Required/type checks precede range checks; range checks precede pattern checks; uniqueness follows those checks and uses input file order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Apply ingest validation stages in the prescribed order."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.primary_key_shape",
+      "source_clause_ids": [
+        "r001-c008"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [
+          "The array may not be empty."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "primary_key",
+            "value": "Array of one or more column-name strings; multiple names form a composite key."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Primary-key declaration order is significant."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Require primary_key to support one or more key columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.valid_and_rejected_outputs",
+      "source_clause_ids": [
+        "r001-c009"
+      ],
+      "spec": {
+        "algorithm": [
+          "Route each valid row to <output>.",
+          "Route each invalid row to <output>.rejected with its rejection reason."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "valid_format",
+            "value": "CSV"
+          },
+          {
+            "key": "rejected_format",
+            "value": "Same CSV columns plus appended rejection_reason column"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "<output>",
+            "value": "CSV containing valid rows."
+          },
+          {
+            "key": "<output>.rejected",
+            "value": "CSV in the input CSV format with rejection_reason appended as the final column."
+          },
+          {
+            "key": "rejection_reason",
+            "value": "Reason the row failed validation."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Write valid and rejected ingest rows to separate CSV files."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.output_ordering",
+      "source_clause_ids": [
+        "r001-c009"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compare primary-key columns left to right in declaration order.",
+          "Sort every key component ascending using its declared type."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Primary-key column 1 is primary, column 2 breaks ties, and so on.",
+          "int and float use numeric ordering; string uses lexicographic ordering; datetime uses chronological ordering; all are ascending."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Sort valid ingest output by the typed composite primary key."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "ingest.output_checksum",
+      "source_clause_ids": [
+        "r001-c009"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute SHA-256 over the exact raw bytes of <output>.",
+          "Hex-encode the digest and append a newline in <output>.sha256."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "checksum_file",
+            "value": "Single hex string followed by newline"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "digest",
+            "value": "SHA-256(raw_bytes(<output>))"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "hash_input",
+            "value": "Raw bytes of <output>."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "<output>.sha256",
+            "value": "One lowercase-or-uppercase-compatible hexadecimal SHA-256 string followed by one newline."
+          }
+        ],
+        "preconditions": [
+          "The output CSV has been fully serialized."
+        ],
+        "summary": "Write a SHA-256 sidecar for the valid ingest output."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.cli_interface",
+      "source_clause_ids": [
+        "r001-c011"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe transform --input <path> --recipe <path> --output <path> --seed <uint64>"
+          },
+          {
+            "key": "--input",
+            "value": "Headered CSV input path"
+          },
+          {
+            "key": "--recipe",
+            "value": "JSON recipe path"
+          },
+          {
+            "key": "--output",
+            "value": "Result CSV path"
+          },
+          {
+            "key": "--seed",
+            "value": "Unsigned 64-bit deterministic seed"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the transform command with input, recipe, output, and uint64 seed arguments."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.recipe_execution",
+      "source_clause_ids": [
+        "r001-c012"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the headered input CSV.",
+          "Read the recipe as an array.",
+          "Apply each transformation object to the current dataset in array order, passing each result to the next transformation."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Previously ingested CSV is typical but not required."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "input",
+            "value": "Any CSV with a header row; it need not have been produced by ingest."
+          },
+          {
+            "key": "recipe",
+            "value": "JSON array of transformation objects, each selected by its op field."
+          },
+          {
+            "key": "normative_recipe_shape",
+            "value": "Objects may use op-specific fields demonstrated for filter, derive, sample, sort, rename, drop, aggregate, join, window, pivot, unpivot, and fill."
+          }
+        ],
+        "integration": [
+          {
+            "key": "chain",
+            "value": "Each operation consumes the immediately preceding dataset."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [
+          "Normative recipe examples include: filter value gt 10.0; derive score as value * 2 + 1; sample 0.5; stable descending sort by score; rename label to category; drop timestamp; grouped aggregations; left join other.csv on id; rank window; pivot; unpivot; and forward fill."
+        ],
+        "ordering": [
+          "Recipe array order is execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Accept any headered CSV and execute recipe transformation objects sequentially."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-012",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.filter",
+      "source_clause_ids": [
+        "r001-c012"
+      ],
+      "spec": {
+        "algorithm": [
+          "Evaluate column condition threshold for each row.",
+          "Keep exactly the rows for which the condition is true."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "conditions",
+            "value": "gt: x>t; gte: x>=t; lt: x<t; lte: x<=t; eq: x=t; neq: x!=t"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "filter"
+          },
+          {
+            "key": "column",
+            "value": "Column to compare"
+          },
+          {
+            "key": "condition",
+            "value": "One of gt, gte, lt, lte, eq, neq"
+          },
+          {
+            "key": "threshold",
+            "value": "Comparison threshold"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve the relative order of retained rows."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Filter rows by comparing a named column to a threshold."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-013",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.derive_operation",
+      "source_clause_ids": [
+        "r001-c012"
+      ],
+      "spec": {
+        "algorithm": [
+          "Evaluate expression for every row.",
+          "Add the result under name."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "derive"
+          },
+          {
+            "key": "name",
+            "value": "Name of the new column"
+          },
+          {
+            "key": "expression",
+            "value": "Numeric expression over existing columns"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "derived_column",
+            "value": "New column named by name containing the evaluated expression result."
+          }
+        ],
+        "preconditions": [
+          "Referenced expression columns are numeric existing columns."
+        ],
+        "summary": "Derive a new column from an expression over existing numeric columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-014",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "derive.expression_grammar_and_precedence",
+      "source_clause_ids": [
+        "r001-c013",
+        "r001-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse operators by precedence from lowest to highest: ||; &&; == and !=; >, >=, <, <=; + and -; *, /, %; unary -; then calls, parentheses, references, and literals.",
+          "Logical OR returns 1 when either operand is >0, else 0.",
+          "Logical AND returns 1 when both operands are >0, else 0.",
+          "Equality and relational operators perform numeric comparison and return 1 or 0."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "inline_condition_example",
+            "value": "(value > 10 && value < 100) * value returns value when value is in range and 0 otherwise."
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "atoms",
+            "value": "Function calls, parenthesized expressions, column references, and numeric literals."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Comparison results are numeric 1 or 0."
+        ],
+        "notes": [],
+        "ordering": [
+          "The listed precedence is lowest to highest."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Evaluate derive expressions with the prescribed operators, truth semantics, and precedence."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-015",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "derive.nan_arithmetic",
+      "source_clause_ids": [
+        "r001-c014"
+      ],
+      "spec": {
+        "algorithm": [
+          "Return NaN for division by zero.",
+          "Return NaN for modulo by zero.",
+          "Return 0 for every comparison having NaN on either side."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "NaN on either comparison operand yields 0."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "x/0",
+            "value": "NaN"
+          },
+          {
+            "key": "x%0",
+            "value": "NaN"
+          },
+          {
+            "key": "comparison_with_NaN",
+            "value": "0"
+          }
+        ],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Use NaN for division/modulo by zero and make NaN comparisons false."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-016",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "derive.functions",
+      "source_clause_ids": [
+        "r001-c015",
+        "r001-c016"
+      ],
+      "spec": {
+        "algorithm": [
+          "abs(x): absolute value.",
+          "sqrt(x): square root, or NaN for negative x.",
+          "ceil(x): smallest integer >= x.",
+          "floor(x): largest integer <= x.",
+          "round(x,n): round x to non-negative integer n decimal places; half-values away from zero.",
+          "pow(x,y): x raised to y.",
+          "log(x): natural logarithm, or NaN for non-positive x.",
+          "min(x,y) and max(x,y): minimum and maximum.",
+          "if(cond,x,y): x when cond>0, otherwise y.",
+          "clamp(x,lo,hi): lo when x<lo, hi when x>hi, otherwise x.",
+          "coalesce(x,y): x unless x is NaN, otherwise y.",
+          "Allow calls to nest recursively."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "sqrt of a negative input and log of a non-positive input return NaN.",
+          "round requires n to be a non-negative integer."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "nesting_example",
+            "value": "round(sqrt(abs(value)), 2)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "call_syntax",
+            "value": "name(arg1, arg2, ...)"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Support nested, parenthesized, comma-separated derive function calls with exact semantics."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-017",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "derive.result_formatting",
+      "source_clause_ids": [
+        "r001-c018"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "finite_number",
+            "value": "Shortest decimal representation preserving the computed value, with no unnecessary trailing zeros or trailing decimal point."
+          },
+          {
+            "key": "NaN",
+            "value": "Literal string NaN"
+          },
+          {
+            "key": "examples",
+            "value": "11, not 11.0; 2.5, not 2.50"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Serialize derive results canonically."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-018",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.sample",
+      "source_clause_ids": [
+        "r001-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Initialize Go's math/rand deterministic PRNG with the given seed.",
+          "In input row order generate one random float per row.",
+          "Keep the row exactly when the generated float is less than fraction."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "keep",
+            "value": "PRNG.Float() < fraction"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "sample"
+          },
+          {
+            "key": "fraction",
+            "value": "Retention fraction"
+          },
+          {
+            "key": "seed",
+            "value": "Value supplied by --seed"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Identical rows, order, fraction, and seed produce identical selection."
+        ],
+        "notes": [],
+        "ordering": [
+          "Consume random values in input row order; retained rows remain in input order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Sample rows deterministically using Go math/rand initialized from --seed."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-019",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.sort",
+      "source_clause_ids": [
+        "r001-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Sort by column in the requested direction using a stable sort."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "sort"
+          },
+          {
+            "key": "column",
+            "value": "Sort column"
+          },
+          {
+            "key": "order",
+            "value": "asc or desc"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Break equal-key ties by original row order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Stably sort rows by one column ascending or descending."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-020",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.rename",
+      "source_clause_ids": [
+        "r001-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Replace the column name from with to."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "rename"
+          },
+          {
+            "key": "from",
+            "value": "Existing column name"
+          },
+          {
+            "key": "to",
+            "value": "Replacement column name"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Do not otherwise reorder rows or columns."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Rename a column."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-021",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.drop",
+      "source_clause_ids": [
+        "r001-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Remove every listed column from the current dataset."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "drop"
+          },
+          {
+            "key": "columns",
+            "value": "Array of column names to remove"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve relative order of remaining columns and all rows."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Remove listed columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-022",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.aggregate_computation",
+      "source_clause_ids": [
+        "r001-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Partition rows by equal group_by values.",
+          "sum: sum numeric values, skipping empty/non-numeric; return 0 when none exist.",
+          "avg: arithmetic mean of numeric values, skipping empty/non-numeric; return NaN when none exist.",
+          "count: count non-empty values in the specified column.",
+          "min/max: extrema of numeric values, skipping empty/non-numeric; return NaN when none exist."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "sum of no numeric values is 0.",
+          "avg, min, and max of no numeric values are NaN."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "avg",
+            "value": "sum(numeric values)/count(numeric values)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "aggregate"
+          },
+          {
+            "key": "group_by",
+            "value": "Grouping-column array"
+          },
+          {
+            "key": "aggregations",
+            "value": "Ordered array of objects with column, function, and as"
+          },
+          {
+            "key": "functions",
+            "value": "sum, avg, count, min, max"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Group rows and compute sum, avg, count, min, and max with prescribed empty and non-numeric handling."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-023",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "aggregate.output_layout_order_and_format",
+      "source_clause_ids": [
+        "r001-c020"
+      ],
+      "spec": {
+        "algorithm": [
+          "Sort grouped output by group_by values, comparing columns left to right.",
+          "Format numeric aggregate results without unnecessary trailing zeros."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "numeric_results",
+            "value": "No unnecessary trailing zeros; for example 10 not 10.0 and 2.5 not 2.50."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Rows use ascending lexicographic ordering over group_by columns left to right."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "group_by columns in declaration order, then aggregation result columns in aggregation declaration order using each as name."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit aggregate columns, rows, and numeric strings in deterministic declaration and lexicographic order."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-024",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "aggregate.having",
+      "source_clause_ids": [
+        "r001-c021"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse the referenced aggregated result string as a float.",
+          "Compare it numerically with threshold using the filter condition semantics.",
+          "Exclude groups that do not satisfy the condition."
+        ],
+        "defaults": [
+          {
+            "key": "having",
+            "value": "Optional; when omitted, retain all aggregate groups."
+          }
+        ],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "having.column",
+            "value": "Must equal an as name declared by an aggregation."
+          },
+          {
+            "key": "having.condition",
+            "value": "gt, gte, lt, lte, eq, or neq"
+          },
+          {
+            "key": "having.threshold",
+            "value": "Numeric threshold"
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"aggregate\",\"group_by\":[\"label\"],\"aggregations\":[{\"column\":\"value\",\"function\":\"sum\",\"as\":\"total\"}],\"having\":{\"column\":\"total\",\"condition\":\"gt\",\"threshold\":100}}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Apply having after aggregate sorting; removal must not change the relative order of retained rows."
+        ],
+        "output_schema": [],
+        "preconditions": [
+          "Aggregation results have been computed, formatted, and sorted."
+        ],
+        "summary": "Optionally filter already-formatted aggregate rows by a numeric condition without changing their order."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-025",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.join",
+      "source_clause_ids": [
+        "r001-c022"
+      ],
+      "spec": {
+        "algorithm": [
+          "Index right rows by join-key value, retaining only the first row for each value in right file order.",
+          "For inner, emit left rows whose key exists on the right.",
+          "For left, emit every left row and fill right fields with empty strings when unmatched."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Duplicate right keys do not multiply output rows."
+        ],
+        "errors": [
+          {
+            "condition": "Join key absent from either dataset.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: join key <name> not found in <left|right> dataset",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "join"
+          },
+          {
+            "key": "right",
+            "value": "Path to right CSV"
+          },
+          {
+            "key": "on",
+            "value": "Column name present in both datasets"
+          },
+          {
+            "key": "type",
+            "value": "inner or left"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve current left-dataset row order.",
+          "Use the first matching right row by right file order."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "All left columns, followed by all right columns except the join key."
+          },
+          {
+            "key": "unmatched_left_join_values",
+            "value": "Empty strings for every right-side output column."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Perform deterministic inner or left joins against a headered right CSV."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-026",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.window_partition_and_order",
+      "source_clause_ids": [
+        "r001-c023"
+      ],
+      "spec": {
+        "algorithm": [
+          "Partition by the complete partition_by tuple.",
+          "Within each partition, sort using order_by from first specification to last.",
+          "Break ties across every order_by column by input row order."
+        ],
+        "defaults": [
+          {
+            "key": "partition_by",
+            "value": "If omitted or empty, place every row in one partition."
+          }
+        ],
+        "edge_cases": [
+          "An empty partition_by array means one global partition."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "window"
+          },
+          {
+            "key": "partition_by",
+            "value": "Optional array of partition columns."
+          },
+          {
+            "key": "order_by",
+            "value": "Array of {column:string, order:asc|desc}; earlier entries have higher priority."
+          },
+          {
+            "key": "as",
+            "value": "Name of appended result column."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Within-partition ordering follows order_by priority and stable input-order ties."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Define window partitions, stable within-partition ordering, and output-column naming."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-027",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "window.functions",
+      "source_clause_ids": [
+        "r001-c024"
+      ],
+      "spec": {
+        "algorithm": [
+          "rank: assign 1-based rank; equal complete order_by tuples share rank and the following rank advances by tie-group size.",
+          "dense_rank: same equality rule but the following distinct rank advances by one.",
+          "row_number: assign unique sequential values from 1, with input order breaking ties.",
+          "lag/lead: return source_column value offset rows before/after in partition order, or default when that position does not exist.",
+          "running_sum: cumulative source_column sum through current row; treat non-numeric values as 0.",
+          "running_avg: cumulative mean through current row; skip non-numeric values from numerator and denominator and return NaN when no numeric value has appeared.",
+          "ntile: assign groups 1..n; for partition size k, first k mod n groups have ceil(k/n) rows and remaining groups have floor(k/n) rows."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "running_avg before any numeric value is NaN.",
+          "lag/lead outside the partition uses default."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "rank_tie_example",
+            "value": "Two rows tied at rank 1 cause the next rank to be 3."
+          },
+          {
+            "key": "dense_rank_tie_example",
+            "value": "Two rows tied at rank 1 cause the next dense rank to be 2."
+          },
+          {
+            "key": "ntile_sizes",
+            "value": "First k mod n groups: ceil(k/n); remaining groups: floor(k/n)."
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "function",
+            "value": "rank, dense_rank, row_number, lag, lead, running_sum, running_avg, or ntile"
+          },
+          {
+            "key": "lag/lead fields",
+            "value": "source_column string, offset positive integer, default string"
+          },
+          {
+            "key": "running fields",
+            "value": "source_column string"
+          },
+          {
+            "key": "ntile field",
+            "value": "n positive integer"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [
+          "Normative examples specify lag(value, offset 1, default \"0\") partitioned by cat and ordered by id asc; running_sum(value) under the same partition/order; and ntile n=4 over one partition ordered by id asc."
+        ],
+        "ordering": [
+          "All positional functions use partition order."
+        ],
+        "output_schema": [],
+        "preconditions": [
+          "Rows have partition and window order positions."
+        ],
+        "summary": "Support rank, dense_rank, row_number, lag, lead, running_sum, running_avg, and ntile with exact semantics."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-028",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "window.output_layout_and_row_order",
+      "source_clause_ids": [
+        "r001-c025"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute window values in partition order.",
+          "Attach each value to its originating row.",
+          "Emit rows in original input order."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Output row order is original input order, not partition order."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "All original columns in original order, followed by the column named by as."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append the window result while preserving original columns and input row order."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-029",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "window.result_formatting",
+      "source_clause_ids": [
+        "r001-c026"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "rank,dense_rank,row_number,ntile",
+            "value": "Integer string with no decimal point."
+          },
+          {
+            "key": "running_sum,running_avg,lag,lead",
+            "value": "Representation without unnecessary trailing zeros."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Format window results according to function family."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-030",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.referenced_column_error",
+      "source_clause_ids": [
+        "r001-c027",
+        "r001-c029",
+        "r001-c031",
+        "r001-c033"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate referenced columns before executing window, pivot, unpivot, or fill.",
+          "On the first applicable absent reference, fail rather than producing transformed output."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "A referenced window partition_by, order_by, or source_column; pivot index, column, or value; unpivot index or columns; or fill columns entry does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail transformation operations that reference absent columns with the exact generic column error."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-031",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.pivot",
+      "source_clause_ids": [
+        "r001-c028",
+        "r001-c029"
+      ],
+      "spec": {
+        "algorithm": [
+          "Create one output row for each unique index-value combination.",
+          "Create one pivot column for each unique value in column.",
+          "For each index/pivot pair use value from the first matching input row by input order.",
+          "Fill missing pairs with empty string."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Missing combinations produce empty strings."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "pivot"
+          },
+          {
+            "key": "index",
+            "value": "Array of row-key column names."
+          },
+          {
+            "key": "column",
+            "value": "Column whose unique values become headers."
+          },
+          {
+            "key": "value",
+            "value": "Column supplying cell values."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Pivot columns sort ascending lexicographically.",
+          "Output rows sort ascending lexicographically by index columns, comparing left to right.",
+          "First matching input row wins for duplicate cells."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "index columns in declaration order, then unique pivot headers in ascending lexicographic order."
+          },
+          {
+            "key": "missing_cell",
+            "value": "Empty string."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Pivot long data to wide data deterministically."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-032",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.unpivot",
+      "source_clause_ids": [
+        "r001-c030",
+        "r001-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each input row, emit one output row for every columns entry.",
+          "Copy index values, put the source column name in name_to, and its value in value_to.",
+          "Preserve empty values instead of skipping them."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty source values still produce rows."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "unpivot"
+          },
+          {
+            "key": "index",
+            "value": "Columns retained as row identifiers."
+          },
+          {
+            "key": "columns",
+            "value": "Columns melted into rows."
+          },
+          {
+            "key": "name_to",
+            "value": "Output column containing each melted source column name."
+          },
+          {
+            "key": "value_to",
+            "value": "Output column containing each melted value."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Process input rows in original order and melted columns in declaration order."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "index columns in declaration order, then name_to, then value_to."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Unpivot wide data to long data while preserving declared and input order."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-033",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.fill",
+      "source_clause_ids": [
+        "r001-c032",
+        "r001-c033"
+      ],
+      "spec": {
+        "algorithm": [
+          "forward: independently scan each specified column top-to-bottom and replace empties with the most recent non-empty value above.",
+          "backward: independently scan each specified column bottom-to-top and replace empties with the nearest non-empty value below.",
+          "constant: replace every eligible empty value with value.",
+          "Never modify non-empty values."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Forward-fill leading empties remain empty.",
+          "Backward-fill trailing empties remain empty."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "fill"
+          },
+          {
+            "key": "columns",
+            "value": "Columns whose empty values are eligible."
+          },
+          {
+            "key": "strategy",
+            "value": "forward, backward, or constant"
+          },
+          {
+            "key": "value",
+            "value": "Replacement string, required only for constant."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve original row order and all columns."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fill empty cells by forward, backward, or constant strategy without changing non-empty cells or layout."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-034",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.output_and_checksum",
+      "source_clause_ids": [
+        "r001-c034"
+      ],
+      "spec": {
+        "algorithm": [
+          "Serialize the current dataset as CSV to <output>.",
+          "Compute SHA-256 over its raw bytes.",
+          "Write the checksum to <output>.sha256."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "digest",
+            "value": "SHA-256(raw_bytes(<output>))"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "hash_input",
+            "value": "Raw bytes of the completed result CSV."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "<output>",
+            "value": "Final transformed CSV."
+          },
+          {
+            "key": "<output>.sha256",
+            "value": "SHA-256 checksum of <output>."
+          }
+        ],
+        "preconditions": [
+          "All recipe operations completed successfully."
+        ],
+        "summary": "After the final transformation, write the result CSV and its SHA-256 sidecar."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-035",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "verify.cli_interface",
+      "source_clause_ids": [
+        "r001-c036"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe verify --file <path> --checksum <path>"
+          },
+          {
+            "key": "--file",
+            "value": "File to hash"
+          },
+          {
+            "key": "--checksum",
+            "value": "File containing expected hex digest"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the checksum verification command."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-036",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "verify.checksum_behavior",
+      "source_clause_ids": [
+        "r001-c037"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read <path> and compute SHA-256.",
+          "Read expected hex string from <checksum>.",
+          "Compare expected and actual digests."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "Expected and actual match.",
+            "exit_code": 0,
+            "stderr": null,
+            "stdout": "VERIFIED"
+          },
+          {
+            "condition": "Expected and actual differ.",
+            "exit_code": 1,
+            "stderr": null,
+            "stdout": "MISMATCH expected=<expected> actual=<actual>"
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "actual",
+            "value": "hex(SHA-256(raw_bytes(<path>)))"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "file",
+            "value": "Raw file bytes."
+          },
+          {
+            "key": "checksum",
+            "value": "Expected SHA-256 hexadecimal string read from <checksum>."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Compare a file's SHA-256 with an expected hexadecimal checksum and report exact success or mismatch output."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-037",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "manifest.cli_interface",
+      "source_clause_ids": [
+        "r001-c039"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe manifest --dir <path> --output <path>"
+          },
+          {
+            "key": "--dir",
+            "value": "Directory tree to scan"
+          },
+          {
+            "key": "--output",
+            "value": "JSON manifest path"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the manifest command with directory and output paths."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-038",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "manifest.generation",
+      "source_clause_ids": [
+        "r001-c040"
+      ],
+      "spec": {
+        "algorithm": [
+          "Recursively scan <dir> for .csv files.",
+          "For each, compute SHA-256, row count, byte size, and relative path.",
+          "Sort file entries by path.",
+          "Record actual current UTC generation time and write JSON to <output>."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "generated_at",
+            "value": "RFC 3339 UTC"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "sha256",
+            "value": "hex(SHA-256(raw file bytes))"
+          },
+          {
+            "key": "size_bytes",
+            "value": "length(raw file bytes)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "scan_filter",
+            "value": "All files under <dir> whose names end in .csv."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "generated_at is not a fixed deterministic timestamp."
+        ],
+        "notes": [],
+        "ordering": [
+          "files array is ascending lexicographic by path."
+        ],
+        "output_schema": [
+          {
+            "key": "generated_at",
+            "value": "RFC 3339 UTC timestamp reflecting actual generation time."
+          },
+          {
+            "key": "files",
+            "value": "Array of objects with path, sha256, rows, and size_bytes."
+          },
+          {
+            "key": "files[].path",
+            "value": "Path relative to <dir>."
+          },
+          {
+            "key": "files[].sha256",
+            "value": "SHA-256 of file raw bytes."
+          },
+          {
+            "key": "files[].rows",
+            "value": "CSV row count."
+          },
+          {
+            "key": "files[].size_bytes",
+            "value": "File size in bytes."
+          },
+          {
+            "key": "normative_shape",
+            "value": "{\"generated_at\":\"<RFC 3339 UTC timestamp>\",\"files\":[{\"path\":\"relative/to/dir/file.csv\",\"sha256\":\"abcdef...\",\"rows\":42,\"size_bytes\":1234}]}"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Recursively inventory CSV files into a path-sorted JSON manifest with live UTC generation time."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-039",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "pipeline.cli_interface",
+      "source_clause_ids": [
+        "r001-c042"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe pipeline --config <path>"
+          },
+          {
+            "key": "--config",
+            "value": "Pipeline JSON path"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the pipeline command with a JSON configuration path."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-040",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r001-c043"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse the config as JSON and obtain seed and steps."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline seed, exemplified by 12345."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of command-step objects."
+          },
+          {
+            "key": "ingest_step",
+            "value": "{\"type\":\"ingest\",\"input\":\"raw.csv\",\"schema\":\"schema.json\",\"output\":\"clean.csv\"}"
+          },
+          {
+            "key": "transform_step",
+            "value": "{\"type\":\"transform\",\"input\":\"clean.csv\",\"recipe\":\"recipe.json\",\"output\":\"final.csv\"}"
+          },
+          {
+            "key": "verify_step",
+            "value": "{\"type\":\"verify\",\"file\":\"final.csv\",\"checksum\":\"final.csv.sha256\"}"
+          },
+          {
+            "key": "manifest_step",
+            "value": "{\"type\":\"manifest\",\"dir\":\".\",\"output\":\"manifest.json\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "steps array order is pipeline execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read a pipeline JSON containing a seed and ordered ingest, transform, verify, or manifest steps."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-041",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "pipeline.execution_and_status",
+      "source_clause_ids": [
+        "r001-c043"
+      ],
+      "spec": {
+        "algorithm": [
+          "Execute each steps entry sequentially.",
+          "Number steps from 1.",
+          "If a step fails, stop immediately and exit 1.",
+          "If all N steps succeed, exit 0."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "Step N fails.",
+            "exit_code": 1,
+            "stderr": null,
+            "stdout": "PIPELINE FAILED at step N: <error>"
+          },
+          {
+            "condition": "All N steps succeed.",
+            "exit_code": 0,
+            "stderr": null,
+            "stdout": "PIPELINE OK: N steps completed"
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_dispatch",
+            "value": "Run each step according to its type using the corresponding dpipe behavior."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "N in failure output is 1-indexed."
+        ],
+        "notes": [],
+        "ordering": [
+          "No later step executes after a failed step."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Execute pipeline steps sequentially, stopping at the first failure and reporting exact terminal status."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-042",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "global.determinism_contract",
+      "source_clause_ids": [
+        "r001-c001",
+        "r001-c045"
+      ],
+      "spec": {
+        "algorithm": [
+          "Avoid nondeterministic traversal, map iteration, ordering, formatting, hashing, and PRNG behavior in every command.",
+          "Use the specified deterministic ordering and seed rules."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "manifest generated_at must reflect wall-clock time and is the sole stated exception."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "scope",
+            "value": "ingest, transform, verify, manifest, pipeline, and every pipeline step"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Except for generated_at, corresponding output files are byte-identical across repeated runs with the same command, inputs, configuration, and seed."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [
+          "Command, inputs, configuration, and seed are identical between runs."
+        ],
+        "summary": "Produce byte-identical output files for repeated equivalent executions, except for manifest generated_at."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-043",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "error.missing_input_file",
+      "source_clause_ids": [
+        "r001-c047"
+      ],
+      "spec": {
+        "algorithm": [
+          "Detect a missing required input path and terminate."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "A required input file does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: file not found: <path>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Report missing input files with the exact error and failure code."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-044",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "error.ingest_row_validation",
+      "source_clause_ids": [
+        "r001-c047"
+      ],
+      "spec": {
+        "algorithm": [
+          "Write schema-invalid rows to the rejected CSV and continue ingest processing."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "One or more rejected rows do not make ingest exit with an error."
+        ],
+        "errors": [
+          {
+            "condition": "A row fails schema validation during ingest.",
+            "exit_code": null,
+            "stderr": null,
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "rejected_destination",
+            "value": "<output>.rejected"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Treat ingest row validation failures as rejected data, not command failures."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-045",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "error.invalid_recipe",
+      "source_clause_ids": [
+        "r001-c047"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate operation names and referenced columns for filter, sort, aggregate, and join.",
+          "Terminate on invalid recipe detail."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "Unknown op or non-existent column referenced by filter, sort, aggregate, or join, except where a more specific exact join-key error applies.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: <detail>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Reject unknown recipe operations and invalid recipe column references with a standardized error."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-046",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "error.malformed_json",
+      "source_clause_ids": [
+        "r001-c047"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse JSON inputs and terminate when parsing fails."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "A config, schema, or recipe file contains malformed JSON.",
+            "exit_code": 1,
+            "stderr": "ERROR: malformed JSON: <path>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Reject malformed JSON configuration, schema, or recipe files with the exact path-bearing error."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-047",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "error.invalid_schema_regex",
+      "source_clause_ids": [
+        "r001-c047"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compile schema pattern values as Go regular expressions.",
+          "Terminate if compilation fails."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "A schema pattern is not a valid Go regular expression.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid pattern: <pattern>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Reject invalid schema regular expressions with the exact pattern-bearing error."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r001-048",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "build.go_command",
+      "source_clause_ids": [
+        "r001-c048"
+      ],
+      "spec": {
+        "algorithm": [
+          "Execute go build -o dpipe ./...."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "build_system",
+            "value": "Go toolchain"
+          }
+        ],
+        "interface": [
+          {
+            "key": "working_directory",
+            "value": "/app/"
+          },
+          {
+            "key": "build_command",
+            "value": "go build -o dpipe ./..."
+          },
+          {
+            "key": "output_binary",
+            "value": "dpipe"
+          }
+        ],
+        "invariants": [
+          "The repository is buildable using the exact command from /app/."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [
+          "Run from /app/."
+        ],
+        "summary": "Build dpipe from /app with the prescribed Go command."
+      },
+      "target_id": null
+    }
+  ],
+  "round": 1
+}

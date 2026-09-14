@@ -1,0 +1,3730 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r002-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-001"
+      ]
+    },
+    {
+      "clause_id": "r002-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-002"
+      ]
+    },
+    {
+      "clause_id": "r002-c005",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c006",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-002",
+        "req-r002-003"
+      ]
+    },
+    {
+      "clause_id": "r002-c007",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-003"
+      ]
+    },
+    {
+      "clause_id": "r002-c008",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-003"
+      ]
+    },
+    {
+      "clause_id": "r002-c009",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c010",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-004",
+        "req-r002-005",
+        "req-r002-013"
+      ]
+    },
+    {
+      "clause_id": "r002-c011",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-004"
+      ]
+    },
+    {
+      "clause_id": "r002-c012",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-004"
+      ]
+    },
+    {
+      "clause_id": "r002-c013",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c014",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-005"
+      ]
+    },
+    {
+      "clause_id": "r002-c015",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-006"
+      ]
+    },
+    {
+      "clause_id": "r002-c016",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c017",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-007"
+      ]
+    },
+    {
+      "clause_id": "r002-c018",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-008"
+      ]
+    },
+    {
+      "clause_id": "r002-c019",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-009"
+      ]
+    },
+    {
+      "clause_id": "r002-c020",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-010"
+      ]
+    },
+    {
+      "clause_id": "r002-c021",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-011"
+      ]
+    },
+    {
+      "clause_id": "r002-c022",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-012"
+      ]
+    },
+    {
+      "clause_id": "r002-c023",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c024",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-013"
+      ]
+    },
+    {
+      "clause_id": "r002-c025",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-013"
+      ]
+    },
+    {
+      "clause_id": "r002-c026",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-013"
+      ]
+    },
+    {
+      "clause_id": "r002-c027",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-013"
+      ]
+    },
+    {
+      "clause_id": "r002-c028",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-013"
+      ]
+    },
+    {
+      "clause_id": "r002-c029",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c030",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-014"
+      ]
+    },
+    {
+      "clause_id": "r002-c031",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c032",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043"
+      ]
+    },
+    {
+      "clause_id": "r002-c033",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c034",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c035",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-015"
+      ]
+    },
+    {
+      "clause_id": "r002-c036",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-015"
+      ]
+    },
+    {
+      "clause_id": "r002-c037",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-015",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c038",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c039",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-016"
+      ]
+    },
+    {
+      "clause_id": "r002-c040",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-016"
+      ]
+    },
+    {
+      "clause_id": "r002-c041",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-016",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c042",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c043",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-017"
+      ]
+    },
+    {
+      "clause_id": "r002-c044",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-017"
+      ]
+    },
+    {
+      "clause_id": "r002-c045",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-017"
+      ]
+    },
+    {
+      "clause_id": "r002-c046",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c047",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-018"
+      ]
+    },
+    {
+      "clause_id": "r002-c048",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-018"
+      ]
+    },
+    {
+      "clause_id": "r002-c049",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-018",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c050",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c051",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-018"
+      ]
+    },
+    {
+      "clause_id": "r002-c052",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-018"
+      ]
+    },
+    {
+      "clause_id": "r002-c053",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-018"
+      ]
+    },
+    {
+      "clause_id": "r002-c054",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c055",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c056",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-019"
+      ]
+    },
+    {
+      "clause_id": "r002-c057",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-019"
+      ]
+    },
+    {
+      "clause_id": "r002-c058",
+      "kind": "context",
+      "requirement_ids": [
+        "req-r002-019"
+      ]
+    },
+    {
+      "clause_id": "r002-c059",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-019"
+      ]
+    },
+    {
+      "clause_id": "r002-c060",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-019"
+      ]
+    },
+    {
+      "clause_id": "r002-c061",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c062",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-020"
+      ]
+    },
+    {
+      "clause_id": "r002-c063",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-020",
+        "req-r002-021"
+      ]
+    },
+    {
+      "clause_id": "r002-c064",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-020",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c065",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c066",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-021"
+      ]
+    },
+    {
+      "clause_id": "r002-c067",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c068",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-022"
+      ]
+    },
+    {
+      "clause_id": "r002-c069",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-022"
+      ]
+    },
+    {
+      "clause_id": "r002-c070",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c071",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-023"
+      ]
+    },
+    {
+      "clause_id": "r002-c072",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-023"
+      ]
+    },
+    {
+      "clause_id": "r002-c073",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-023",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c074",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-024"
+      ]
+    },
+    {
+      "clause_id": "r002-c075",
+      "kind": "context",
+      "requirement_ids": [
+        "req-r002-024"
+      ]
+    },
+    {
+      "clause_id": "r002-c076",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-023",
+        "req-r002-024"
+      ]
+    },
+    {
+      "clause_id": "r002-c077",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c078",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-025"
+      ]
+    },
+    {
+      "clause_id": "r002-c079",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-026"
+      ]
+    },
+    {
+      "clause_id": "r002-c080",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c081",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-027"
+      ]
+    },
+    {
+      "clause_id": "r002-c082",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-027",
+        "req-r002-028"
+      ]
+    },
+    {
+      "clause_id": "r002-c083",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-027",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c084",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-027"
+      ]
+    },
+    {
+      "clause_id": "r002-c085",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-027"
+      ]
+    },
+    {
+      "clause_id": "r002-c086",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c087",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-028"
+      ]
+    },
+    {
+      "clause_id": "r002-c088",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-029"
+      ]
+    },
+    {
+      "clause_id": "r002-c089",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c090",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c091",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-031"
+      ]
+    },
+    {
+      "clause_id": "r002-c092",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-031",
+        "req-r002-032"
+      ]
+    },
+    {
+      "clause_id": "r002-c093",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-031",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c094",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-031"
+      ]
+    },
+    {
+      "clause_id": "r002-c095",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-031"
+      ]
+    },
+    {
+      "clause_id": "r002-c096",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c097",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-032"
+      ]
+    },
+    {
+      "clause_id": "r002-c098",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-033"
+      ]
+    },
+    {
+      "clause_id": "r002-c099",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c100",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-034"
+      ]
+    },
+    {
+      "clause_id": "r002-c101",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-034"
+      ]
+    },
+    {
+      "clause_id": "r002-c102",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-034"
+      ]
+    },
+    {
+      "clause_id": "r002-c103",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c104",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c105",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-035"
+      ]
+    },
+    {
+      "clause_id": "r002-c106",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-036"
+      ]
+    },
+    {
+      "clause_id": "r002-c107",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c108",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-036",
+        "req-r002-039"
+      ]
+    },
+    {
+      "clause_id": "r002-c109",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c110",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-037"
+      ]
+    },
+    {
+      "clause_id": "r002-c111",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c112",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-037"
+      ]
+    },
+    {
+      "clause_id": "r002-c113",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-037"
+      ]
+    },
+    {
+      "clause_id": "r002-c114",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-037"
+      ]
+    },
+    {
+      "clause_id": "r002-c115",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-037"
+      ]
+    },
+    {
+      "clause_id": "r002-c116",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c117",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-038"
+      ]
+    },
+    {
+      "clause_id": "r002-c118",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c119",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r002-039"
+      ]
+    },
+    {
+      "clause_id": "r002-c120",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c121",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-040",
+        "req-r002-041"
+      ]
+    },
+    {
+      "clause_id": "r002-c122",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-040"
+      ]
+    },
+    {
+      "clause_id": "r002-c123",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-040"
+      ]
+    },
+    {
+      "clause_id": "r002-c124",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-041"
+      ]
+    },
+    {
+      "clause_id": "r002-c125",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-041"
+      ]
+    },
+    {
+      "clause_id": "r002-c126",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-041"
+      ]
+    },
+    {
+      "clause_id": "r002-c127",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c128",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-042"
+      ]
+    },
+    {
+      "clause_id": "r002-c129",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c130",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c131",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-043"
+      ]
+    },
+    {
+      "clause_id": "r002-c132",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-043"
+      ]
+    },
+    {
+      "clause_id": "r002-c133",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-043"
+      ]
+    },
+    {
+      "clause_id": "r002-c134",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c135",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-043"
+      ]
+    },
+    {
+      "clause_id": "r002-c136",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-043"
+      ]
+    },
+    {
+      "clause_id": "r002-c137",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-043",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r002-c138",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r002-c139",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-034"
+      ]
+    },
+    {
+      "clause_id": "r002-c140",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r002-034"
+      ]
+    },
+    {
+      "clause_id": "r002-c141",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r002-034"
+      ]
+    }
+  ],
+  "instruction_sha256": "9978e2977da3780159c6e49bbe97f3462d39854a0b700fb0851f85751329e3c1",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r002-001",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.cli_interface",
+      "source_clause_ids": [
+        "r002-c003"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe profile --input <path> --output <path>"
+          },
+          {
+            "key": "--input",
+            "value": "Headered CSV input path"
+          },
+          {
+            "key": "--output",
+            "value": "JSON profile output path"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the profile command with input and output paths."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.csv_processing",
+      "source_clause_ids": [
+        "r002-c004",
+        "r002-c006"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the input CSV and treat its first row as the header.",
+          "Infer each column's type from its data without a schema.",
+          "Compute the specified profile and write it to --output."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "input",
+            "value": "CSV whose first row is the header; subsequent rows are data."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "destination",
+            "value": "JSON statistical profile written to --output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Read a headered CSV without a schema and write its statistical profile as JSON."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.type_inference",
+      "source_clause_ids": [
+        "r002-c006",
+        "r002-c007",
+        "r002-c008"
+      ],
+      "spec": {
+        "algorithm": [
+          "Ignore empty values for inference.",
+          "If all non-empty values parse with strconv.ParseInt base 10 bit size 64, infer int.",
+          "Otherwise, if all parse with strconv.ParseFloat bit size 64, infer float.",
+          "Otherwise, if all parse as RFC 3339 datetimes, infer datetime.",
+          "Otherwise infer string."
+        ],
+        "defaults": [
+          {
+            "key": "zero_non_empty_values",
+            "value": "string"
+          }
+        ],
+        "edge_cases": [
+          "A column containing no non-empty values is string."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "int_parser",
+            "value": "strconv.ParseInt(value, 10, 64)"
+          },
+          {
+            "key": "float_parser",
+            "value": "strconv.ParseFloat(value, 64)"
+          },
+          {
+            "key": "datetime_parser",
+            "value": "RFC 3339"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Test int before float, then datetime, then string; integer strings also parse as floats, so this order is significant."
+        ],
+        "output_schema": [
+          {
+            "key": "inferred_type",
+            "value": "int, float, datetime, or string"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Infer profile column types from non-empty values using ordered int, float, datetime, then string tests."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.base_output_schema",
+      "source_clause_ids": [
+        "r002-c010",
+        "r002-c011",
+        "r002-c012"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each header column, count non-empty, empty, and distinct non-empty raw values and emit its base fields."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "null_count",
+            "value": "row_count - count"
+          }
+        ],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Every column object always contains name, type, count, null_count, and unique."
+        ],
+        "notes": [],
+        "ordering": [
+          "columns follows header declaration order from left to right."
+        ],
+        "output_schema": [
+          {
+            "key": "row_count",
+            "value": "Integer number of CSV data rows."
+          },
+          {
+            "key": "columns",
+            "value": "Array containing one object per header column."
+          },
+          {
+            "key": "columns[].name",
+            "value": "String header name."
+          },
+          {
+            "key": "columns[].type",
+            "value": "Inferred type: int, float, string, or datetime."
+          },
+          {
+            "key": "columns[].count",
+            "value": "Integer count of non-empty values."
+          },
+          {
+            "key": "columns[].null_count",
+            "value": "Integer equal to row_count - count."
+          },
+          {
+            "key": "columns[].unique",
+            "value": "Integer number of distinct non-empty values."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit top-level row count and one ordered base-statistics object per CSV column."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.numeric_basic_statistics",
+      "source_clause_ids": [
+        "r002-c010",
+        "r002-c014"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute min and max over non-empty numeric values.",
+          "Compute arithmetic mean.",
+          "Compute population standard deviation.",
+          "Compute percentiles using the profile percentile algorithm."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "For one numeric value, stddev is 0."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "int_min_max",
+            "value": "JSON integers"
+          },
+          {
+            "key": "float_min_max_and_other_statistics",
+            "value": "JSON numbers"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "mean",
+            "value": "sum(xi)/n"
+          },
+          {
+            "key": "stddev",
+            "value": "sqrt(sum((xi-mean)^2)/n)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "All non-empty numeric values in an inferred int or float column."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "min",
+            "value": "Minimum; JSON integer for int columns and JSON number for float columns."
+          },
+          {
+            "key": "max",
+            "value": "Maximum with the same type formatting as min."
+          },
+          {
+            "key": "mean",
+            "value": "JSON number arithmetic mean."
+          },
+          {
+            "key": "stddev",
+            "value": "JSON number population standard deviation."
+          },
+          {
+            "key": "median",
+            "value": "50th percentile JSON number."
+          },
+          {
+            "key": "p25",
+            "value": "25th percentile JSON number."
+          },
+          {
+            "key": "p75",
+            "value": "75th percentile JSON number."
+          }
+        ],
+        "preconditions": [
+          "Column type is int or float."
+        ],
+        "summary": "Compute required range, mean, population deviation, and percentile fields for int and float columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.percentile_algorithm",
+      "source_clause_ids": [
+        "r002-c015"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute idx = p/100*(n-1).",
+          "If idx is integral, return values[idx].",
+          "Otherwise set lower=floor(idx), upper=ceil(idx), frac=idx-lower and interpolate between those positions."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "idx",
+            "value": "p / 100 * (n - 1)"
+          },
+          {
+            "key": "result",
+            "value": "values[lower] + frac * (values[upper] - values[lower])"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "p",
+            "value": "25, 50, or 75"
+          },
+          {
+            "key": "values",
+            "value": "n non-empty numeric values"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Numeric values are sorted ascending before indexing."
+        ],
+        "output_schema": [
+          {
+            "key": "result",
+            "value": "Interpolated percentile value"
+          }
+        ],
+        "preconditions": [
+          "Sort values ascending."
+        ],
+        "summary": "Calculate numeric percentiles by linear interpolation over sorted values."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.numeric_skewness",
+      "source_clause_ids": [
+        "r002-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute sample standard deviation s using denominator n-1.",
+          "If n<3 or s==0, emit null.",
+          "Otherwise compute the adjusted standardized third moment."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Return null when n<3 or s==0."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "s",
+            "value": "sqrt(sum((xi - mean)^2) / (n - 1))"
+          },
+          {
+            "key": "skewness",
+            "value": "(n / ((n - 1) * (n - 2))) * sum(((xi - mean) / s)^3)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "n non-empty numeric values"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Sample s uses Bessel's correction, unlike population stddev."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "skewness",
+            "value": "JSON number or null"
+          }
+        ],
+        "preconditions": [
+          "Compute arithmetic mean."
+        ],
+        "summary": "Compute adjusted Fisher-Pearson skewness or null when undefined."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.numeric_kurtosis",
+      "source_clause_ids": [
+        "r002-c018"
+      ],
+      "spec": {
+        "algorithm": [
+          "If n<4 or s==0, emit null.",
+          "Otherwise compute the corrected fourth standardized moment minus its excess correction."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Return null when n<4 or s==0."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "kurtosis",
+            "value": "((n * (n + 1)) / ((n - 1) * (n - 2) * (n - 3))) * sum(((xi - mean) / s)^4) - (3 * (n - 1)^2) / ((n - 2) * (n - 3))"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "n non-empty numeric values"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "kurtosis",
+            "value": "JSON number or null"
+          }
+        ],
+        "preconditions": [
+          "Use the sample standard deviation s defined for skewness."
+        ],
+        "summary": "Compute sample excess kurtosis or null when undefined."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.numeric_mode",
+      "source_clause_ids": [
+        "r002-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Count occurrences of each numeric value.",
+          "Find the highest frequency.",
+          "Return null if count is zero or the highest frequency is one.",
+          "Otherwise choose the smallest value among those with highest frequency."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Null for no values or when every value occurs exactly once."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "int_mode",
+            "value": "JSON integer"
+          },
+          {
+            "key": "float_mode",
+            "value": "JSON number"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "Non-empty numeric column values"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Mode ties are broken by numeric value ascending."
+        ],
+        "output_schema": [
+          {
+            "key": "mode",
+            "value": "JSON integer for int columns, JSON number for float columns, or null"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit the repeated numeric mode with deterministic smallest-value tie breaking."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.numeric_histogram",
+      "source_clause_ids": [
+        "r002-c020"
+      ],
+      "spec": {
+        "algorithm": [
+          "If n is zero, return [].",
+          "If max==min, return one bin with low=max=min and count=n.",
+          "Otherwise compute width=(max-min)/10 and emit bins i=0..9 with low=min+i*width and high=min+(i+1)*width.",
+          "Assign v to floor((v-min)/width), clamped to 0..9."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Bins 0-8 are [low,high); bin 9 is [low,max].",
+          "Identical values produce a single {low:value,high:value,count:n} bin.",
+          "No values produce an empty array."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "bounds",
+            "value": "Same JSON number formatting as other profile statistics."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "width",
+            "value": "(max - min) / 10"
+          },
+          {
+            "key": "bin_i",
+            "value": "clamp(floor((v - min) / width), 0, 9)"
+          },
+          {
+            "key": "bounds",
+            "value": "low=min+i*width; high=min+(i+1)*width"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "n non-empty numeric values"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Bins are emitted in index order 0 through 9."
+        ],
+        "output_schema": [
+          {
+            "key": "histogram",
+            "value": "Array of {low:number, high:number, count:integer}."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit a deterministic ten-bin equal-width histogram for numeric columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.string_statistics",
+      "source_clause_ids": [
+        "r002-c021"
+      ],
+      "spec": {
+        "algorithm": [
+          "Measure lengths in bytes.",
+          "Compute minimum, maximum, and arithmetic average length over non-empty values.",
+          "Count each non-empty value and retain the first five after required sorting."
+        ],
+        "defaults": [
+          {
+            "key": "empty_statistics",
+            "value": "min_length=0, max_length=0, avg_length=0, most_common=[]"
+          }
+        ],
+        "edge_cases": [
+          "Empty values do not participate."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "avg_length",
+            "value": "sum(byte_length(value))/count"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "Non-empty raw string values"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "most_common sorts count descending, then value ascending lexicographically; include all when fewer than five unique values exist."
+        ],
+        "output_schema": [
+          {
+            "key": "min_length",
+            "value": "Integer minimum byte length, or 0 when count=0."
+          },
+          {
+            "key": "max_length",
+            "value": "Integer maximum byte length, or 0 when count=0."
+          },
+          {
+            "key": "avg_length",
+            "value": "Number average byte length, or 0 when count=0."
+          },
+          {
+            "key": "most_common",
+            "value": "Up to five {value:string,count:integer} entries."
+          }
+        ],
+        "preconditions": [
+          "Column type is string."
+        ],
+        "summary": "Compute byte-length and frequency statistics for inferred string columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-012",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.datetime_statistics",
+      "source_clause_ids": [
+        "r002-c022"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compare parsed instants chronologically and emit the minimum and maximum."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "earliest_latest",
+            "value": "RFC 3339"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "Non-empty values parsed as RFC 3339 datetimes"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "earliest",
+            "value": "Earliest datetime formatted as RFC 3339 string."
+          },
+          {
+            "key": "latest",
+            "value": "Latest datetime formatted as RFC 3339 string."
+          }
+        ],
+        "preconditions": [
+          "Column type is datetime."
+        ],
+        "summary": "Emit earliest and latest RFC 3339 values for datetime columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-013",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.correlations",
+      "source_clause_ids": [
+        "r002-c010",
+        "r002-c024",
+        "r002-c025",
+        "r002-c026",
+        "r002-c027",
+        "r002-c028"
+      ],
+      "spec": {
+        "algorithm": [
+          "For every numeric-column pair A,B with A before B, collect rows where both are non-empty.",
+          "If paired n<2, emit null.",
+          "Otherwise compute paired means, covariance numerator, and product-of-sums denominator.",
+          "If denominator is zero, emit null; otherwise emit numerator/denominator."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Fewer than two numeric columns produces [].",
+          "Paired n<2 or zero paired variance produces null."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "entry_shape",
+            "value": "{\"column_a\":\"col1\",\"column_b\":\"col2\",\"correlation\":0.95}"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "mean_a",
+            "value": "sum(ai)/n"
+          },
+          {
+            "key": "mean_b",
+            "value": "sum(bi)/n"
+          },
+          {
+            "key": "numerator",
+            "value": "sum((ai-mean_a)*(bi-mean_b))"
+          },
+          {
+            "key": "denom",
+            "value": "sqrt(sum((ai-mean_a)^2)*sum((bi-mean_b)^2))"
+          },
+          {
+            "key": "correlation",
+            "value": "numerator/denom"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "eligible_columns",
+            "value": "Columns inferred as int or float."
+          },
+          {
+            "key": "paired_observations",
+            "value": "Rows where both columns have non-empty values."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Each unordered numeric-column pair appears exactly once with the earlier column as column_a."
+        ],
+        "notes": [],
+        "ordering": [
+          "Sort by column_a header position, then column_b header position."
+        ],
+        "output_schema": [
+          {
+            "key": "correlations",
+            "value": "Array of {column_a:string,column_b:string,correlation:number|null}."
+          },
+          {
+            "key": "column_a",
+            "value": "Earlier numeric column's header name."
+          },
+          {
+            "key": "column_b",
+            "value": "Later numeric column's header name."
+          },
+          {
+            "key": "correlation",
+            "value": "Pearson coefficient or null when undefined."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Compute ordered Pearson correlations for every header-ordered pair of numeric columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-014",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "profile.json_formatting",
+      "source_clause_ids": [
+        "r002-c030"
+      ],
+      "spec": {
+        "algorithm": [
+          "Encode the complete profile as JSON."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces"
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline"
+          },
+          {
+            "key": "integer_statistics",
+            "value": "JSON integers with no decimal point"
+          },
+          {
+            "key": "floating_statistics",
+            "value": "Go default float64 JSON encoding with no unnecessary trailing zeros"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Serialize profile output as canonical indented JSON."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-015",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.deduplicate",
+      "source_clause_ids": [
+        "r002-c035",
+        "r002-c036",
+        "r002-c037"
+      ],
+      "spec": {
+        "algorithm": [
+          "Construct a key combination from the selected columns for every row.",
+          "For keep=first, retain the first input-order row per key and discard later rows.",
+          "For keep=last, retain the last input-order row per key and discard earlier rows."
+        ],
+        "defaults": [
+          {
+            "key": "columns",
+            "value": "If omitted or empty, use all columns in header order."
+          }
+        ],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "A named columns entry does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "deduplicate"
+          },
+          {
+            "key": "columns",
+            "value": "Optional array of key column names."
+          },
+          {
+            "key": "keep",
+            "value": "first or last"
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"deduplicate\",\"columns\":[\"id\",\"name\"],\"keep\":\"first\"}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Retained rows preserve their relative input order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Remove duplicate rows by selected key columns while retaining either first or last occurrences."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-016",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.split",
+      "source_clause_ids": [
+        "r002-c039",
+        "r002-c040",
+        "r002-c041"
+      ],
+      "spec": {
+        "algorithm": [
+          "Split each source cell using delimiter.",
+          "If the number of parts equals len(names), map them one-to-one.",
+          "If fewer, fill remaining named cells with empty strings.",
+          "If more, map initial parts normally and join all remaining parts with delimiter into the last named column."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Excess parts are rejoined only into the last named column."
+        ],
+        "errors": [
+          {
+            "condition": "column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "split"
+          },
+          {
+            "key": "column",
+            "value": "Source column name"
+          },
+          {
+            "key": "delimiter",
+            "value": "Literal string separator"
+          },
+          {
+            "key": "names",
+            "value": "Ordered array of new column names"
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"split\",\"column\":\"full_name\",\"delimiter\":\" \",\"names\":[\"first\",\"last\"]}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "The original column is removed."
+        ],
+        "notes": [],
+        "ordering": [
+          "New columns follow names order and occupy the source column's original position; row order is unchanged."
+        ],
+        "output_schema": [
+          {
+            "key": "columns",
+            "value": "Original header with source removed and names inserted at its former position."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Replace one column in place with named delimiter-split columns."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-017",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.assert",
+      "source_clause_ids": [
+        "r002-c043",
+        "r002-c044",
+        "r002-c045"
+      ],
+      "spec": {
+        "algorithm": [
+          "Evaluate expression for rows in current dataset order using the derive evaluator.",
+          "Continue while each result is >0.",
+          "On the first result <=0 or NaN, terminate immediately with its 1-indexed current-row position.",
+          "If all pass, return exactly the unchanged header and rows."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "NaN is failure."
+        ],
+        "errors": [
+          {
+            "condition": "Row N is the first assertion failure.",
+            "exit_code": 1,
+            "stderr": "ERROR: assertion failed on row N: <message>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "pass",
+            "value": "result > 0"
+          },
+          {
+            "key": "fail",
+            "value": "result <= 0 or result is NaN"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "assert"
+          },
+          {
+            "key": "expression",
+            "value": "Boolean expression using the same operators, functions, and column references as derive."
+          },
+          {
+            "key": "message",
+            "value": "Error message string"
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"assert\",\"expression\":\"value > 0 && value < 1000\",\"message\":\"value out of expected range\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "expression_evaluator",
+            "value": "Use req-r001-014 through req-r001-016 semantics."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Successful assertion does not modify data."
+        ],
+        "notes": [],
+        "ordering": [
+          "Evaluate in current row order and report the first failing row."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Require a derive-language expression to be true for every current row."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-018",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.normalize",
+      "source_clause_ids": [
+        "r002-c047",
+        "r002-c048",
+        "r002-c049",
+        "r002-c051",
+        "r002-c052",
+        "r002-c053"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect every non-empty source value that parses as float64.",
+          "For zscore compute mean and population stddev; for minmax compute min and max.",
+          "For each row, emit empty string when source is empty or unparsable.",
+          "For zscore emit 0 when stddev==0, else (x-mean)/stddev.",
+          "For minmax emit 0 when max==min, else (x-min)/(max-min)."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty or non-float cells produce empty output.",
+          "Zero stddev or zero range produces 0."
+        ],
+        "errors": [
+          {
+            "condition": "column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "numeric_result",
+            "value": "strconv.FormatFloat(val, 'f', -1, 64)"
+          },
+          {
+            "key": "zero",
+            "value": "Literal string 0, not 0.0"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "mean",
+            "value": "sum(xi)/n"
+          },
+          {
+            "key": "stddev",
+            "value": "sqrt(sum((xi-mean)^2)/n)"
+          },
+          {
+            "key": "zscore",
+            "value": "(x-mean)/stddev"
+          },
+          {
+            "key": "minmax",
+            "value": "(x-min)/(max-min)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "normalize"
+          },
+          {
+            "key": "column",
+            "value": "Source column"
+          },
+          {
+            "key": "method",
+            "value": "zscore or minmax"
+          },
+          {
+            "key": "as",
+            "value": "Appended result-column name"
+          },
+          {
+            "key": "parser",
+            "value": "strconv.ParseFloat(value, 64)"
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"normalize\",\"column\":\"value\",\"method\":\"zscore\",\"as\":\"value_norm\"}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve rows and original columns; append as last column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "Last header column; contains normalized string or empty string."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append z-score or min-max normalized numeric values."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-019",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "transform.fill",
+      "source_clause_ids": [
+        "r002-c056",
+        "r002-c057",
+        "r002-c059",
+        "r002-c060"
+      ],
+      "spec": {
+        "algorithm": [
+          "forward: scan each specified column top-to-bottom, replacing empties with the most recent non-empty value above; leave leading empties empty.",
+          "backward: scan each specified column bottom-to-top, replacing empties with the nearest non-empty value below; leave trailing empties empty.",
+          "constant: replace eligible empty values with value.",
+          "linear: for each empty cell at i, search upward for nearest non-empty float-parsable anchor (lo,v_lo) and downward for nearest non-empty float-parsable anchor (hi,v_hi); if both exist interpolate, otherwise leave empty.",
+          "Never modify a non-empty cell; for linear, skip non-empty unparsable cells as anchors but do not fill them."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Linear interpolation requires numeric anchors on both sides.",
+          "Non-empty unparsable cells are skipped in anchor searches and remain unchanged."
+        ],
+        "errors": [
+          {
+            "condition": "A referenced column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "linear_result",
+            "value": "strconv.FormatFloat(val, 'f', -1, 64)"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "linear",
+            "value": "v_lo + (v_hi - v_lo) * (i - lo) / (hi - lo)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "fill"
+          },
+          {
+            "key": "columns",
+            "value": "Columns whose empty values are eligible."
+          },
+          {
+            "key": "strategy",
+            "value": "forward, backward, constant, or linear"
+          },
+          {
+            "key": "value",
+            "value": "Replacement string required only for constant."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Non-empty values are never modified."
+        ],
+        "notes": [],
+        "ordering": [
+          "Preserve original row order and all columns; anchor searches use decreasing and increasing row index."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fill empty cells using forward, backward, constant, or linear strategy without changing non-empty cells."
+      },
+      "target_id": "req-r001-033"
+    },
+    {
+      "id": "req-r002-020",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.encode_interface",
+      "source_clause_ids": [
+        "r002-c062",
+        "r002-c063",
+        "r002-c064"
+      ],
+      "spec": {
+        "algorithm": [
+          "Dispatch to onehot or ordinal semantics according to method."
+        ],
+        "defaults": [
+          {
+            "key": "drop",
+            "value": "false"
+          }
+        ],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "encode"
+          },
+          {
+            "key": "column",
+            "value": "Existing source column"
+          },
+          {
+            "key": "method",
+            "value": "onehot or ordinal"
+          },
+          {
+            "key": "drop",
+            "value": "Optional boolean used only by onehot."
+          },
+          {
+            "key": "as",
+            "value": "Result-column name used only by ordinal."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Encode a categorical source column using one-hot or ordinal encoding."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-021",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.encode_onehot",
+      "source_clause_ids": [
+        "r002-c063",
+        "r002-c066"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect unique non-empty source values and sort them lexicographically ascending.",
+          "Create one new column per value.",
+          "For each row and value emit 1 on equality and 0 otherwise; an empty source emits 0 in every new column.",
+          "If drop=true, remove source and insert new columns at its position; otherwise retain source and append new columns."
+        ],
+        "defaults": [
+          {
+            "key": "drop",
+            "value": "false"
+          }
+        ],
+        "edge_cases": [
+          "Empty values encode to all zeros."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "method",
+            "value": "onehot"
+          },
+          {
+            "key": "drop",
+            "value": "Boolean"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "New columns follow sorted category order.",
+          "drop=true preserves the source header index for the first new column; drop=false appends them at the end."
+        ],
+        "output_schema": [
+          {
+            "key": "new_column_name",
+            "value": "{column}_{value}"
+          },
+          {
+            "key": "encoded_cells",
+            "value": "Strings 1 or 0"
+          }
+        ],
+        "preconditions": [
+          "Source column exists."
+        ],
+        "summary": "One-hot encode sorted unique non-empty values with configurable source-column retention."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-022",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.encode_ordinal",
+      "source_clause_ids": [
+        "r002-c068",
+        "r002-c069"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect unique non-empty source values and sort ascending lexicographically.",
+          "Assign strings 0, 1, ... in sorted order.",
+          "Emit the matching rank per non-empty row and empty string for an empty source.",
+          "Append the as column last."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty source values remain empty in the encoding."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "rank",
+            "value": "Decimal integer string"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "method",
+            "value": "ordinal"
+          },
+          {
+            "key": "as",
+            "value": "Appended result-column name"
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"encode\",\"column\":\"status\",\"method\":\"ordinal\",\"as\":\"status_code\"}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Ranks follow ascending lexicographic category order; result column is last."
+        ],
+        "output_schema": [
+          {
+            "key": "encoded_cell",
+            "value": "Zero-based decimal rank string; empty string for empty source."
+          }
+        ],
+        "preconditions": [
+          "Source column exists."
+        ],
+        "summary": "Ordinal-encode lexicographically sorted non-empty categories into zero-based rank strings."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-023",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.rollup_computation",
+      "source_clause_ids": [
+        "r002-c071",
+        "r002-c072",
+        "r002-c073",
+        "r002-c076"
+      ],
+      "spec": {
+        "algorithm": [
+          "At detail level, group by all columns.",
+          "For k=len(columns)-1 down to 1, group by the first k columns and put * in grouping positions k through len(columns)-1.",
+          "At level 0, aggregate all rows and put * in every grouping column.",
+          "For every level apply aggregate semantics: numeric sum/avg/min/max skip empty and non-numeric values; count counts non-empty values; empty numeric sets yield sum=0 and avg/min/max=NaN."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Grand total is one row."
+        ],
+        "errors": [
+          {
+            "condition": "Any columns or aggregations[].column reference is absent.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "rollup"
+          },
+          {
+            "key": "columns",
+            "value": "Grouping hierarchy from coarsest to finest."
+          },
+          {
+            "key": "aggregations",
+            "value": "Ordered {column,function,as} array; functions sum, avg, count, min, max."
+          }
+        ],
+        "integration": [
+          {
+            "key": "aggregation_semantics",
+            "value": "Same as transform aggregate."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Compute aggregate detail, hierarchy subtotals, and grand total using aggregate semantics."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-024",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "rollup.output_layout",
+      "source_clause_ids": [
+        "r002-c074",
+        "r002-c075",
+        "r002-c076"
+      ],
+      "spec": {
+        "algorithm": [
+          "Emit one detail row per full grouping tuple.",
+          "Emit subtotal rows for every prefix length from len(columns)-1 through 1.",
+          "Emit one grand-total row."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "rollup_marker",
+            "value": "Literal string *"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "header",
+            "value": "columns in declaration order followed by aggregation as names in declaration order."
+          },
+          {
+            "key": "detail_group_fields",
+            "value": "Actual grouping values."
+          },
+          {
+            "key": "subtotal_group_fields",
+            "value": "Included prefix values followed by * markers."
+          },
+          {
+            "key": "grand_total_group_fields",
+            "value": "* in every grouping column."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Lay out rollup grouping and aggregation columns and level markers exactly."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-025",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "rollup.row_ordering",
+      "source_clause_ids": [
+        "r002-c078"
+      ],
+      "spec": {
+        "algorithm": [
+          "Emit all detail rows first, ascending lexicographically by all grouping columns left to right.",
+          "Then emit subtotal levels from finest to coarsest; within each level sort ascending by included grouping columns.",
+          "Emit grand total last."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "detail; subtotal k=len(columns)-1 down to 1; grand total.",
+          "Within each applicable level compare grouping values left to right ascending lexicographically."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Order rollup rows by level and ascending grouping tuples."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-026",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "rollup.numeric_formatting",
+      "source_clause_ids": [
+        "r002-c079"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "numeric_results",
+            "value": "No unnecessary trailing zeros or trailing decimal point."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Format rollup numeric aggregation results without redundant decimal characters."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-027",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.detect_interface",
+      "source_clause_ids": [
+        "r002-c081",
+        "r002-c082",
+        "r002-c083",
+        "r002-c084",
+        "r002-c085"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect all non-empty float-parsable source values and compute method thresholds.",
+          "For each row emit 0 if the cell is empty or unparsable; otherwise apply the selected method and emit 1 or 0."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty and non-numeric cells are never outliers."
+        ],
+        "errors": [
+          {
+            "condition": "column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "boolean",
+            "value": "Literal strings 1 and 0"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "detect"
+          },
+          {
+            "key": "column",
+            "value": "Existing numeric source column"
+          },
+          {
+            "key": "method",
+            "value": "iqr, zscore, or mad"
+          },
+          {
+            "key": "as",
+            "value": "Appended indicator-column name"
+          },
+          {
+            "key": "factor",
+            "value": "Numeric threshold multiplier"
+          },
+          {
+            "key": "parser",
+            "value": "strconv.ParseFloat(value, 64)"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve row order and append as last column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "Last column containing 1 for outlier or 0 otherwise."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append a 1/0 outlier indicator computed from float-parsable source values."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-028",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "detect.iqr",
+      "source_clause_ids": [
+        "r002-c082",
+        "r002-c087"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute Q1 and Q3 using the profile percentile interpolation algorithm.",
+          "Compute IQR=Q3-Q1.",
+          "Mark v as outlier exactly when below the lower fence or above the upper fence."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "With fewer than two numeric values, emit 0 for every row."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "IQR",
+            "value": "Q3 - Q1"
+          },
+          {
+            "key": "outlier",
+            "value": "v < Q1 - factor*IQR or v > Q3 + factor*IQR"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "method",
+            "value": "iqr"
+          }
+        ],
+        "integration": [
+          {
+            "key": "percentiles",
+            "value": "Use req-r002-006."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Fence equality is not an outlier."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Detect outliers beyond factor-scaled interquartile fences."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-029",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "detect.zscore",
+      "source_clause_ids": [
+        "r002-c088"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute population mean and population standard deviation over collected values.",
+          "Mark v as outlier when its absolute z-score is strictly greater than factor."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "If stddev==0, emit 0 for every value."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "mean",
+            "value": "sum(xi)/n"
+          },
+          {
+            "key": "stddev",
+            "value": "sqrt(sum((xi-mean)^2)/n)"
+          },
+          {
+            "key": "outlier",
+            "value": "abs(v-mean)/stddev > factor"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "method",
+            "value": "zscore"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Equality to factor is not an outlier."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Detect outliers by absolute population z-score."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-030",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "detect.mad",
+      "source_clause_ids": [
+        "r002-c089"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute median of all collected numeric values.",
+          "Compute absolute deviations abs(xi-median) and their median MAD.",
+          "When MAD is nonzero, mark v when abs(modified_z)>factor.",
+          "When MAD is zero, mark values unequal to median and do not mark values equal to median."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "MAD==0: v==median emits 0; v!=median emits 1."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "MAD",
+            "value": "median(abs(xi - median))"
+          },
+          {
+            "key": "modified_z",
+            "value": "0.6745 * (v - median) / MAD"
+          },
+          {
+            "key": "outlier",
+            "value": "abs(modified_z) > factor"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "method",
+            "value": "mad"
+          }
+        ],
+        "integration": [
+          {
+            "key": "median",
+            "value": "Use profile percentile interpolation at p=50."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Detect outliers by modified median absolute-deviation score."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-031",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.bin_interface",
+      "source_clause_ids": [
+        "r002-c091",
+        "r002-c092",
+        "r002-c093",
+        "r002-c094",
+        "r002-c095"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect all non-empty values that parse as floats.",
+          "For each row emit empty string when the source is empty or unparsable; otherwise assign using the selected method."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Non-float cells produce empty labels."
+        ],
+        "errors": [
+          {
+            "condition": "column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "bin"
+          },
+          {
+            "key": "column",
+            "value": "Existing source column"
+          },
+          {
+            "key": "method",
+            "value": "width or quantile"
+          },
+          {
+            "key": "bins",
+            "value": "Positive integer bin count"
+          },
+          {
+            "key": "as",
+            "value": "Appended bin-label column"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Preserve rows and append as last column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "Last column containing a bin label or empty string."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append width- or quantile-bin labels for float-parsable source values."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-032",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "bin.width",
+      "source_clause_ids": [
+        "r002-c092",
+        "r002-c097"
+      ],
+      "spec": {
+        "algorithm": [
+          "If max==min, label every numeric value [val,val].",
+          "Otherwise compute w=(max-min)/bins and i=floor((v-min)/w), clamped to 0..bins-1.",
+          "Compute low=min+i*w and high=min+(i+1)*w, except final high=max.",
+          "Use a right-exclusive label except for the final bin."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Constant data uses [val,val]."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "bounds",
+            "value": "strconv.FormatFloat(val, 'f', -1, 64)"
+          },
+          {
+            "key": "nonfinal_label",
+            "value": "[low,high)"
+          },
+          {
+            "key": "final_label",
+            "value": "[low,high]"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "w",
+            "value": "(max - min) / bins"
+          },
+          {
+            "key": "i",
+            "value": "clamp(floor((v - min) / w), 0, bins - 1)"
+          },
+          {
+            "key": "bounds",
+            "value": "low=min+i*w; high=min+(i+1)*w; final high=max"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "method",
+            "value": "width"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "label",
+            "value": "[low,high) except final [low,high]"
+          }
+        ],
+        "preconditions": [
+          "bins is positive."
+        ],
+        "summary": "Assign values to equal-width bins with exact interval labels."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-033",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "bin.quantile",
+      "source_clause_ids": [
+        "r002-c098"
+      ],
+      "spec": {
+        "algorithm": [
+          "If max==min, label every numeric value [val,val].",
+          "Compute boundary j for j=0..bins as the percentile at j*100/bins using profile interpolation.",
+          "Choose the highest i in 0..bins-1 for which v>=boundary[i].",
+          "Use boundary[i] and boundary[i+1] as bounds, except force final high=max.",
+          "Use a right-exclusive label except for the final bin."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Constant data uses [val,val].",
+          "Repeated percentile boundaries are permitted; highest qualifying i wins."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "bounds",
+            "value": "strconv.FormatFloat(val, 'f', -1, 64)"
+          },
+          {
+            "key": "nonfinal_label",
+            "value": "[low,high)"
+          },
+          {
+            "key": "final_label",
+            "value": "[low,high]"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "boundary_j",
+            "value": "percentile(j * 100 / bins)"
+          },
+          {
+            "key": "i",
+            "value": "max{i in [0,bins-1] | v >= boundary[i]}"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "method",
+            "value": "quantile"
+          }
+        ],
+        "integration": [
+          {
+            "key": "percentiles",
+            "value": "Use req-r002-006."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "label",
+            "value": "[boundary[i],boundary[i+1]) except final inclusive label."
+          }
+        ],
+        "preconditions": [
+          "bins is positive."
+        ],
+        "summary": "Assign values to equal-frequency percentile-boundary bins."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-034",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r002-c100",
+        "r002-c101",
+        "r002-c102",
+        "r002-c139",
+        "r002-c140",
+        "r002-c141"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse seed and steps from JSON.",
+          "Dispatch ingest, transform, verify, and manifest steps to their corresponding command behavior.",
+          "Dispatch profile with its input and output paths.",
+          "Dispatch compare with its left, right, key, and output arguments."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline transform seed."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of step objects."
+          },
+          {
+            "key": "ingest",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "transform",
+            "value": "{type,input,recipe,output}"
+          },
+          {
+            "key": "verify",
+            "value": "{type,file,checksum}"
+          },
+          {
+            "key": "manifest",
+            "value": "{type,dir,output}"
+          },
+          {
+            "key": "profile",
+            "value": "{\"type\":\"profile\",\"input\":\"data.csv\",\"output\":\"profile.json\"}"
+          },
+          {
+            "key": "compare",
+            "value": "{\"type\":\"compare\",\"left\":\"left.csv\",\"right\":\"right.csv\",\"key\":\"id,name\",\"output\":\"diff.json\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling."
+          },
+          {
+            "key": "profile_step",
+            "value": "Runs dpipe profile."
+          },
+          {
+            "key": "compare_step",
+            "value": "Runs dpipe compare."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Execute steps in array order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read a pipeline JSON containing a seed and ordered ingest, transform, verify, manifest, profile, or compare steps."
+      },
+      "target_id": "req-r001-040"
+    },
+    {
+      "id": "req-r002-035",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.cli_interface",
+      "source_clause_ids": [
+        "r002-c105"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [
+          {
+            "key": "--tolerance",
+            "value": "0"
+          },
+          {
+            "key": "--ignore",
+            "value": "Omitted; no ignored columns"
+          }
+        ],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe compare --left <path> --right <path> --key <col1,col2,...> --output <path>"
+          },
+          {
+            "key": "--left",
+            "value": "Left headered CSV path"
+          },
+          {
+            "key": "--right",
+            "value": "Right headered CSV path"
+          },
+          {
+            "key": "--key",
+            "value": "Comma-separated composite-key column names"
+          },
+          {
+            "key": "--output",
+            "value": "JSON diff-report path"
+          },
+          {
+            "key": "--tolerance",
+            "value": "Optional numeric comparison tolerance"
+          },
+          {
+            "key": "--ignore",
+            "value": "Optional comma-separated ignored columns"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose compare with left, right, composite key, and output arguments."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-036",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.classification",
+      "source_clause_ids": [
+        "r002-c106",
+        "r002-c108"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read both headered CSVs and require identical headers.",
+          "Resolve key columns in flag order.",
+          "For each side, index rows by null-byte-joined key and retain only the first occurrence.",
+          "Classify a right-only key as added and a left-only key as removed.",
+          "For a shared key, compare non-key columns using tolerance and ignore rules; classify as modified if at least one compared column differs, otherwise unchanged.",
+          "Exclude unchanged rows from changes."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Duplicate keys after the first do not participate in comparison."
+        ],
+        "errors": [
+          {
+            "condition": "Headers differ in name or order.",
+            "exit_code": 1,
+            "stderr": "ERROR: schema mismatch: headers differ",
+            "stdout": null
+          },
+          {
+            "condition": "A key column is absent.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid key: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "composite_key",
+            "value": "value(key1) + 0x00 + value(key2) + ..."
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "left,right",
+            "value": "Headered CSV files with identical names and header order."
+          },
+          {
+            "key": "key",
+            "value": "Comma-separated existing column names."
+          },
+          {
+            "key": "composite_key",
+            "value": "Key-column values joined by the single byte 0x00."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Added means right-only; removed means left-only; modified means shared key with a relevant differing non-key field."
+        ],
+        "notes": [],
+        "ordering": [
+          "Duplicate resolution uses input file order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Compare first-occurrence rows from identical-schema CSVs by null-separated composite keys."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-037",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.output_schema",
+      "source_clause_ids": [
+        "r002-c110",
+        "r002-c112",
+        "r002-c113",
+        "r002-c114",
+        "r002-c115"
+      ],
+      "spec": {
+        "algorithm": [
+          "Count classifications for summary.",
+          "For added and removed changes emit key and the applicable full row.",
+          "For modified changes emit key, both full rows, and diff.",
+          "Include every header column in each full row object."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Unchanged rows are counted but omitted from changes."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "normative_shape",
+            "value": "{\"summary\":{\"left_rows\":100,\"right_rows\":105,\"added\":10,\"removed\":5,\"modified\":3,\"unchanged\":87},\"changes\":[{\"type\":\"added\",\"key\":{\"id\":\"101\"},\"row\":{\"id\":\"101\",\"name\":\"Alice\",\"value\":\"50\"}},{\"type\":\"removed\",\"key\":{\"id\":\"5\"},\"row\":{\"id\":\"5\",\"name\":\"Bob\",\"value\":\"30\"}},{\"type\":\"modified\",\"key\":{\"id\":\"10\"},\"left\":{\"id\":\"10\",\"name\":\"Charlie\",\"value\":\"20\"},\"right\":{\"id\":\"10\",\"name\":\"Charlie\",\"value\":\"25\"},\"diff\":[\"value\"]}]}"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Fields in diff follow header order."
+        ],
+        "output_schema": [
+          {
+            "key": "summary.left_rows",
+            "value": "Integer left row count."
+          },
+          {
+            "key": "summary.right_rows",
+            "value": "Integer right row count."
+          },
+          {
+            "key": "summary.added",
+            "value": "Integer added count."
+          },
+          {
+            "key": "summary.removed",
+            "value": "Integer removed count."
+          },
+          {
+            "key": "summary.modified",
+            "value": "Integer modified count."
+          },
+          {
+            "key": "summary.unchanged",
+            "value": "Integer unchanged count."
+          },
+          {
+            "key": "changes[].type",
+            "value": "added, removed, or modified."
+          },
+          {
+            "key": "changes[].key",
+            "value": "Object mapping each key column name to its value."
+          },
+          {
+            "key": "added.row",
+            "value": "Full right-file row object."
+          },
+          {
+            "key": "removed.row",
+            "value": "Full left-file row object."
+          },
+          {
+            "key": "modified.left",
+            "value": "Full left-file row object."
+          },
+          {
+            "key": "modified.right",
+            "value": "Full right-file row object."
+          },
+          {
+            "key": "modified.diff",
+            "value": "Differing non-key, non-ignored column names in header order."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit summary counts and type-specific full-row change objects."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-038",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.changes_ordering",
+      "source_clause_ids": [
+        "r002-c117"
+      ],
+      "spec": {
+        "algorithm": [
+          "Partition changes by type.",
+          "Emit added, then removed, then modified.",
+          "Within each type sort ascending lexicographically by the joined composite-key string."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "added < removed < modified; within type, composite key ascending lexicographically."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Sort comparison changes by fixed type order and composite key."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-039",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.argument_and_schema_errors",
+      "source_clause_ids": [
+        "r002-c108",
+        "r002-c119"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate required key and output flags.",
+          "Read headers and require exact equality.",
+          "Validate every key column."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "--key is missing.",
+            "exit_code": 1,
+            "stderr": "ERROR: --key is required",
+            "stdout": null
+          },
+          {
+            "condition": "--output is missing.",
+            "exit_code": 1,
+            "stderr": "ERROR: --output is required",
+            "stdout": null
+          },
+          {
+            "condition": "A key column is absent.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid key: column <name> not found",
+            "stdout": null
+          },
+          {
+            "condition": "Headers differ.",
+            "exit_code": 1,
+            "stderr": "ERROR: schema mismatch: headers differ",
+            "stdout": null
+          },
+          {
+            "condition": "Left or right input file is missing.",
+            "exit_code": 1,
+            "stderr": "ERROR: file not found: <path>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail compare for missing required flags, invalid keys, or unequal headers with exact diagnostics."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-040",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.numeric_tolerance",
+      "source_clause_ids": [
+        "r002-c121",
+        "r002-c122",
+        "r002-c123"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each otherwise-compared field, attempt to parse both strings as float64.",
+          "If both parse, treat them as equal when abs(left-right)<=tolerance.",
+          "If either does not parse, use exact string equality."
+        ],
+        "defaults": [
+          {
+            "key": "--tolerance",
+            "value": "0"
+          }
+        ],
+        "edge_cases": [
+          "When only one side parses as float, compare exact strings."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "numeric_equal",
+            "value": "abs(left_float - right_float) <= tolerance"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "parser",
+            "value": "strconv.ParseFloat(value, 64)"
+          }
+        ],
+        "integration": [
+          {
+            "key": "scope",
+            "value": "Modified detection and diff construction."
+          }
+        ],
+        "interface": [
+          {
+            "key": "flag",
+            "value": "--tolerance <number>"
+          }
+        ],
+        "invariants": [
+          "Tolerance equality is inclusive."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Treat two float-parsable values as equal when their absolute difference is within tolerance."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-041",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.ignore_columns",
+      "source_clause_ids": [
+        "r002-c121",
+        "r002-c124",
+        "r002-c125",
+        "r002-c126"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate every ignored column against the header.",
+          "Exclude key columns and ignored columns from differing-field detection.",
+          "Keep ignored fields in all emitted full-row objects.",
+          "If all non-key, non-ignored fields compare equal, classify the shared-key row as unchanged.",
+          "Never include ignored columns in diff."
+        ],
+        "defaults": [
+          {
+            "key": "--ignore",
+            "value": "Optional; when omitted, ignore no columns."
+          }
+        ],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "An ignored column is absent.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid ignore: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "columns",
+            "value": "Comma-separated header names."
+          }
+        ],
+        "integration": [
+          {
+            "key": "scope",
+            "value": "Modified classification and diff only; row serialization is unaffected."
+          }
+        ],
+        "interface": [
+          {
+            "key": "flag",
+            "value": "--ignore <col1,col2,...>"
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Exclude selected existing columns from modification detection while retaining them in row objects."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-042",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "compare.json_formatting",
+      "source_clause_ids": [
+        "r002-c128"
+      ],
+      "spec": {
+        "algorithm": [
+          "Encode the complete diff report as JSON."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces"
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Serialize compare reports as two-space-indented newline-terminated JSON."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r002-043",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.hash",
+      "source_clause_ids": [
+        "r002-c131",
+        "r002-c132",
+        "r002-c133",
+        "r002-c135",
+        "r002-c136",
+        "r002-c137"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve selected columns in declared order; when omitted or empty use every column in header order.",
+          "For each row concatenate selected raw cell strings with one null byte 0x00 between adjacent values.",
+          "Include empty cells as empty strings.",
+          "Compute SHA-256 over the exact concatenated bytes and lowercase-hex encode it.",
+          "Append the digest under as."
+        ],
+        "defaults": [
+          {
+            "key": "columns",
+            "value": "If omitted or empty, all columns in header order."
+          }
+        ],
+        "edge_cases": [
+          "Empty cells contribute zero value bytes but separators remain."
+        ],
+        "errors": [
+          {
+            "condition": "A selected column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "digest",
+            "value": "Exactly 64 lowercase hexadecimal characters"
+          },
+          {
+            "key": "example",
+            "value": "columns [id,name] and values [1,Alice] hash the bytes represented by 1\\x00Alice."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "hash_input",
+            "value": "value(column1) + 0x00 + value(column2) + ..."
+          },
+          {
+            "key": "digest",
+            "value": "lowercase_hex(SHA-256(hash_input))"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "hash"
+          },
+          {
+            "key": "columns",
+            "value": "Optional ordered array of source columns."
+          },
+          {
+            "key": "as",
+            "value": "Appended digest-column name"
+          },
+          {
+            "key": "normative_example",
+            "value": "{\"op\":\"hash\",\"columns\":[\"id\",\"name\",\"value\"],\"as\":\"row_hash\"}"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Selected column order determines hash input; preserve row order and append as last column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "Last header column containing a 64-character lowercase hexadecimal SHA-256 digest."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append a lowercase SHA-256 digest of null-separated selected cell values to every row."
+      },
+      "target_id": null
+    }
+  ],
+  "round": 2
+}

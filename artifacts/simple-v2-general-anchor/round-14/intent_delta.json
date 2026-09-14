@@ -1,0 +1,1375 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r014-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-001",
+        "req-r014-002",
+        "req-r014-003",
+        "req-r014-004"
+      ]
+    },
+    {
+      "clause_id": "r014-c004",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c005",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r014-001"
+      ]
+    },
+    {
+      "clause_id": "r014-c006",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c007",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r014-002",
+        "req-r014-003",
+        "req-r014-004"
+      ]
+    },
+    {
+      "clause_id": "r014-c008",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c009",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-002",
+        "req-r014-003",
+        "req-r014-004"
+      ]
+    },
+    {
+      "clause_id": "r014-c010",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c011",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-002",
+        "req-r014-003",
+        "req-r014-004"
+      ]
+    },
+    {
+      "clause_id": "r014-c012",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c013",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043"
+      ]
+    },
+    {
+      "clause_id": "r014-c014",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c015",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-005"
+      ]
+    },
+    {
+      "clause_id": "r014-c016",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r014-005",
+        "req-r014-006",
+        "req-r014-007",
+        "req-r014-008",
+        "req-r014-009"
+      ]
+    },
+    {
+      "clause_id": "r014-c017",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-005",
+        "req-r014-006",
+        "req-r014-007",
+        "req-r014-008",
+        "req-r014-009"
+      ]
+    },
+    {
+      "clause_id": "r014-c018",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c019",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c020",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-010",
+        "req-r014-011"
+      ]
+    },
+    {
+      "clause_id": "r014-c021",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c022",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r014-010",
+        "req-r014-011",
+        "req-r014-012"
+      ]
+    },
+    {
+      "clause_id": "r014-c023",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c024",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-010"
+      ]
+    },
+    {
+      "clause_id": "r014-c025",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c026",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-010",
+        "req-r014-011",
+        "req-r014-012"
+      ]
+    },
+    {
+      "clause_id": "r014-c027",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r014-c028",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r014-013"
+      ]
+    }
+  ],
+  "instruction_sha256": "35f96a0f121285e4cb080f49aad89a6716e704030ae07ec37ccce5f4fc91e123",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r014-001",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "changelog.cli_interface",
+      "source_clause_ids": [
+        "r014-c003",
+        "r014-c005"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [
+          {
+            "input": "dpipe changelog --before before.csv --after after.csv --output changelog.json",
+            "name": "changelog invocation",
+            "notes": "Compares before.csv with after.csv and writes changelog.json.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe changelog --before before.csv --after after.csv --output changelog.json"
+          },
+          {
+            "key": "--before",
+            "value": "Path to the headered CSV representing the earlier dataset."
+          },
+          {
+            "key": "--after",
+            "value": "Path to the headered CSV representing the later dataset."
+          },
+          {
+            "key": "--output",
+            "value": "Path for the changelog JSON report."
+          }
+        ],
+        "invariants": [
+          "changelog is a top-level dpipe command."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose a top-level changelog command that compares before and after CSV files and writes a JSON change summary."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r014-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "changelog.row_counts",
+      "source_clause_ids": [
+        "r014-c003",
+        "r014-c007",
+        "r014-c009",
+        "r014-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse the before file using encoding/csv and treat its first record as the header.",
+          "Parse the after file using encoding/csv and treat its first record as the header.",
+          "Count every record after the before header and store the count in rows_before.",
+          "Count every record after the after header and store the count in rows_after."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A header-only file contributes a data-row count of 0."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "The before file has 3 data rows and the after file has 4 data rows.",
+            "name": "row counts",
+            "notes": "Headers are excluded.",
+            "output": "{\"rows_before\":3,\"rows_after\":4}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "rows_before",
+            "value": "JSON integer."
+          },
+          {
+            "key": "rows_after",
+            "value": "JSON integer."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "rows_before",
+            "value": "number of parsed before-file CSV records after the header"
+          },
+          {
+            "key": "rows_after",
+            "value": "number of parsed after-file CSV records after the header"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "before",
+            "value": "CSV file with a header record followed by zero or more data records."
+          },
+          {
+            "key": "after",
+            "value": "CSV file with a header record followed by zero or more data records."
+          },
+          {
+            "key": "parser",
+            "value": "Go encoding/csv."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Neither header record is included in its file's row count."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "rows_before",
+            "value": "JSON integer equal to the number of data rows in the before file, excluding its header."
+          },
+          {
+            "key": "rows_after",
+            "value": "JSON integer equal to the number of data rows in the after file, excluding its header."
+          }
+        ],
+        "preconditions": [
+          "Both CSV files are available for parsing."
+        ],
+        "summary": "Parse both headered CSV files with Go encoding/csv and report their data-row counts excluding headers."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r014-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "changelog.column_changes",
+      "source_clause_ids": [
+        "r014-c003",
+        "r014-c007",
+        "r014-c009",
+        "r014-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "Copy the before header into columns_before without reordering.",
+          "Copy the after header into columns_after without reordering.",
+          "For every column in the after header, include it in columns_added exactly when it is not present in the before header.",
+          "For every column in the before header, include it in columns_removed exactly when it is not present in the after header.",
+          "Serialize columns_added and columns_removed as arrays even when they contain no elements."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "No added columns produces columns_added=[].",
+          "No removed columns produces columns_removed=[]."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Before header: [\"id\",\"name\"]; after header: [\"id\",\"name\",\"score\"].",
+            "name": "added score column",
+            "notes": "The empty removed set is an empty JSON array.",
+            "output": "{\"columns_before\":[\"id\",\"name\"],\"columns_after\":[\"id\",\"name\",\"score\"],\"columns_added\":[\"score\"],\"columns_removed\":[]}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "column_fields",
+            "value": "JSON arrays of strings."
+          },
+          {
+            "key": "empty_change_arrays",
+            "value": "Use [], never null."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "columns_added",
+            "value": "[c for c in after_header where c is not present in before_header]"
+          },
+          {
+            "key": "columns_removed",
+            "value": "[c for c in before_header where c is not present in after_header]"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "before_header",
+            "value": "Parsed before-file header fields in their original left-to-right order."
+          },
+          {
+            "key": "after_header",
+            "value": "Parsed after-file header fields in their original left-to-right order."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "columns_added and columns_removed are never null.",
+          "Header arrays preserve their source header positions."
+        ],
+        "notes": [],
+        "ordering": [
+          "columns_before preserves before-header order.",
+          "columns_after preserves after-header order.",
+          "columns_added follows after-header order because candidates are examined in that order.",
+          "columns_removed follows before-header order because candidates are examined in that order."
+        ],
+        "output_schema": [
+          {
+            "key": "columns_before",
+            "value": "JSON array of strings equal to the before-file header."
+          },
+          {
+            "key": "columns_after",
+            "value": "JSON array of strings equal to the after-file header."
+          },
+          {
+            "key": "columns_added",
+            "value": "JSON array of columns present in the after header but absent from the before header."
+          },
+          {
+            "key": "columns_removed",
+            "value": "JSON array of columns present in the before header but absent from the after header."
+          }
+        ],
+        "preconditions": [
+          "Both CSV headers have been parsed."
+        ],
+        "summary": "Report both headers and the columns added to or removed from the after file relative to the before file."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r014-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "changelog.row_count_change",
+      "source_clause_ids": [
+        "r014-c003",
+        "r014-c007",
+        "r014-c009",
+        "r014-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "Subtract rows_before from rows_after.",
+          "Store the signed result in row_count_change."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The value is negative when the after file has fewer data rows.",
+          "The value is 0 when both files have equal data-row counts."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "rows_before=3; rows_after=4",
+            "name": "one added row",
+            "notes": "",
+            "output": "{\"row_count_change\":1}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "row_count_change",
+            "value": "JSON integer."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "row_count_change",
+            "value": "rows_after - rows_before"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "rows_before",
+            "value": "Before-file data-row count excluding the header."
+          },
+          {
+            "key": "rows_after",
+            "value": "After-file data-row count excluding the header."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "rows_before + row_count_change equals rows_after."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "row_count_change",
+            "value": "JSON integer equal to rows_after minus rows_before."
+          }
+        ],
+        "preconditions": [
+          "rows_before and rows_after have been computed."
+        ],
+        "summary": "Report the signed change in data-row count from the before file to the after file."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r014-005",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r014-c015",
+        "r014-c016",
+        "r014-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse seed and steps from pipeline JSON.",
+          "Execute steps sequentially in array order using the corresponding dpipe command behavior.",
+          "Dispatch every established step type using its established fields and semantics.",
+          "For reconcile, run reconcile with left, right, and output.",
+          "For fingerprint, run fingerprint with input and output.",
+          "For snapshot, run snapshot with input and output.",
+          "For changelog, run changelog with --before set from input, --after set from right, and --output set from output."
+        ],
+        "defaults": [
+          {
+            "key": "drift.threshold",
+            "value": "0.1 when threshold is omitted or equals 0."
+          }
+        ],
+        "edge_cases": [
+          "A drift-step threshold of 0 selects default 0.1, not a zero threshold."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"changelog\",\"input\":\"before.csv\",\"right\":\"after.csv\",\"output\":\"changelog.json\"}",
+            "name": "changelog pipeline step",
+            "notes": "Runs dpipe changelog --before before.csv --after after.csv --output changelog.json.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline transform seed."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of step objects."
+          },
+          {
+            "key": "ingest",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "transform",
+            "value": "{type,input,recipe,output}"
+          },
+          {
+            "key": "verify",
+            "value": "{type,file,checksum}"
+          },
+          {
+            "key": "manifest",
+            "value": "{type,dir,output}"
+          },
+          {
+            "key": "profile",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "compare",
+            "value": "{type,left,right,key,output}"
+          },
+          {
+            "key": "drift",
+            "value": "{type,baseline,current,output,threshold?}"
+          },
+          {
+            "key": "validate",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "lineage",
+            "value": "{type,config,output}"
+          },
+          {
+            "key": "quality",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "schema",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "reconcile",
+            "value": "{type,left,right,output}"
+          },
+          {
+            "key": "fingerprint",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "snapshot",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "changelog",
+            "value": "{type,input,right,output}; input supplies --before, right supplies --after, and output supplies --output."
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling where applicable."
+          },
+          {
+            "key": "profile_step",
+            "value": "Runs dpipe profile."
+          },
+          {
+            "key": "compare_step",
+            "value": "Runs dpipe compare."
+          },
+          {
+            "key": "drift_step",
+            "value": "Runs dpipe drift."
+          },
+          {
+            "key": "validate_step",
+            "value": "Runs dpipe validate."
+          },
+          {
+            "key": "lineage_step",
+            "value": "Runs dpipe lineage."
+          },
+          {
+            "key": "quality_step",
+            "value": "Runs dpipe quality."
+          },
+          {
+            "key": "schema_step",
+            "value": "Runs dpipe schema."
+          },
+          {
+            "key": "reconcile_step",
+            "value": "Runs dpipe reconcile with left, right, and output."
+          },
+          {
+            "key": "fingerprint_step",
+            "value": "Runs dpipe fingerprint with input and output."
+          },
+          {
+            "key": "snapshot_step",
+            "value": "Runs dpipe snapshot with input and output."
+          },
+          {
+            "key": "changelog_step",
+            "value": "Runs dpipe changelog with input mapped to --before, right mapped to --after, and output mapped to --output."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Sequential execution, first-failure stopping, and terminal-status behavior remain unchanged."
+        ],
+        "notes": [],
+        "ordering": [
+          "The steps array order is pipeline execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read pipeline JSON containing a seed and ordered ingest, transform, verify, manifest, profile, compare, drift, validate, lineage, quality, schema, reconcile, fingerprint, snapshot, or changelog steps."
+      },
+      "target_id": "req-r013-006"
+    },
+    {
+      "id": "req-r014-006",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.step_io_mapping",
+      "source_clause_ids": [
+        "r014-c016",
+        "r014-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve every configured step's inputs in the exact order specified for its type.",
+          "For manifest, use no inputs, ignore dir for node and edge construction, and retain output.",
+          "For quality, schema, fingerprint, and snapshot, use a one-element inputs array containing input and retain output.",
+          "For reconcile, use inputs left then right and retain output.",
+          "For changelog, use inputs input then right and retain output.",
+          "For verify, use inputs file then checksum and set output to null.",
+          "For all other mapped types, use their listed inputs and output."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest dir is not modeled as a node.",
+          "Verify has no output."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"changelog\",\"input\":\"before.csv\",\"right\":\"after.csv\",\"output\":\"changelog.json\"}",
+            "name": "changelog lineage mapping",
+            "notes": "The input/before path precedes the right/after path.",
+            "output": "{\"inputs\":[\"before.csv\",\"after.csv\"],\"output\":\"changelog.json\"}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "ingest",
+            "value": "input = field file; output = field output."
+          },
+          {
+            "key": "transform",
+            "value": "inputs = fields input then recipe; output = field output."
+          },
+          {
+            "key": "profile",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "compare",
+            "value": "inputs = fields left then right; output = field output."
+          },
+          {
+            "key": "manifest",
+            "value": "inputs = []; output = field output; dir is not a lineage input."
+          },
+          {
+            "key": "verify",
+            "value": "inputs = fields file then checksum; output = none."
+          },
+          {
+            "key": "validate",
+            "value": "inputs = fields input then schema; output = field output."
+          },
+          {
+            "key": "drift",
+            "value": "inputs = fields baseline then current; output = field output."
+          },
+          {
+            "key": "quality",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "schema",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "reconcile",
+            "value": "inputs = fields left then right; output = field output."
+          },
+          {
+            "key": "fingerprint",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "snapshot",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "changelog",
+            "value": "inputs = fields input then right; output = field output. input represents the before file and right represents the after file."
+          }
+        ],
+        "integration": [
+          {
+            "key": "supported_step_types",
+            "value": "ingest, transform, profile, compare, manifest, verify, validate, drift, quality, schema, reconcile, fingerprint, snapshot, changelog"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "A changelog step has exactly input and right as lineage inputs, in that order, and output as its lineage output.",
+          "A snapshot step has input as its sole lineage input and output as its lineage output.",
+          "A reconcile step has left and right inputs in that order.",
+          "Manifest has no lineage inputs."
+        ],
+        "notes": [
+          "The active lineage contract continues to name the ingest input field file."
+        ],
+        "ordering": [
+          "transform: input, recipe.",
+          "compare: left, right.",
+          "verify: file, checksum.",
+          "validate: input, schema.",
+          "drift: baseline, current.",
+          "manifest: [].",
+          "quality: input.",
+          "schema: input.",
+          "reconcile: left, right.",
+          "fingerprint: input.",
+          "snapshot: input.",
+          "changelog: input, right."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Map supported pipeline step types to exact lineage inputs and outputs, including changelog and snapshot while treating manifest as output-only."
+      },
+      "target_id": "req-r013-007"
+    },
+    {
+      "id": "req-r014-007",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.nodes",
+      "source_clause_ids": [
+        "r014-c016",
+        "r014-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve every step using the active lineage step-I/O mapping.",
+          "Collect all resolved input paths and non-null output paths.",
+          "Deduplicate paths by exact string equality.",
+          "Set every node type to file and produced_by to the producing step index or null.",
+          "For changelog, include input, right, and output and set the output node's produced_by to the changelog step index.",
+          "For snapshot and fingerprint, include input and output.",
+          "For reconcile, include left, right, and output.",
+          "Include manifest output but exclude manifest dir.",
+          "Do not create an output node for a null output."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A changelog input or right path not produced by an analyzed step has produced_by=null.",
+          "A verify step contributes inputs but no output node.",
+          "A manifest output remains a node despite manifest having no inputs."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Step 1 is {\"type\":\"changelog\",\"input\":\"before.csv\",\"right\":\"after.csv\",\"output\":\"changelog.json\"}.",
+            "name": "changelog nodes",
+            "notes": "Shown in lexicographic node order.",
+            "output": "[{\"id\":\"after.csv\",\"type\":\"file\",\"produced_by\":null},{\"id\":\"before.csv\",\"type\":\"file\",\"produced_by\":null},{\"id\":\"changelog.json\",\"type\":\"file\",\"produced_by\":1}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r014-006."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Each exact resolved path occurs at most once.",
+          "Every node's type is file.",
+          "Changelog input, right, and output paths participate in node construction.",
+          "Manifest dir values do not participate in node construction."
+        ],
+        "notes": [],
+        "ordering": [
+          "Sort nodes by id ascending lexicographically under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "nodes",
+            "value": "Array containing one object per unique resolved input or non-null output path."
+          },
+          {
+            "key": "nodes[].id",
+            "value": "String file path."
+          },
+          {
+            "key": "nodes[].type",
+            "value": "Literal string file."
+          },
+          {
+            "key": "nodes[].produced_by",
+            "value": "Producing step's 1-based index, or null when the path is only an external input."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one file node for every resolved lineage input or output path, including changelog paths and excluding manifest dir values."
+      },
+      "target_id": "req-r013-008"
+    },
+    {
+      "id": "req-r014-008",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.edges",
+      "source_clause_ids": [
+        "r014-c016",
+        "r014-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve every step's inputs and output using the active lineage step-I/O mapping.",
+          "When output is non-null, emit one edge per resolved input with from=input, to=output, and step=index.",
+          "For changelog, emit one edge from input to output and one edge from right to output.",
+          "For snapshot and fingerprint, emit exactly one edge from input to output.",
+          "For reconcile, emit one edge from left to output and one from right to output.",
+          "Emit no edges when inputs are empty or output is null.",
+          "Therefore emit no manifest edge and no verify edge."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest has an output but zero inputs and emits no edge.",
+          "Verify has inputs but no output and emits no edge.",
+          "Changelog has two inputs and one output and emits exactly two edges."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Step 1 is {\"type\":\"changelog\",\"input\":\"before.csv\",\"right\":\"after.csv\",\"output\":\"changelog.json\"}.",
+            "name": "changelog edges",
+            "notes": "Edges for the same step are sorted by from lexicographically.",
+            "output": "[{\"from\":\"after.csv\",\"to\":\"changelog.json\",\"step\":1},{\"from\":\"before.csv\",\"to\":\"changelog.json\",\"step\":1}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "edge_count_per_step",
+            "value": "output is null ? 0 : length(resolved inputs)"
+          },
+          {
+            "key": "changelog_edges",
+            "value": "input -> output and right -> output, both with the changelog step index"
+          },
+          {
+            "key": "snapshot_edge",
+            "value": "snapshot.input -> snapshot.output with the snapshot step index"
+          },
+          {
+            "key": "fingerprint_edge",
+            "value": "fingerprint.input -> fingerprint.output with the fingerprint step index"
+          },
+          {
+            "key": "reconcile_edges",
+            "value": "left -> output and right -> output, both with the reconcile step index"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r014-006."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every changelog step produces exactly two input-to-output edges.",
+          "Every edge represents one resolved input of an output-producing step."
+        ],
+        "notes": [],
+        "ordering": [
+          "Sort edges by step ascending, then from ascending lexicographically under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "edges",
+            "value": "Array of dependency-edge objects."
+          },
+          {
+            "key": "edges[].from",
+            "value": "Resolved input path."
+          },
+          {
+            "key": "edges[].to",
+            "value": "Resolved output path."
+          },
+          {
+            "key": "edges[].step",
+            "value": "Represented step's 1-based index."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one dependency edge from every resolved input to its step output, including two changelog edges and excluding manifest and terminal-step edges."
+      },
+      "target_id": "req-r013-009"
+    },
+    {
+      "id": "req-r014-009",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.steps",
+      "source_clause_ids": [
+        "r014-c016",
+        "r014-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Traverse configured steps in configuration order and assign 1-based indexes.",
+          "Copy each step's type.",
+          "Resolve inputs and output using the active lineage step-I/O mapping.",
+          "For manifest, set inputs=[] and retain output.",
+          "For quality, schema, fingerprint, and snapshot, set inputs=[input] and retain output.",
+          "For reconcile, set inputs=[left,right] and retain output.",
+          "For changelog, set inputs=[input,right] and retain output.",
+          "For verify or another mapped terminal step, set output=null.",
+          "Emit exactly one summary for every configured step."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "No-output steps remain present with output=null.",
+          "Manifest remains present with inputs=[] despite having dir."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"changelog\",\"input\":\"before.csv\",\"right\":\"after.csv\",\"output\":\"changelog.json\"}",
+            "name": "changelog step summary",
+            "notes": "",
+            "output": "{\"index\":1,\"type\":\"changelog\",\"inputs\":[\"before.csv\",\"after.csv\"],\"output\":\"changelog.json\"}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "index",
+            "value": "zero_based_configuration_position + 1"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "mapping",
+            "value": "Use req-r014-006."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The steps array contains exactly one entry per configured step.",
+          "Every changelog summary has inputs=[input,right] and output equal to the configured output field."
+        ],
+        "notes": [],
+        "ordering": [
+          "The steps array is sorted by index ascending.",
+          "Each inputs array preserves the active step-type mapping order; changelog uses input before right and reconcile uses left before right."
+        ],
+        "output_schema": [
+          {
+            "key": "steps",
+            "value": "Array containing one summary per configured pipeline step."
+          },
+          {
+            "key": "steps[].index",
+            "value": "1-based integer step index."
+          },
+          {
+            "key": "steps[].type",
+            "value": "String pipeline step type."
+          },
+          {
+            "key": "steps[].inputs",
+            "value": "Resolved input paths in prescribed order; [] for manifest, [input] for quality, schema, fingerprint, and snapshot, [left,right] for reconcile, and [input,right] for changelog."
+          },
+          {
+            "key": "steps[].output",
+            "value": "Output path string, or null for a step with no output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one complete lineage summary for every configured step, including changelog summaries with input, right, and output paths."
+      },
+      "target_id": "req-r013-010"
+    },
+    {
+      "id": "req-r014-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.scale_interface_and_layout",
+      "source_clause_ids": [
+        "r014-c020",
+        "r014-c022",
+        "r014-c024",
+        "r014-c026"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve the configured source column.",
+          "Process every row in current dataset order.",
+          "For each row, compute the appended cell using the scale computation and formatting requirements.",
+          "Append the result under the column name supplied by as."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty and non-numeric source cells produce empty appended cells."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"scale\",\"column\":\"price\",\"factor\":1.1,\"as\":\"price_adjusted\"}",
+            "name": "scale recipe",
+            "notes": "Appends price_adjusted as the last column.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "scale"
+          },
+          {
+            "key": "column",
+            "value": "String name of the source column containing numeric values."
+          },
+          {
+            "key": "factor",
+            "value": "float64 multiplication factor."
+          },
+          {
+            "key": "as",
+            "value": "String name of the new column to append."
+          },
+          {
+            "key": "recipe",
+            "value": "{\"op\":\"scale\",\"column\":\"price\",\"factor\":1.1,\"as\":\"price_adjusted\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "recipe_execution",
+            "value": "Runs as one operation in the ordered transform recipe chain."
+          },
+          {
+            "key": "computation",
+            "value": "Use req-r014-011."
+          },
+          {
+            "key": "formatting",
+            "value": "Use req-r014-012."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Exactly one new column is appended.",
+          "Existing source and other columns are not modified."
+        ],
+        "notes": [],
+        "ordering": [
+          "Preserve current row order and all existing column order.",
+          "Append as after all existing columns."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "New last column containing the scaled numeric string or an empty string."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Provide a scale transform that parses one numeric source column, multiplies values by a float64 factor, and appends a result column."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r014-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "scale.computation",
+      "source_clause_ids": [
+        "r014-c020",
+        "r014-c022",
+        "r014-c026"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each row, if the source cell is empty, produce an empty string.",
+          "Otherwise parse the source-cell string as a float.",
+          "If parsing fails, produce an empty string.",
+          "If parsing succeeds, multiply the parsed value by factor.",
+          "Pass the numeric product to the scale formatting requirement."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "An empty source cell produces empty output.",
+          "A non-empty source cell that cannot be parsed as a float produces empty output."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "source price parsed as x with factor 1.1",
+            "name": "scale multiplication",
+            "notes": "The numeric product is serialized by req-r014-012.",
+            "output": "x * 1.1"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "empty_or_non_numeric",
+            "value": "Literal empty string."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "scaled_value",
+            "value": "parsed_source_value * factor"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "source",
+            "value": "Raw source-cell string parsed as a floating-point number."
+          },
+          {
+            "key": "factor",
+            "value": "Configured float64 multiplication factor."
+          }
+        ],
+        "integration": [
+          {
+            "key": "serialization",
+            "value": "Use req-r014-012 for every numeric product."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every numeric output is the parsed source value multiplied by the configured factor."
+        ],
+        "notes": [],
+        "ordering": [
+          "Process rows in current dataset order."
+        ],
+        "output_schema": [
+          {
+            "key": "result",
+            "value": "source parsed as float multiplied by factor, or empty string when source is empty or cannot be parsed as float."
+          }
+        ],
+        "preconditions": [
+          "The configured source column exists."
+        ],
+        "summary": "Multiply each float-parsable source value by factor and emit empty output for empty or non-numeric source cells."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r014-012",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "scale.result_formatting",
+      "source_clause_ids": [
+        "r014-c022",
+        "r014-c026"
+      ],
+      "spec": {
+        "algorithm": [
+          "Call strconv.FormatFloat(result, 'f', -1, 64).",
+          "Store the returned string in the appended scale column."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The -1 precision does not introduce unnecessary trailing fractional zeros."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A numeric product named result.",
+            "name": "scale result formatting",
+            "notes": "",
+            "output": "strconv.FormatFloat(result, 'f', -1, 64)"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "numeric_result",
+            "value": "Go strconv.FormatFloat(result, 'f', -1, 64)."
+          },
+          {
+            "key": "empty_result",
+            "value": "Empty and non-numeric source cells remain empty strings and are not formatted numerically."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "serialization",
+            "value": "strconv.FormatFloat(result, 'f', -1, 64)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "result",
+            "value": "The numeric product computed by the scale operation."
+          }
+        ],
+        "integration": [
+          {
+            "key": "consumer",
+            "value": "req-r014-011."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "All numeric scale results use the exact same formatting call."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "serialized_result",
+            "value": "String returned by strconv.FormatFloat(result, 'f', -1, 64)."
+          }
+        ],
+        "preconditions": [
+          "Scale computation produced a numeric result."
+        ],
+        "summary": "Serialize every numeric scale result using Go strconv.FormatFloat with fixed format, shortest necessary precision, and 64-bit size."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r014-013",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "scale.missing_column_error",
+      "source_clause_ids": [
+        "r014-c028"
+      ],
+      "spec": {
+        "algorithm": [
+          "Validate column against the current dataset header before processing rows.",
+          "Terminate when the configured source column is absent."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "The scale source column does not exist in the current dataset.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "column",
+            "value": "Configured scale source-column name."
+          }
+        ],
+        "integration": [
+          {
+            "key": "standard_error",
+            "value": "Uses the established invalid-recipe missing-column diagnostic."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "No scaled output is produced after this error."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail a scale transform when its configured source column is absent."
+      },
+      "target_id": null
+    }
+  ],
+  "round": 14
+}

@@ -1,0 +1,128 @@
+schema_version = "1.2"
+multi_step_reward_strategy = "mean"
+
+[metadata]
+name = "deterministic-data-pipeline-go-contract-only-v2-general-anchor"
+version = "1.0.0"
+difficulty = "hard"
+category = "data-engineering-reproducibility"
+
+[metadata.requirement_chain]
+num_steps = 15
+
+[[metadata.requirement_chain.steps]]
+step = "round-1"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-2"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-3"
+change_types = ["extension", "correction"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-4"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-5"
+change_types = ["extension", "conflict"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-6"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-7"
+change_types = ["extension", "correction"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-8"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-9"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-10"
+change_types = ["extension", "conflict"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-11"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-12"
+change_types = ["extension", "correction"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-13"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-14"
+change_types = ["extension"]
+
+[[metadata.requirement_chain.steps]]
+step = "round-15"
+change_types = ["extension", "conflict"]
+
+[verifier]
+timeout_sec = 1800.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+build_timeout_sec = 600.0
+cpus = 1
+memory_mb = 4096
+storage_mb = 10240
+
+[[steps]]
+name = "round-1"
+
+[[steps]]
+name = "round-2"
+
+[[steps]]
+name = "round-3"
+
+[[steps]]
+name = "round-4"
+
+[[steps]]
+name = "round-5"
+
+[[steps]]
+name = "round-6"
+
+[[steps]]
+name = "round-7"
+
+[[steps]]
+name = "round-8"
+
+[[steps]]
+name = "round-9"
+
+[[steps]]
+name = "round-10"
+
+[[steps]]
+name = "round-11"
+
+[[steps]]
+name = "round-12"
+
+[[steps]]
+name = "round-13"
+
+[[steps]]
+name = "round-14"
+
+[[steps]]
+name = "round-15"

@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/intent-delta.schema.json",
+  "title": "Intent Delta",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["round", "instruction_sha256", "operations"],
+  "properties": {
+    "round": {"type": "integer", "minimum": 1},
+    "instruction_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "operations": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/operation"}
+    }
+  },
+  "$defs": {
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation", "id", "target_id", "semantic_key", "modality", "statement", "value", "source_quote", "source_round", "instruction_sha256"],
+      "properties": {
+        "operation": {"enum": ["add", "revise", "supersede", "mark_unknown"]},
+        "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+        "target_id": {"type": ["string", "null"], "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+        "semantic_key": {"type": "string", "minLength": 1},
+        "modality": {"enum": ["must", "should", "may", "unknown"]},
+        "statement": {"type": "string", "minLength": 1},
+        "value": {"type": ["string", "null"]},
+        "source_quote": {"type": "string", "minLength": 1},
+        "source_round": {"type": "integer", "minimum": 1},
+        "instruction_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  }
+}

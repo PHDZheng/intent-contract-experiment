@@ -1,0 +1,1162 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r010-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-001"
+      ]
+    },
+    {
+      "clause_id": "r010-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-001"
+      ]
+    },
+    {
+      "clause_id": "r010-c005",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r010-001"
+      ]
+    },
+    {
+      "clause_id": "r010-c006",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r010-001"
+      ]
+    },
+    {
+      "clause_id": "r010-c007",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-001"
+      ]
+    },
+    {
+      "clause_id": "r010-c008",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c009",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-002"
+      ]
+    },
+    {
+      "clause_id": "r010-c010",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-003"
+      ]
+    },
+    {
+      "clause_id": "r010-c011",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c012",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-002"
+      ]
+    },
+    {
+      "clause_id": "r010-c013",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c014",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-003",
+        "req-r010-004"
+      ]
+    },
+    {
+      "clause_id": "r010-c015",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c016",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r010-004"
+      ]
+    },
+    {
+      "clause_id": "r010-c017",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-004",
+        "req-r010-005",
+        "req-r010-006"
+      ]
+    },
+    {
+      "clause_id": "r010-c018",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c019",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r010-007"
+      ]
+    },
+    {
+      "clause_id": "r010-c020",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c021",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-008"
+      ]
+    },
+    {
+      "clause_id": "r010-c022",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r010-c023",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r010-009",
+        "req-r010-010",
+        "req-r010-011",
+        "req-r010-012"
+      ]
+    }
+  ],
+  "instruction_sha256": "e7302e2865e1ba7ed69b1aa28b9616e6f1a2caf9b1eb3828b7f76641b1459eca",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r010-001",
+      "modality": "must",
+      "operation": "supersede",
+      "semantic_key": "manifest.generation",
+      "source_clause_ids": [
+        "r010-c003",
+        "r010-c004",
+        "r010-c005",
+        "r010-c006",
+        "r010-c007"
+      ],
+      "spec": {
+        "algorithm": [
+          "Recursively scan <dir> for .csv files.",
+          "For each file, compute its relative path, CSV row count, raw byte size, and standard BLAKE2b-256 digest over its raw bytes.",
+          "Encode the digest as 64 lowercase hexadecimal characters in checksum and set algorithm to \"blake2b-256\".",
+          "Do not emit the former manifest digest field; checksum and algorithm replace it.",
+          "Sort file entries lexicographically by path.",
+          "Set generated_at to the actual current UTC generation time and write the manifest to <output>."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "generated_at reflects wall-clock time and remains the determinism exception for manifest output."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A 100-byte file named file.csv.",
+            "name": "old entry format",
+            "notes": "This old format is replaced and must not be emitted.",
+            "output": "{\"path\":\"file.csv\",\"size_bytes\":100,\"blake2b\":\"abc123...\"}"
+          },
+          {
+            "input": "A 100-byte file named file.csv.",
+            "name": "new entry format",
+            "notes": "checksum contains the BLAKE2b-256 hexadecimal digest.",
+            "output": "{\"path\":\"file.csv\",\"size_bytes\":100,\"checksum\":\"abc123...\",\"algorithm\":\"blake2b-256\"}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "checksum",
+            "value": "Exactly 64 lowercase hexadecimal characters."
+          },
+          {
+            "key": "algorithm",
+            "value": "Exactly the JSON string \"blake2b-256\"."
+          },
+          {
+            "key": "generated_at",
+            "value": "RFC 3339 UTC timestamp."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "files[].checksum",
+            "value": "lowercase_hex(BLAKE2b-256(raw_file_bytes))"
+          },
+          {
+            "key": "files[].size_bytes",
+            "value": "length(raw_file_bytes)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "scan_filter",
+            "value": "All files under <dir> whose names end in .csv."
+          },
+          {
+            "key": "digest_algorithm",
+            "value": "Standard 256-bit BLAKE2b (BLAKE2b-256)."
+          }
+        ],
+        "integration": [
+          {
+            "key": "verify_compatibility",
+            "value": "checksum uses the same BLAKE2b-256 computation as verify."
+          },
+          {
+            "key": "reconcile_compatibility",
+            "value": "Reconcile consumes files[].path and files[].checksum."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The hash computation remains BLAKE2b-256.",
+          "Only the manifest JSON digest field names change.",
+          "algorithm is always \"blake2b-256\"."
+        ],
+        "notes": [
+          "The current instruction names the former field blake2b and explicitly replaces it with checksum and algorithm."
+        ],
+        "ordering": [
+          "The files array is sorted by path ascending lexicographically."
+        ],
+        "output_schema": [
+          {
+            "key": "generated_at",
+            "value": "RFC 3339 UTC timestamp reflecting the actual generation time."
+          },
+          {
+            "key": "files",
+            "value": "Array of objects containing path, checksum, algorithm, rows, and size_bytes."
+          },
+          {
+            "key": "files[].path",
+            "value": "File path relative to <dir>."
+          },
+          {
+            "key": "files[].checksum",
+            "value": "BLAKE2b-256 digest of the file's raw bytes, encoded as 64 lowercase hexadecimal characters."
+          },
+          {
+            "key": "files[].algorithm",
+            "value": "Literal string \"blake2b-256\"."
+          },
+          {
+            "key": "files[].rows",
+            "value": "CSV row count."
+          },
+          {
+            "key": "files[].size_bytes",
+            "value": "File size in bytes."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Recursively inventory CSV files into a path-sorted JSON manifest whose entries expose BLAKE2b-256 digests through checksum and algorithm fields."
+      },
+      "target_id": "req-r005-002"
+    },
+    {
+      "id": "req-r010-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "reconcile.cli_interface",
+      "source_clause_ids": [
+        "r010-c009",
+        "r010-c012"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "manifest_source",
+            "value": "Both inputs are manifests produced by dpipe manifest."
+          }
+        ],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe reconcile --left <path> --right <path> --output <path>"
+          },
+          {
+            "key": "--left",
+            "value": "Path to the first, baseline manifest JSON file."
+          },
+          {
+            "key": "--right",
+            "value": "Path to the second, current manifest JSON file."
+          },
+          {
+            "key": "--output",
+            "value": "Path for the reconciliation report JSON file."
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose reconcile with baseline manifest, current manifest, and reconciliation-report paths."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r010-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "reconcile.classification",
+      "source_clause_ids": [
+        "r010-c010",
+        "r010-c014"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read both manifest JSON files and their files arrays.",
+          "Match left and right entries by exact path value.",
+          "Classify a right-only path as added.",
+          "Classify a left-only path as removed.",
+          "For a path present in both, classify it as modified when checksum values differ and unchanged when checksum values are equal."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Fields other than path and checksum do not affect the stated classification."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "added",
+            "value": "path in right and path not in left"
+          },
+          {
+            "key": "removed",
+            "value": "path in left and path not in right"
+          },
+          {
+            "key": "modified",
+            "value": "path in left and right and left.checksum != right.checksum"
+          },
+          {
+            "key": "unchanged",
+            "value": "path in left and right and left.checksum == right.checksum"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "left",
+            "value": "Baseline manifest JSON containing a files array."
+          },
+          {
+            "key": "right",
+            "value": "Current manifest JSON containing a files array."
+          },
+          {
+            "key": "files[].path",
+            "value": "File identity used for matching entries."
+          },
+          {
+            "key": "files[].checksum",
+            "value": "Digest value used to distinguish modified from unchanged shared paths."
+          }
+        ],
+        "integration": [
+          {
+            "key": "manifest_format",
+            "value": "Consumes the active manifest files[].path and files[].checksum fields."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every path present in either manifest belongs to exactly one classification."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "classification",
+            "value": "Exactly one of added, removed, modified, or unchanged for each path present in either manifest."
+          }
+        ],
+        "preconditions": [
+          "Each input is a manifest JSON document with a files array of entries."
+        ],
+        "summary": "Compare two manifest files by path and classify every file as added, removed, modified, or unchanged using checksum equality."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r010-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "reconcile.report_output_schema",
+      "source_clause_ids": [
+        "r010-c014",
+        "r010-c016",
+        "r010-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Place each classified path into its corresponding top-level array.",
+          "Set total_left and total_right from the left and right files-array entry counts.",
+          "Set each classification summary field to the length of its corresponding array."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "An empty classification is represented by an empty array and a zero summary count."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Left and right manifests each have three entries, with one added, one removed, one modified, and one unchanged path.",
+            "name": "reconciliation report",
+            "notes": "The displayed object defines the required fields and JSON types.",
+            "output": "{\"added\":[\"new_file.csv\"],\"removed\":[\"old_file.csv\"],\"modified\":[\"changed_file.csv\"],\"unchanged\":[\"same_file.csv\"],\"summary\":{\"total_left\":3,\"total_right\":3,\"added\":1,\"removed\":1,\"modified\":1,\"unchanged\":1}}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "summary.total_left",
+            "value": "length(left.files)"
+          },
+          {
+            "key": "summary.total_right",
+            "value": "length(right.files)"
+          },
+          {
+            "key": "summary.added",
+            "value": "length(added)"
+          },
+          {
+            "key": "summary.removed",
+            "value": "length(removed)"
+          },
+          {
+            "key": "summary.modified",
+            "value": "length(modified)"
+          },
+          {
+            "key": "summary.unchanged",
+            "value": "length(unchanged)"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "classification",
+            "value": "Uses req-r010-003."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Each classification count equals the length of the identically named array."
+        ],
+        "notes": [],
+        "ordering": [
+          "Each path array is sorted by the separate reconciliation array-ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "added",
+            "value": "Array of path strings classified as added."
+          },
+          {
+            "key": "removed",
+            "value": "Array of path strings classified as removed."
+          },
+          {
+            "key": "modified",
+            "value": "Array of path strings classified as modified."
+          },
+          {
+            "key": "unchanged",
+            "value": "Array of path strings classified as unchanged."
+          },
+          {
+            "key": "summary.total_left",
+            "value": "Integer number of entries in the left manifest files array."
+          },
+          {
+            "key": "summary.total_right",
+            "value": "Integer number of entries in the right manifest files array."
+          },
+          {
+            "key": "summary.added",
+            "value": "Integer equal to the length of added."
+          },
+          {
+            "key": "summary.removed",
+            "value": "Integer equal to the length of removed."
+          },
+          {
+            "key": "summary.modified",
+            "value": "Integer equal to the length of modified."
+          },
+          {
+            "key": "summary.unchanged",
+            "value": "Integer equal to the length of unchanged."
+          }
+        ],
+        "preconditions": [
+          "Reconciliation classifications have been computed."
+        ],
+        "summary": "Emit classified path arrays and complete reconciliation summary counts."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r010-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "reconcile.array_ordering",
+      "source_clause_ids": [
+        "r010-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Sort added alphabetically ascending.",
+          "Sort removed alphabetically ascending.",
+          "Sort modified alphabetically ascending.",
+          "Sort unchanged alphabetically ascending."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty and single-element arrays require no effective reordering."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Classification-array ordering is deterministic."
+        ],
+        "notes": [],
+        "ordering": [
+          "added, removed, modified, and unchanged each use ascending alphabetical path order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Sort every reconciliation path array alphabetically."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r010-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "reconcile.json_formatting",
+      "source_clause_ids": [
+        "r010-c017"
+      ],
+      "spec": {
+        "algorithm": [
+          "Encode the complete reconciliation report as JSON.",
+          "Indent nested content using two spaces.",
+          "Terminate the document with one newline."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces."
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "document",
+            "value": "Complete reconciliation report."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "The persisted reconciliation report ends with a newline."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "output",
+            "value": "Indented JSON reconciliation-report file."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Serialize reconciliation reports as two-space-indented JSON with a trailing newline."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r010-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "reconcile.invalid_manifest_error",
+      "source_clause_ids": [
+        "r010-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse both manifest inputs as JSON manifests.",
+          "Terminate with exit code 1 when either input contains invalid JSON."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "The left or right manifest contains invalid JSON.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid manifest: <path>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "missing_file",
+            "value": "A missing left or right manifest uses exit code 1 and stderr ERROR: file not found: <path> under the active generic missing-file requirement."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "No reconciliation report is successfully produced from invalid manifest JSON."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail reconcile with an exact path-bearing diagnostic when either manifest contains invalid JSON."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r010-008",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r010-c021"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse seed and steps from pipeline JSON.",
+          "Execute steps sequentially in array order using the corresponding dpipe command behavior.",
+          "Dispatch all established step types using their established fields and semantics.",
+          "For a reconcile step, run reconcile using left, right, and output from the step."
+        ],
+        "defaults": [
+          {
+            "key": "drift.threshold",
+            "value": "0.1 when threshold is omitted or equals 0."
+          }
+        ],
+        "edge_cases": [
+          "A drift-step threshold of 0 selects default 0.1, not a zero threshold."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"reconcile\",\"left\":\"old_manifest.json\",\"right\":\"new_manifest.json\",\"output\":\"reconcile.json\"}",
+            "name": "reconcile pipeline step",
+            "notes": "Runs dpipe reconcile with the corresponding left, right, and output paths.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline transform seed."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of step objects."
+          },
+          {
+            "key": "ingest",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "transform",
+            "value": "{type,input,recipe,output}"
+          },
+          {
+            "key": "verify",
+            "value": "{type,file,checksum}"
+          },
+          {
+            "key": "manifest",
+            "value": "{type,dir,output}"
+          },
+          {
+            "key": "profile",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "compare",
+            "value": "{type,left,right,key,output}"
+          },
+          {
+            "key": "drift",
+            "value": "{type,baseline,current,output,threshold?}"
+          },
+          {
+            "key": "validate",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "lineage",
+            "value": "{type,config,output}"
+          },
+          {
+            "key": "quality",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "schema",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "reconcile",
+            "value": "{type,left,right,output}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling where applicable."
+          },
+          {
+            "key": "profile_step",
+            "value": "Runs dpipe profile."
+          },
+          {
+            "key": "compare_step",
+            "value": "Runs dpipe compare."
+          },
+          {
+            "key": "drift_step",
+            "value": "Runs dpipe drift."
+          },
+          {
+            "key": "validate_step",
+            "value": "Runs dpipe validate."
+          },
+          {
+            "key": "lineage_step",
+            "value": "Runs dpipe lineage."
+          },
+          {
+            "key": "quality_step",
+            "value": "Runs dpipe quality."
+          },
+          {
+            "key": "schema_step",
+            "value": "Runs dpipe schema."
+          },
+          {
+            "key": "reconcile_step",
+            "value": "Runs dpipe reconcile with left, right, and output."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Sequential execution, first-failure stopping, and terminal-status behavior remain unchanged."
+        ],
+        "notes": [],
+        "ordering": [
+          "The steps array order is pipeline execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read pipeline JSON containing a seed and ordered ingest, transform, verify, manifest, profile, compare, drift, validate, lineage, quality, schema, or reconcile steps."
+      },
+      "target_id": "req-r009-018"
+    },
+    {
+      "id": "req-r010-009",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.step_io_mapping",
+      "source_clause_ids": [
+        "r010-c023"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve every configured step's inputs in the exact order specified for its type.",
+          "For manifest, use no inputs, ignore dir for node and edge construction, and retain output.",
+          "For quality and schema, use [input] and retain output.",
+          "For reconcile, use [left,right] and retain output.",
+          "For verify, use [file,checksum] and set output to null.",
+          "For all other mapped types, use their listed inputs and output."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest dir is not modeled as a node.",
+          "Verify has no output."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"reconcile\",\"left\":\"old_manifest.json\",\"right\":\"new_manifest.json\",\"output\":\"reconcile.json\"}",
+            "name": "reconcile lineage mapping",
+            "notes": "left precedes right.",
+            "output": "{\"inputs\":[\"old_manifest.json\",\"new_manifest.json\"],\"output\":\"reconcile.json\"}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "ingest",
+            "value": "input = field file; output = field output."
+          },
+          {
+            "key": "transform",
+            "value": "inputs = fields input then recipe; output = field output."
+          },
+          {
+            "key": "profile",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "compare",
+            "value": "inputs = fields left then right; output = field output."
+          },
+          {
+            "key": "manifest",
+            "value": "inputs = []; output = field output; dir is not a lineage input."
+          },
+          {
+            "key": "verify",
+            "value": "inputs = fields file then checksum; output = none."
+          },
+          {
+            "key": "validate",
+            "value": "inputs = fields input then schema; output = field output."
+          },
+          {
+            "key": "drift",
+            "value": "inputs = fields baseline then current; output = field output."
+          },
+          {
+            "key": "quality",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "schema",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "reconcile",
+            "value": "inputs = fields left then right; output = field output."
+          }
+        ],
+        "integration": [
+          {
+            "key": "supported_step_types",
+            "value": "ingest, transform, profile, compare, manifest, verify, validate, drift, quality, schema, reconcile"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "A reconcile step has exactly the left and right lineage inputs, in that order, and its configured output."
+        ],
+        "notes": [
+          "The active lineage contract continues to name the ingest input field file."
+        ],
+        "ordering": [
+          "transform: input, recipe.",
+          "compare: left, right.",
+          "verify: file, checksum.",
+          "validate: input, schema.",
+          "drift: baseline, current.",
+          "manifest: [].",
+          "quality: input.",
+          "schema: input.",
+          "reconcile: left, right."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Map supported pipeline step types to exact lineage inputs and outputs, including reconcile, schema, and quality while treating manifest as output-only."
+      },
+      "target_id": "req-r009-019"
+    },
+    {
+      "id": "req-r010-010",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.nodes",
+      "source_clause_ids": [
+        "r010-c023"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve every step using the active lineage step-I/O mapping.",
+          "Collect all resolved input paths and non-null output paths.",
+          "Deduplicate paths by exact string equality.",
+          "Set every node type to file and produced_by to the producing step index or null.",
+          "For reconcile, include left, right, and output; set the output node's produced_by to the reconcile step index.",
+          "Include manifest output but exclude manifest dir.",
+          "Do not create an output node for a null output."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A reconcile input not produced by an analyzed step has produced_by=null.",
+          "A verify step contributes inputs but no output node.",
+          "A manifest output remains a node despite manifest having no inputs."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r010-009."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Each exact resolved path occurs at most once.",
+          "Every node's type is file.",
+          "Reconcile left, right, and output paths participate in node construction."
+        ],
+        "notes": [],
+        "ordering": [
+          "Sort nodes by id ascending lexicographically under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "nodes",
+            "value": "Array containing one object per unique resolved input or non-null output path."
+          },
+          {
+            "key": "nodes[].id",
+            "value": "String file path."
+          },
+          {
+            "key": "nodes[].type",
+            "value": "Literal string file."
+          },
+          {
+            "key": "nodes[].produced_by",
+            "value": "Producing step's 1-based index, or null when the path is only an external input."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one file node for every resolved lineage input or output path, including reconcile paths and excluding manifest dir values."
+      },
+      "target_id": "req-r009-020"
+    },
+    {
+      "id": "req-r010-011",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.edges",
+      "source_clause_ids": [
+        "r010-c023"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve every step's inputs and output using the active lineage step-I/O mapping.",
+          "When output is non-null, emit one edge per resolved input with from=input, to=output, and step=index.",
+          "For reconcile, emit one edge from left to output and one edge from right to output.",
+          "Emit no edges when inputs are empty or output is null.",
+          "Therefore emit no manifest edge and no verify edge."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Manifest has an output but zero inputs and emits no edge.",
+          "Verify has inputs but no output and emits no edge.",
+          "Reconcile has two inputs and one output and emits exactly two edges."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "edge_count_per_step",
+            "value": "output is null ? 0 : length(resolved inputs)"
+          },
+          {
+            "key": "reconcile_edges",
+            "value": "(left -> output) and (right -> output), both with the reconcile step index"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "step_mapping",
+            "value": "Use req-r010-009."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every reconcile step produces exactly two input-to-output edges."
+        ],
+        "notes": [],
+        "ordering": [
+          "Sort edges by step ascending, then from ascending lexicographically under the active lineage ordering requirement."
+        ],
+        "output_schema": [
+          {
+            "key": "edges",
+            "value": "Array of dependency-edge objects."
+          },
+          {
+            "key": "edges[].from",
+            "value": "Resolved input path."
+          },
+          {
+            "key": "edges[].to",
+            "value": "Resolved output path."
+          },
+          {
+            "key": "edges[].step",
+            "value": "Represented step's 1-based index."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one dependency edge from every resolved input to its step output, including both reconcile edges and excluding manifest and terminal-step edges."
+      },
+      "target_id": "req-r009-021"
+    },
+    {
+      "id": "req-r010-012",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "lineage.steps",
+      "source_clause_ids": [
+        "r010-c023"
+      ],
+      "spec": {
+        "algorithm": [
+          "Traverse configured steps in configuration order and assign 1-based indexes.",
+          "Copy each step's type.",
+          "Resolve inputs and output using the active lineage step-I/O mapping.",
+          "For manifest, set inputs=[] and retain output.",
+          "For quality and schema, set inputs=[input] and retain output.",
+          "For reconcile, set inputs=[left,right] and retain output.",
+          "For verify or another mapped terminal step, set output=null.",
+          "Emit exactly one summary for every configured step."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "No-output steps remain present with output=null.",
+          "Manifest remains present with inputs=[] despite having dir."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"reconcile\",\"left\":\"old_manifest.json\",\"right\":\"new_manifest.json\",\"output\":\"reconcile.json\"}",
+            "name": "reconcile step summary",
+            "notes": "",
+            "output": "{\"index\":1,\"type\":\"reconcile\",\"inputs\":[\"old_manifest.json\",\"new_manifest.json\"],\"output\":\"reconcile.json\"}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "index",
+            "value": "zero_based_configuration_position + 1"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "mapping",
+            "value": "Use req-r010-009."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The steps array contains exactly one entry per configured step.",
+          "Every reconcile summary has inputs=[left,right] and output equal to the configured output field."
+        ],
+        "notes": [],
+        "ordering": [
+          "The steps array is sorted by index ascending.",
+          "Each inputs array preserves the active step-type mapping order; reconcile uses left before right."
+        ],
+        "output_schema": [
+          {
+            "key": "steps",
+            "value": "Array containing one summary per configured pipeline step."
+          },
+          {
+            "key": "steps[].index",
+            "value": "1-based integer step index."
+          },
+          {
+            "key": "steps[].type",
+            "value": "String pipeline step type."
+          },
+          {
+            "key": "steps[].inputs",
+            "value": "Resolved input paths in prescribed order; [] for manifest, [input] for quality and schema, and [left,right] for reconcile."
+          },
+          {
+            "key": "steps[].output",
+            "value": "Output path string, or null for a step with no output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one complete lineage summary for every configured step, including reconcile summaries with left and right inputs and the configured output."
+      },
+      "target_id": "req-r009-022"
+    }
+  ],
+  "round": 10
+}

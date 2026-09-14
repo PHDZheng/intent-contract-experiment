@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/intent-delta-v2.schema.json",
+  "title": "Intent Delta v2",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ir_version", "round", "instruction_sha256", "clause_dispositions", "operations"],
+  "properties": {
+    "ir_version": {"type": "integer", "const": 2},
+    "round": {"type": "integer", "minimum": 1},
+    "instruction_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "clause_dispositions": {"type": "array", "items": {"$ref": "#/$defs/clauseDisposition"}},
+    "operations": {"type": "array", "items": {"$ref": "#/$defs/operation"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+    "stringArray": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "fact": {
+      "type": "object", "additionalProperties": false, "required": ["key", "value"],
+      "properties": {"key": {"type": "string", "minLength": 1}, "value": {"type": "string", "minLength": 1}}
+    },
+    "factArray": {"type": "array", "items": {"$ref": "#/$defs/fact"}},
+    "clauseDisposition": {
+      "type": "object", "additionalProperties": false,
+      "required": ["clause_id", "kind", "requirement_ids"],
+      "properties": {
+        "clause_id": {"$ref": "#/$defs/id"},
+        "kind": {"type": "string", "enum": ["normative", "example", "context"]},
+        "requirement_ids": {"type": "array", "items": {"$ref": "#/$defs/id"}}
+      }
+    },
+    "error": {
+      "type": "object", "additionalProperties": false,
+      "required": ["condition", "exit_code", "stdout", "stderr"],
+      "properties": {
+        "condition": {"type": "string", "minLength": 1},
+        "exit_code": {"type": ["integer", "null"]},
+        "stdout": {"type": ["string", "null"]},
+        "stderr": {"type": ["string", "null"]}
+      }
+    },
+    "example": {
+      "type": "object", "additionalProperties": false,
+      "required": ["name", "input", "output", "notes"],
+      "properties": {
+        "name": {"type": "string"}, "input": {"type": "string"},
+        "output": {"type": "string"}, "notes": {"type": "string"}
+      }
+    },
+    "spec": {
+      "type": "object", "additionalProperties": false,
+      "required": ["summary", "interface", "input_schema", "output_schema", "preconditions", "algorithm", "formulas", "defaults", "ordering", "formatting", "edge_cases", "errors", "examples", "integration", "invariants", "notes"],
+      "properties": {
+        "summary": {"type": "string", "minLength": 1},
+        "interface": {"$ref": "#/$defs/factArray"},
+        "input_schema": {"$ref": "#/$defs/factArray"},
+        "output_schema": {"$ref": "#/$defs/factArray"},
+        "preconditions": {"$ref": "#/$defs/stringArray"},
+        "algorithm": {"$ref": "#/$defs/stringArray"},
+        "formulas": {"$ref": "#/$defs/factArray"},
+        "defaults": {"$ref": "#/$defs/factArray"},
+        "ordering": {"$ref": "#/$defs/stringArray"},
+        "formatting": {"$ref": "#/$defs/factArray"},
+        "edge_cases": {"$ref": "#/$defs/stringArray"},
+        "errors": {"type": "array", "items": {"$ref": "#/$defs/error"}},
+        "examples": {"type": "array", "items": {"$ref": "#/$defs/example"}},
+        "integration": {"$ref": "#/$defs/factArray"},
+        "invariants": {"$ref": "#/$defs/stringArray"},
+        "notes": {"$ref": "#/$defs/stringArray"}
+      }
+    },
+    "operation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["operation", "id", "target_id", "semantic_key", "modality", "spec", "source_clause_ids"],
+      "properties": {
+        "operation": {"type": "string", "enum": ["add", "revise", "supersede", "mark_unknown"]},
+        "id": {"$ref": "#/$defs/id"},
+        "target_id": {"type": ["string", "null"], "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$"},
+        "semantic_key": {"type": "string", "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)+$"},
+        "modality": {"type": "string", "enum": ["must", "should", "may", "unknown"]},
+        "spec": {"$ref": "#/$defs/spec"},
+        "source_clause_ids": {"type": "array", "items": {"$ref": "#/$defs/id"}, "minItems": 1}
+      }
+    }
+  }
+}

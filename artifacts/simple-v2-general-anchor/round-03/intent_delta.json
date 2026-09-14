@@ -1,0 +1,2148 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r003-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c003",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-001"
+      ]
+    },
+    {
+      "clause_id": "r003-c005",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-001"
+      ]
+    },
+    {
+      "clause_id": "r003-c006",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-001"
+      ]
+    },
+    {
+      "clause_id": "r003-c007",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c008",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-002"
+      ]
+    },
+    {
+      "clause_id": "r003-c009",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-002"
+      ]
+    },
+    {
+      "clause_id": "r003-c010",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-002"
+      ]
+    },
+    {
+      "clause_id": "r003-c011",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-002",
+        "req-r002-005"
+      ]
+    },
+    {
+      "clause_id": "r003-c012",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c013",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c014",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-003"
+      ]
+    },
+    {
+      "clause_id": "r003-c015",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-003",
+        "req-r003-004"
+      ]
+    },
+    {
+      "clause_id": "r003-c016",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-004"
+      ]
+    },
+    {
+      "clause_id": "r003-c017",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c018",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-005"
+      ]
+    },
+    {
+      "clause_id": "r003-c019",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-006"
+      ]
+    },
+    {
+      "clause_id": "r003-c020",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c021",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-005"
+      ]
+    },
+    {
+      "clause_id": "r003-c022",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c023",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-006"
+      ]
+    },
+    {
+      "clause_id": "r003-c024",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c025",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-007",
+        "req-r003-008",
+        "req-r003-009"
+      ]
+    },
+    {
+      "clause_id": "r003-c026",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-010"
+      ]
+    },
+    {
+      "clause_id": "r003-c027",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-011",
+        "req-r003-012",
+        "req-r003-013",
+        "req-r003-014"
+      ]
+    },
+    {
+      "clause_id": "r003-c028",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c029",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-015",
+        "req-r003-016"
+      ]
+    },
+    {
+      "clause_id": "r003-c030",
+      "kind": "context",
+      "requirement_ids": [
+        "req-r003-015"
+      ]
+    },
+    {
+      "clause_id": "r003-c031",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-007",
+        "req-r003-008",
+        "req-r003-009",
+        "req-r003-011",
+        "req-r003-012",
+        "req-r003-013",
+        "req-r003-014",
+        "req-r003-015"
+      ]
+    },
+    {
+      "clause_id": "r003-c032",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c033",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-017"
+      ]
+    },
+    {
+      "clause_id": "r003-c034",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-017"
+      ]
+    },
+    {
+      "clause_id": "r003-c035",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c036",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r003-018"
+      ]
+    },
+    {
+      "clause_id": "r003-c037",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c038",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-019"
+      ]
+    },
+    {
+      "clause_id": "r003-c039",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c040",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c041",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-020"
+      ]
+    },
+    {
+      "clause_id": "r003-c042",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r003-020",
+        "req-r003-021"
+      ]
+    },
+    {
+      "clause_id": "r003-c043",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-020",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r003-c044",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c045",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-021"
+      ]
+    },
+    {
+      "clause_id": "r003-c046",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c047",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-022"
+      ]
+    },
+    {
+      "clause_id": "r003-c048",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c049",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-023"
+      ]
+    },
+    {
+      "clause_id": "r003-c050",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r003-023"
+      ]
+    },
+    {
+      "clause_id": "r003-c051",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-023"
+      ]
+    },
+    {
+      "clause_id": "r003-c052",
+      "kind": "context",
+      "requirement_ids": [
+        "req-r003-023"
+      ]
+    },
+    {
+      "clause_id": "r003-c053",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-023"
+      ]
+    },
+    {
+      "clause_id": "r003-c054",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-023",
+        "req-r001-030"
+      ]
+    },
+    {
+      "clause_id": "r003-c055",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r003-c056",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-024"
+      ]
+    },
+    {
+      "clause_id": "r003-c057",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r003-024"
+      ]
+    },
+    {
+      "clause_id": "r003-c058",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-024"
+      ]
+    },
+    {
+      "clause_id": "r003-c059",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r003-024"
+      ]
+    }
+  ],
+  "instruction_sha256": "106c83b0c04fd28b1ad8956248cf22745cda7bcf3b1562412fac0990b3e2647e",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r003-001",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "transform.fill",
+      "source_clause_ids": [
+        "r003-c004",
+        "r003-c005",
+        "r003-c006"
+      ],
+      "spec": {
+        "algorithm": [
+          "forward: independently scan each specified column top-to-bottom; replace an empty cell with the most recent non-empty value above, leaving leading empties empty.",
+          "backward: independently scan each specified column bottom-to-top; replace an empty cell with the nearest non-empty value below, leaving trailing empties empty.",
+          "constant: replace every eligible empty cell with value.",
+          "linear: for an empty cell at row index i, search upward by decreasing row index for the nearest non-empty float-parseable lower anchor (lo,v_lo), and downward by increasing row index for the nearest non-empty float-parseable upper anchor (hi,v_hi).",
+          "If both linear anchors exist, emit v_lo + (v_hi-v_lo)*(i-lo)/(hi-lo).",
+          "If only the lower anchor exists, emit v_lo; if only the upper anchor exists, emit v_hi; if neither exists, leave the cell empty.",
+          "Never modify non-empty cells. During linear anchor searches, skip non-empty values that do not parse as floats, but do not fill those non-empty cells."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Linear with two anchors interpolates.",
+          "Linear with exactly one anchor constant-extrapolates that anchor value.",
+          "Linear with neither anchor leaves the empty cell empty.",
+          "Non-empty unparsable cells are skipped as anchors and remain unchanged."
+        ],
+        "errors": [
+          {
+            "condition": "A referenced columns entry does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "linear_result",
+            "value": "Go strconv.FormatFloat(val, 'f', -1, 64)"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "linear_interpolation",
+            "value": "result = v_lo + (v_hi - v_lo) * (i - lo) / (hi - lo)"
+          },
+          {
+            "key": "lower_only_extrapolation",
+            "value": "result = v_lo"
+          },
+          {
+            "key": "upper_only_extrapolation",
+            "value": "result = v_hi"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "fill"
+          },
+          {
+            "key": "columns",
+            "value": "Array of existing columns whose empty values are eligible."
+          },
+          {
+            "key": "strategy",
+            "value": "forward, backward, constant, or linear"
+          },
+          {
+            "key": "value",
+            "value": "Replacement string required only for constant."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Non-empty values are never modified."
+        ],
+        "notes": [],
+        "ordering": [
+          "Preserve all columns and original row order.",
+          "Linear lower-anchor search uses decreasing indices; upper-anchor search uses increasing indices."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fill empty cells using forward, backward, constant, or linear strategy; linear filling interpolates between two numeric anchors and constant-extrapolates from a sole boundary anchor."
+      },
+      "target_id": "req-r002-019"
+    },
+    {
+      "id": "req-r003-002",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "transform.normalize",
+      "source_clause_ids": [
+        "r003-c008",
+        "r003-c009",
+        "r003-c010",
+        "r003-c011"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect all non-empty source values that parse as float64; let n be their count.",
+          "For zscore, compute mean and sample standard deviation with denominator n-1.",
+          "For minmax, compute min and max.",
+          "For each row, emit empty string if the source cell is empty or does not parse as float.",
+          "For zscore, if n<2 or sample stddev==0, emit 0 for every float-parseable source value; otherwise emit (x-mean)/stddev.",
+          "For minmax, emit 0 when max==min; otherwise emit (x-min)/(max-min)."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Empty or unparsable cells produce empty strings.",
+          "For zscore, n<2 produces \"0\" for all float-parseable cells.",
+          "For zscore, sample stddev 0 produces \"0\" for all float-parseable cells.",
+          "For minmax, max==min produces \"0\"."
+        ],
+        "errors": [
+          {
+            "condition": "column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [
+          {
+            "input": "{\"op\":\"normalize\",\"column\":\"value\",\"method\":\"zscore\",\"as\":\"value_norm\"}",
+            "name": "zscore",
+            "notes": "Appends value_norm using sample-standard-deviation z-scores.",
+            "output": ""
+          }
+        ],
+        "formatting": [
+          {
+            "key": "numeric_result",
+            "value": "Go strconv.FormatFloat(val, 'f', -1, 64)"
+          },
+          {
+            "key": "zero",
+            "value": "Literal string \"0\", not \"0.0\""
+          }
+        ],
+        "formulas": [
+          {
+            "key": "mean",
+            "value": "sum(xi) / n"
+          },
+          {
+            "key": "zscore_sample_stddev",
+            "value": "sqrt(sum((xi - mean)^2) / (n - 1))"
+          },
+          {
+            "key": "zscore",
+            "value": "(x - mean) / stddev"
+          },
+          {
+            "key": "minmax",
+            "value": "(x - min) / (max - min)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "normalize"
+          },
+          {
+            "key": "column",
+            "value": "Existing source column."
+          },
+          {
+            "key": "method",
+            "value": "zscore or minmax"
+          },
+          {
+            "key": "as",
+            "value": "Name of the new last column."
+          },
+          {
+            "key": "numeric_parser",
+            "value": "Go strconv.ParseFloat(value, 64)"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "The profile command's stddev remains a population standard deviation; this correction applies only to normalize method zscore."
+        ],
+        "notes": [],
+        "ordering": [
+          "Preserve row order and all original columns; append as last column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "Appended last column containing a normalized numeric string or empty string."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append z-score or min-max normalized values, using sample standard deviation for z-score normalization."
+      },
+      "target_id": "req-r002-018"
+    },
+    {
+      "id": "req-r003-003",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "profile.numeric_basic_statistics",
+      "source_clause_ids": [
+        "r003-c014",
+        "r003-c015"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute min and max over non-empty numeric values.",
+          "Compute arithmetic mean.",
+          "Compute population standard deviation using denominator n.",
+          "Compute p05, p25, median, p75, and p95 using the profile percentile interpolation algorithm."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "For one numeric value, population stddev is 0."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "int_min_max",
+            "value": "JSON integers."
+          },
+          {
+            "key": "float_min_max_and_other_statistics",
+            "value": "JSON numbers."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "mean",
+            "value": "sum(xi) / n"
+          },
+          {
+            "key": "stddev",
+            "value": "sqrt(sum((xi - mean)^2) / n)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "values",
+            "value": "All non-empty numeric values in an inferred int or float column."
+          }
+        ],
+        "integration": [
+          {
+            "key": "percentiles",
+            "value": "Use req-r003-004."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Profile stddev continues to use population standard deviation."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "min",
+            "value": "Minimum; JSON integer for int columns and JSON number for float columns."
+          },
+          {
+            "key": "max",
+            "value": "Maximum with the same type formatting as min."
+          },
+          {
+            "key": "mean",
+            "value": "JSON number arithmetic mean."
+          },
+          {
+            "key": "stddev",
+            "value": "JSON number population standard deviation."
+          },
+          {
+            "key": "p05",
+            "value": "JSON number 5th percentile."
+          },
+          {
+            "key": "p25",
+            "value": "JSON number 25th percentile."
+          },
+          {
+            "key": "median",
+            "value": "JSON number 50th percentile."
+          },
+          {
+            "key": "p75",
+            "value": "JSON number 75th percentile."
+          },
+          {
+            "key": "p95",
+            "value": "JSON number 95th percentile."
+          }
+        ],
+        "preconditions": [
+          "Column type is int or float."
+        ],
+        "summary": "Compute range, mean, population deviation, and p05, p25, median, p75, and p95 percentile fields for int and float columns."
+      },
+      "target_id": "req-r002-005"
+    },
+    {
+      "id": "req-r003-004",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "profile.percentile_algorithm",
+      "source_clause_ids": [
+        "r003-c015",
+        "r003-c016"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute idx = p/100*(n-1).",
+          "If idx is an integer, return values[idx].",
+          "Otherwise set lower=floor(idx), upper=ceil(idx), and frac=idx-lower.",
+          "Return values[lower] + frac*(values[upper]-values[lower])."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "An integral idx selects the value directly without interpolation."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "idx",
+            "value": "p / 100 * (n - 1)"
+          },
+          {
+            "key": "lower",
+            "value": "floor(idx)"
+          },
+          {
+            "key": "upper",
+            "value": "ceil(idx)"
+          },
+          {
+            "key": "frac",
+            "value": "idx - lower"
+          },
+          {
+            "key": "result",
+            "value": "values[lower] + frac * (values[upper] - values[lower])"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "p",
+            "value": "5, 25, 50, 75, or 95."
+          },
+          {
+            "key": "values",
+            "value": "n non-empty numeric values."
+          }
+        ],
+        "integration": [
+          {
+            "key": "profile_fields",
+            "value": "p05, p25, median, p75, and p95."
+          },
+          {
+            "key": "other_consumers",
+            "value": "Existing percentile-based transforms continue to use this interpolation algorithm for their requested percentile values."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Sort values numerically ascending before indexing."
+        ],
+        "output_schema": [
+          {
+            "key": "result",
+            "value": "Interpolated percentile value."
+          }
+        ],
+        "preconditions": [
+          "Sort the n numeric values in ascending order."
+        ],
+        "summary": "Calculate the 5th, 25th, 50th, 75th, and 95th percentiles by linear interpolation over sorted non-empty numeric values."
+      },
+      "target_id": "req-r002-006"
+    },
+    {
+      "id": "req-r003-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.cli_interface",
+      "source_clause_ids": [
+        "r003-c018",
+        "r003-c021"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [
+          {
+            "key": "--threshold",
+            "value": "0.1"
+          }
+        ],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe drift --baseline <path> --current <path> --output <path> [--threshold <number>]"
+          },
+          {
+            "key": "--baseline",
+            "value": "Baseline CSV data-file path."
+          },
+          {
+            "key": "--current",
+            "value": "Current CSV data-file path."
+          },
+          {
+            "key": "--output",
+            "value": "Drift-report JSON path."
+          },
+          {
+            "key": "--threshold",
+            "value": "Optional numeric threshold for distribution drift metrics."
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the drift command with baseline, current, output, and optional distribution-threshold arguments."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.internal_profiles",
+      "source_clause_ids": [
+        "r003-c019",
+        "r003-c023"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read both CSV data files.",
+          "For each file, infer column types using the profile command's ordered type-inference rules.",
+          "For every column compute count, null_count, and unique using profile semantics.",
+          "For int and float columns compute min, max, mean, and population standard deviation using profile semantics.",
+          "Compare the resulting profiles column by column for schema and distribution drift."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "population_stddev",
+            "value": "sqrt(sum((xi - mean)^2) / n)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "baseline",
+            "value": "Headered baseline CSV."
+          },
+          {
+            "key": "current",
+            "value": "Headered current CSV."
+          }
+        ],
+        "integration": [
+          {
+            "key": "type_inference",
+            "value": "Same rules as req-r002-003."
+          },
+          {
+            "key": "base_statistics",
+            "value": "Same count, null_count, and unique semantics as req-r002-004."
+          },
+          {
+            "key": "numeric_statistics",
+            "value": "Same min, max, mean, and population stddev semantics as req-r003-003."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Internal drift profiling uses population, not sample, standard deviation."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "internal_column_profile",
+            "value": "For every column: type, count, null_count, and unique; numeric columns additionally have min, max, mean, and population stddev."
+          },
+          {
+            "key": "internal_file_profile",
+            "value": "Includes row_count for null-rate calculations."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Build comparable internal column profiles for baseline and current CSV files before detecting drift."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.schema.column_added",
+      "source_clause_ids": [
+        "r003-c025",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each current-profile column absent from baseline, emit one column_added drift."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "detail",
+            "value": "Exact template: new column of type <type>"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "scope",
+            "value": "Every column in either internal profile."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drift_type",
+            "value": "column_added"
+          },
+          {
+            "key": "baseline_value",
+            "value": "null"
+          },
+          {
+            "key": "current_value",
+            "value": "Current column type string."
+          },
+          {
+            "key": "detail",
+            "value": "new column of type <type>"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Report column_added for each column found only in the current dataset."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.schema.column_removed",
+      "source_clause_ids": [
+        "r003-c025",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each baseline-profile column absent from current, emit one column_removed drift."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "detail",
+            "value": "Exact template: column of type <type> removed"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "scope",
+            "value": "Every column in either internal profile."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drift_type",
+            "value": "column_removed"
+          },
+          {
+            "key": "baseline_value",
+            "value": "Baseline column type string."
+          },
+          {
+            "key": "current_value",
+            "value": "null"
+          },
+          {
+            "key": "detail",
+            "value": "column of type <type> removed"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Report column_removed for each column found only in the baseline dataset."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.schema.type_changed",
+      "source_clause_ids": [
+        "r003-c025",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each shared column, emit type_changed when baseline and current type differ."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "detail",
+            "value": "Exact template: type changed from <baseline_type> to <current_type>"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "scope",
+            "value": "Columns present in both internal profiles."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drift_type",
+            "value": "type_changed"
+          },
+          {
+            "key": "baseline_value",
+            "value": "Baseline type string."
+          },
+          {
+            "key": "current_value",
+            "value": "Current type string."
+          },
+          {
+            "key": "detail",
+            "value": "type changed from <baseline_type> to <current_type>"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Report type_changed when a shared column's inferred types differ."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.distribution_eligibility",
+      "source_clause_ids": [
+        "r003-c026"
+      ],
+      "spec": {
+        "algorithm": [
+          "Require the column to exist in both profiles.",
+          "Require equal baseline and current types, with that type int or float.",
+          "Require baseline count>0 and current count>0.",
+          "Run distribution metrics only for eligible columns."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Do not run distribution checks for added, removed, type-changed, string, datetime, or zero-count columns."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Restrict distribution-drift checks to non-empty shared columns having the same numeric type."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.distribution.mean_shift",
+      "source_clause_ids": [
+        "r003-c027",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute abs(current_mean-baseline_mean)/max(baseline_stddev,1e-10).",
+          "Emit mean_shift only when the result is strictly greater than threshold."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Use denominator 1e-10 when baseline stddev is smaller."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "detail_value",
+            "value": "fmt.Sprintf(\"%v\", normalized_shift)"
+          },
+          {
+            "key": "detail",
+            "value": "normalized shift = <formatted value>"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "normalized_shift",
+            "value": "abs(current_mean - baseline_mean) / max(baseline_stddev, 1e-10)"
+          },
+          {
+            "key": "predicate",
+            "value": "normalized_shift > threshold"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "threshold",
+            "value": "Effective drift threshold."
+          }
+        ],
+        "integration": [
+          {
+            "key": "eligibility",
+            "value": "req-r003-010"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Equality to threshold is not drift."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drift_type",
+            "value": "mean_shift"
+          },
+          {
+            "key": "baseline_value",
+            "value": "Baseline mean."
+          },
+          {
+            "key": "current_value",
+            "value": "Current mean."
+          },
+          {
+            "key": "detail",
+            "value": "normalized shift = <value>"
+          }
+        ],
+        "preconditions": [
+          "Column satisfies distribution eligibility."
+        ],
+        "summary": "Report mean_shift when the baseline-standard-deviation-normalized mean difference exceeds threshold."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-012",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.distribution.null_rate_change",
+      "source_clause_ids": [
+        "r003-c027",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute null_count/row_count for each side, using 0 when row_count is 0.",
+          "Emit null_rate_change only when the absolute difference is strictly greater than threshold."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A zero-row dataset has null_rate 0."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "rates",
+            "value": "fmt.Sprintf(\"%v\", rate)"
+          },
+          {
+            "key": "detail",
+            "value": "null rate changed from <baseline_rate> to <current_rate>"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "null_rate",
+            "value": "row_count == 0 ? 0 : null_count / row_count"
+          },
+          {
+            "key": "predicate",
+            "value": "abs(current_null_rate - baseline_null_rate) > threshold"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "threshold",
+            "value": "Effective drift threshold."
+          }
+        ],
+        "integration": [
+          {
+            "key": "eligibility",
+            "value": "req-r003-010"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Equality to threshold is not drift."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drift_type",
+            "value": "null_rate_change"
+          },
+          {
+            "key": "baseline_value",
+            "value": "Baseline null_rate."
+          },
+          {
+            "key": "current_value",
+            "value": "Current null_rate."
+          },
+          {
+            "key": "detail",
+            "value": "null rate changed from <baseline_rate> to <current_rate>"
+          }
+        ],
+        "preconditions": [
+          "Column satisfies distribution eligibility."
+        ],
+        "summary": "Report null_rate_change when the absolute null-rate difference exceeds threshold."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-013",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.distribution.range_expansion",
+      "source_clause_ids": [
+        "r003-c027",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute baseline_range=baseline_max-baseline_min and current_range=current_max-current_min.",
+          "Emit range_expansion only when current_range > baseline_range*(1+threshold)."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "ranges",
+            "value": "fmt.Sprintf(\"%v\", range)"
+          },
+          {
+            "key": "detail",
+            "value": "range expanded from <baseline_range> to <current_range>"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "baseline_range",
+            "value": "baseline_max - baseline_min"
+          },
+          {
+            "key": "current_range",
+            "value": "current_max - current_min"
+          },
+          {
+            "key": "predicate",
+            "value": "current_range > baseline_range * (1 + threshold)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "threshold",
+            "value": "Effective drift threshold."
+          }
+        ],
+        "integration": [
+          {
+            "key": "eligibility",
+            "value": "req-r003-010"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Equality to the expanded baseline range is not drift."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drift_type",
+            "value": "range_expansion"
+          },
+          {
+            "key": "baseline_value",
+            "value": "Baseline range."
+          },
+          {
+            "key": "current_value",
+            "value": "Current range."
+          },
+          {
+            "key": "detail",
+            "value": "range expanded from <baseline_range> to <current_range>"
+          }
+        ],
+        "preconditions": [
+          "Column satisfies distribution eligibility."
+        ],
+        "summary": "Report range_expansion when current range exceeds the threshold-expanded baseline range."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-014",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.distribution.unique_ratio_change",
+      "source_clause_ids": [
+        "r003-c027",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "Compute unique/count for each side, using 0 when count is 0.",
+          "Emit unique_ratio_change only when the absolute difference is strictly greater than threshold."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A zero-count column has unique_ratio 0, though eligibility excludes it."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "ratios",
+            "value": "fmt.Sprintf(\"%v\", ratio)"
+          },
+          {
+            "key": "detail",
+            "value": "unique ratio changed from <baseline_ratio> to <current_ratio>"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "unique_ratio",
+            "value": "count == 0 ? 0 : unique / count"
+          },
+          {
+            "key": "predicate",
+            "value": "abs(current_unique_ratio - baseline_unique_ratio) > threshold"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "threshold",
+            "value": "Effective drift threshold."
+          }
+        ],
+        "integration": [
+          {
+            "key": "eligibility",
+            "value": "req-r003-010"
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Equality to threshold is not drift."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drift_type",
+            "value": "unique_ratio_change"
+          },
+          {
+            "key": "baseline_value",
+            "value": "Baseline unique_ratio."
+          },
+          {
+            "key": "current_value",
+            "value": "Current unique_ratio."
+          },
+          {
+            "key": "detail",
+            "value": "unique ratio changed from <baseline_ratio> to <current_ratio>"
+          }
+        ],
+        "preconditions": [
+          "Column satisfies distribution eligibility."
+        ],
+        "summary": "Report unique_ratio_change when the absolute unique-ratio difference exceeds threshold."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-015",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.output_entries",
+      "source_clause_ids": [
+        "r003-c029",
+        "r003-c030",
+        "r003-c031"
+      ],
+      "spec": {
+        "algorithm": [
+          "Emit one entry with all five fields for every detected drift.",
+          "For column_added use null baseline and current type; for column_removed use baseline type and null current; for type_changed use both types.",
+          "For distribution drift use baseline and current mean, null_rate, range, or unique_ratio as applicable.",
+          "Construct detail using the exact drift-type template."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Detected mean shift for age.",
+            "name": "mean shift entry",
+            "notes": "",
+            "output": "{\"column\":\"age\",\"drift_type\":\"mean_shift\",\"baseline_value\":25.5,\"current_value\":45.0,\"detail\":\"normalized shift = 1.95\"}"
+          }
+        ],
+        "formatting": [
+          {
+            "key": "schema_details",
+            "value": "new column of type <type>; column of type <type> removed; type changed from <baseline_type> to <current_type>"
+          },
+          {
+            "key": "distribution_details",
+            "value": "normalized shift = <value>; null rate changed from <baseline_rate> to <current_rate>; range expanded from <baseline_range> to <current_range>; unique ratio changed from <baseline_ratio> to <current_ratio>"
+          },
+          {
+            "key": "distribution_numbers",
+            "value": "Go fmt.Sprintf(\"%v\", value)"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Every drift entry contains column, drift_type, baseline_value, current_value, and detail."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "drifts",
+            "value": "Array of drift-entry objects."
+          },
+          {
+            "key": "drifts[].column",
+            "value": "String column name."
+          },
+          {
+            "key": "drifts[].drift_type",
+            "value": "column_added, column_removed, type_changed, mean_shift, null_rate_change, range_expansion, or unique_ratio_change."
+          },
+          {
+            "key": "drifts[].baseline_value",
+            "value": "String, number, or null according to drift type."
+          },
+          {
+            "key": "drifts[].current_value",
+            "value": "String, number, or null according to drift type."
+          },
+          {
+            "key": "drifts[].detail",
+            "value": "String formatted by the applicable drift-type rule."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit each detected drift as a typed column-level object with relevant baseline/current values and exact detail text."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-016",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.summary",
+      "source_clause_ids": [
+        "r003-c029"
+      ],
+      "spec": {
+        "algorithm": [
+          "Count emitted schema drift entries.",
+          "Count emitted distribution drift entries.",
+          "Set total_drifts to their sum."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "No detected drift yields all three counts equal to 0."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "One schema drift and two distribution drifts.",
+            "name": "summary",
+            "notes": "",
+            "output": "{\"total_drifts\":3,\"schema_drifts\":1,\"distribution_drifts\":2}"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "total_drifts",
+            "value": "schema_drifts + distribution_drifts"
+          }
+        ],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "summary.total_drifts",
+            "value": "Integer number of all emitted drift entries."
+          },
+          {
+            "key": "summary.schema_drifts",
+            "value": "Integer number of column_added, column_removed, and type_changed entries."
+          },
+          {
+            "key": "summary.distribution_drifts",
+            "value": "Integer number of mean_shift, null_rate_change, range_expansion, and unique_ratio_change entries."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit total, schema, and distribution drift counts."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-017",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.ordering",
+      "source_clause_ids": [
+        "r003-c033",
+        "r003-c034"
+      ],
+      "spec": {
+        "algorithm": [
+          "Sort entries by column name ascending lexicographically.",
+          "For entries with the same column, sort by the fixed drift-type rank."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "Primary: column ascending lexicographically.",
+          "Secondary: column_added, column_removed, type_changed, mean_shift, null_rate_change, range_expansion, unique_ratio_change."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Sort drift entries lexicographically by column and then by fixed drift-type order."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-018",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.csv_parse_errors",
+      "source_clause_ids": [
+        "r003-c036"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse baseline and current CSV files.",
+          "Terminate with code 1 when either cannot be parsed."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "Baseline CSV cannot be parsed.",
+            "exit_code": 1,
+            "stderr": "ERROR: cannot parse CSV: <path>",
+            "stdout": null
+          },
+          {
+            "condition": "Current CSV cannot be parsed.",
+            "exit_code": 1,
+            "stderr": "ERROR: cannot parse CSV: <path>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "missing_files",
+            "value": "Missing baseline or current uses ERROR: file not found: <path> on stderr and exit code 1."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail drift with exact path-bearing errors when either CSV cannot be parsed."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-019",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "drift.json_formatting",
+      "source_clause_ids": [
+        "r003-c038"
+      ],
+      "spec": {
+        "algorithm": [
+          "Encode the complete drift report as JSON."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces"
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Serialize drift reports as two-space-indented, newline-terminated JSON."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-020",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.resample_interface",
+      "source_clause_ids": [
+        "r003-c041",
+        "r003-c042",
+        "r003-c043"
+      ],
+      "spec": {
+        "algorithm": [
+          "Group rows by the raw value in column.",
+          "Dispatch to oversample or undersample behavior."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [
+          {
+            "input": "{\"op\":\"resample\",\"column\":\"label\",\"strategy\":\"oversample\",\"seed\":42}",
+            "name": "oversample recipe",
+            "notes": "seed is ignored for oversample.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "resample"
+          },
+          {
+            "key": "column",
+            "value": "Existing grouping column."
+          },
+          {
+            "key": "strategy",
+            "value": "oversample or undersample"
+          },
+          {
+            "key": "seed",
+            "value": "Integer deterministic seed used by undersample and ignored by oversample."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Resampling balances group sizes to the selected strategy's target."
+        ],
+        "notes": [],
+        "ordering": [
+          "Both strategies sort group keys ascending lexicographically before output."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Provide stratified over- and undersampling grouped by an existing column."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-021",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "resample.oversample",
+      "source_clause_ids": [
+        "r003-c042",
+        "r003-c045"
+      ],
+      "spec": {
+        "algorithm": [
+          "Sort group keys ascending lexicographically.",
+          "Set target to maximum group size.",
+          "For each smaller group, retain original rows and repeat its rows cyclically in original within-group order until exactly target rows exist.",
+          "Emit all groups in sorted-key order."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A group already at target receives no copies."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"resample\",\"column\":\"label\",\"strategy\":\"oversample\",\"seed\":42}",
+            "name": "oversample recipe",
+            "notes": "The seed does not affect oversampling.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "target",
+            "value": "max(group_size)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "strategy",
+            "value": "oversample"
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Every emitted group has exactly target rows."
+        ],
+        "notes": [],
+        "ordering": [
+          "Groups by ascending lexicographic key.",
+          "Within each group, original rows first in original order, followed by cyclic copies in that order."
+        ],
+        "output_schema": [],
+        "preconditions": [
+          "Rows are grouped by the resample column."
+        ],
+        "summary": "Oversample every group cyclically to the maximum original group size."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-022",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "resample.undersample",
+      "source_clause_ids": [
+        "r003-c047"
+      ],
+      "spec": {
+        "algorithm": [
+          "Sort group keys ascending lexicographically and assign groupIndex as each key's 0-based position.",
+          "Set target to minimum group size.",
+          "For groupSize>target, create indices [0,1,...,groupSize-1].",
+          "Initialize rng with rand.New(rand.NewSource(int64(seed + groupIndex))).",
+          "For i from groupSize-1 down to 1, swap indices[i] with indices[rng.Intn(i+1)].",
+          "Take the first target shuffled indices, sort them ascending, and select corresponding group rows.",
+          "For groupSize==target, keep all rows.",
+          "Emit groups in sorted-key order and selected rows in original relative order."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Groups already at target are not shuffled and retain all rows."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "target",
+            "value": "min(group_size)"
+          },
+          {
+            "key": "group_seed",
+            "value": "seed + groupIndex"
+          },
+          {
+            "key": "shuffle",
+            "value": "for i=groupSize-1..1: swap(indices[i], indices[rng.Intn(i+1)])"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "strategy",
+            "value": "undersample"
+          },
+          {
+            "key": "seed",
+            "value": "Integer base seed."
+          }
+        ],
+        "integration": [
+          {
+            "key": "prng",
+            "value": "Go math/rand with rand.New(rand.NewSource(int64(seed + groupIndex)))."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every emitted group has exactly target rows.",
+          "Identical data and seed produce identical selection."
+        ],
+        "notes": [],
+        "ordering": [
+          "Group keys ascending lexicographically.",
+          "groupIndex follows sorted group-key order.",
+          "Sort selected indices ascending before selecting rows."
+        ],
+        "output_schema": [],
+        "preconditions": [
+          "Rows are grouped by the resample column."
+        ],
+        "summary": "Deterministically undersample every group to the minimum original group size using a group-specific Go PRNG and Fisher-Yates shuffle."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-023",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.watermark",
+      "source_clause_ids": [
+        "r003-c049",
+        "r003-c050",
+        "r003-c051",
+        "r003-c053",
+        "r003-c054"
+      ],
+      "spec": {
+        "algorithm": [
+          "Resolve columns in declaration order; if omitted or empty, use all columns in header order.",
+          "For each row, concatenate selected raw cell strings with one null byte 0x00 between adjacent values.",
+          "Include empty cells as empty strings, retaining adjacent separators.",
+          "Compute HMAC-SHA256 of the exact bytes using key as secret.",
+          "Take the first 8 bytes of the 32-byte digest and lowercase-hex encode them.",
+          "Append the watermark under as."
+        ],
+        "defaults": [
+          {
+            "key": "columns",
+            "value": "If omitted or empty, all columns in header order."
+          }
+        ],
+        "edge_cases": [
+          "Empty cell values contribute no value bytes but do not remove separators."
+        ],
+        "errors": [
+          {
+            "condition": "A selected column does not exist.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid recipe: column <name> not found",
+            "stdout": null
+          }
+        ],
+        "examples": [
+          {
+            "input": "{\"op\":\"watermark\",\"columns\":[\"id\",\"value\"],\"key\":\"secret123\",\"as\":\"wmark\"}",
+            "name": "watermark recipe",
+            "notes": "Uses id and value in that order as the null-separated HMAC message.",
+            "output": ""
+          }
+        ],
+        "formatting": [
+          {
+            "key": "watermark",
+            "value": "Exactly 16 lowercase hexadecimal characters representing the first 8 digest bytes."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "hmac_input",
+            "value": "value(column1) + 0x00 + value(column2) + ..."
+          },
+          {
+            "key": "digest",
+            "value": "HMAC-SHA256(secret=key, message=hmac_input)"
+          },
+          {
+            "key": "watermark",
+            "value": "lowercase_hex(digest[0:8])"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "watermark"
+          },
+          {
+            "key": "columns",
+            "value": "Optional ordered array of source column names."
+          },
+          {
+            "key": "key",
+            "value": "String HMAC secret key."
+          },
+          {
+            "key": "as",
+            "value": "Name of appended last column."
+          }
+        ],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "The full digest is 32 bytes, but only its first 8 bytes are emitted."
+        ],
+        "notes": [],
+        "ordering": [
+          "Selected column order determines HMAC input.",
+          "Preserve row and original column order; append as last column."
+        ],
+        "output_schema": [
+          {
+            "key": "as",
+            "value": "Last header column containing exactly 16 lowercase hexadecimal characters."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Append a 16-character lowercase watermark derived from the first eight bytes of HMAC-SHA256 over null-separated selected cells."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r003-024",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r003-c056",
+        "r003-c057",
+        "r003-c058",
+        "r003-c059"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse seed and steps from JSON.",
+          "Execute steps sequentially in array order using corresponding command behavior.",
+          "Dispatch existing step types using their fields.",
+          "For drift, pass baseline, current, output, and effective threshold to the drift command."
+        ],
+        "defaults": [
+          {
+            "key": "drift.threshold",
+            "value": "0.1 when threshold is omitted or equals 0."
+          }
+        ],
+        "edge_cases": [
+          "A drift-step threshold of 0 selects default 0.1, not a zero threshold."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"drift\",\"baseline\":\"baseline.csv\",\"current\":\"current.csv\",\"output\":\"drift.json\",\"threshold\":0.2}",
+            "name": "drift pipeline step",
+            "notes": "Runs drift with corresponding arguments.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline transform seed."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of step objects."
+          },
+          {
+            "key": "ingest",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "transform",
+            "value": "{type,input,recipe,output}"
+          },
+          {
+            "key": "verify",
+            "value": "{type,file,checksum}"
+          },
+          {
+            "key": "manifest",
+            "value": "{type,dir,output}"
+          },
+          {
+            "key": "profile",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "compare",
+            "value": "{type,left,right,key,output}"
+          },
+          {
+            "key": "drift",
+            "value": "{type,baseline,current,output,threshold?}"
+          },
+          {
+            "key": "drift_example",
+            "value": "{\"type\":\"drift\",\"baseline\":\"baseline.csv\",\"current\":\"current.csv\",\"output\":\"drift.json\",\"threshold\":0.2}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling where applicable."
+          },
+          {
+            "key": "profile_step",
+            "value": "Runs dpipe profile."
+          },
+          {
+            "key": "compare_step",
+            "value": "Runs dpipe compare."
+          },
+          {
+            "key": "drift_step",
+            "value": "Runs dpipe drift with baseline, current, output, and effective threshold."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Active sequential pipeline execution and terminal-status behavior remain unchanged."
+        ],
+        "notes": [],
+        "ordering": [
+          "steps array order is pipeline execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read pipeline JSON containing a seed and ordered ingest, transform, verify, manifest, profile, compare, or drift steps."
+      },
+      "target_id": "req-r002-034"
+    }
+  ],
+  "round": 3
+}

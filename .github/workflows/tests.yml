@@ -1,0 +1,33 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install compiler and test dependencies
+        run: python -m pip install -e './compiler[test]'
+      - name: Run compiler tests
+        run: python -m pytest -q compiler/tests
+      - name: Validate checked-in treatment artifacts
+        run: |
+          python compiler/validate_task_copy.py \
+            tasks/pilot-control-3 \
+            tasks/pilot-contract-only-v2-general-anchor-3 \
+            --instruction-mode contract-only \
+            --compiled-directory artifacts/simple-v2-general-anchor
+      - name: Check evaluation utilities
+        run: |
+          bash -n evaluation/run_single.sh
+          python -m py_compile evaluation/compute_metrics.py evaluation/validate_dataset.py
+

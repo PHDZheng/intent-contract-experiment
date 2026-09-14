@@ -1,0 +1,1134 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r005-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-001"
+      ]
+    },
+    {
+      "clause_id": "r005-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-001",
+        "req-r005-002",
+        "req-r005-003",
+        "req-r005-004"
+      ]
+    },
+    {
+      "clause_id": "r005-c005",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-001",
+        "req-r005-002",
+        "req-r005-003",
+        "req-r005-004"
+      ]
+    },
+    {
+      "clause_id": "r005-c006",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c007",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-005"
+      ]
+    },
+    {
+      "clause_id": "r005-c008",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-006"
+      ]
+    },
+    {
+      "clause_id": "r005-c009",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c010",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-005"
+      ]
+    },
+    {
+      "clause_id": "r005-c011",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c012",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-006"
+      ]
+    },
+    {
+      "clause_id": "r005-c013",
+      "kind": "context",
+      "requirement_ids": [
+        "req-r005-007"
+      ]
+    },
+    {
+      "clause_id": "r005-c014",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-007"
+      ]
+    },
+    {
+      "clause_id": "r005-c015",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c016",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r005-008",
+        "req-r005-009",
+        "req-r005-010"
+      ]
+    },
+    {
+      "clause_id": "r005-c017",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-008"
+      ]
+    },
+    {
+      "clause_id": "r005-c018",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-009"
+      ]
+    },
+    {
+      "clause_id": "r005-c019",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-008",
+        "req-r005-009",
+        "req-r005-010"
+      ]
+    },
+    {
+      "clause_id": "r005-c020",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-010"
+      ]
+    },
+    {
+      "clause_id": "r005-c021",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c022",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-011"
+      ]
+    },
+    {
+      "clause_id": "r005-c023",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c024",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r001-043",
+        "req-r005-012"
+      ]
+    },
+    {
+      "clause_id": "r005-c025",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-013"
+      ]
+    },
+    {
+      "clause_id": "r005-c026",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r005-c027",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-014"
+      ]
+    },
+    {
+      "clause_id": "r005-c028",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r005-014"
+      ]
+    },
+    {
+      "clause_id": "r005-c029",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r005-014"
+      ]
+    }
+  ],
+  "instruction_sha256": "01448debee74501095c593267cdbf13f7322c50c9d01710ae36c64fab1465033",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r005-001",
+      "modality": "must",
+      "operation": "supersede",
+      "semantic_key": "verify.checksum_behavior",
+      "source_clause_ids": [
+        "r005-c003",
+        "r005-c004",
+        "r005-c005"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the file passed with --file.",
+          "Compute the standard 256-bit BLAKE2b digest over its raw bytes.",
+          "Encode the digest as exactly 64 lowercase hexadecimal characters.",
+          "Read the expected digest from the checksum file passed with --checksum.",
+          "Compare the expected and actual digest strings.",
+          "If they match, exit with code 0 and print VERIFIED to stdout.",
+          "If they differ, exit with code 1 and print MISMATCH expected=<expected> actual=<actual> to stdout."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "Expected and actual BLAKE2b-256 digests match.",
+            "exit_code": 0,
+            "stderr": null,
+            "stdout": "VERIFIED"
+          },
+          {
+            "condition": "Expected and actual BLAKE2b-256 digests differ.",
+            "exit_code": 1,
+            "stderr": null,
+            "stdout": "MISMATCH expected=<expected> actual=<actual>"
+          }
+        ],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "actual_digest",
+            "value": "Exactly 64 lowercase hexadecimal characters."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "actual",
+            "value": "lowercase_hex(BLAKE2b-256(raw_bytes(--file)))"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "file",
+            "value": "Raw bytes of the file passed with --file."
+          },
+          {
+            "key": "checksum",
+            "value": "Expected BLAKE2b-256 hexadecimal digest read from the file passed with --checksum."
+          },
+          {
+            "key": "digest_algorithm",
+            "value": "Standard 256-bit BLAKE2b (BLAKE2b-256)."
+          }
+        ],
+        "integration": [
+          {
+            "key": "checksum_source",
+            "value": "The expected checksum remains the contents of the path supplied with --checksum."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The checksum algorithm is BLAKE2b-256, not SHA-256."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Compare a file's BLAKE2b-256 digest with the hexadecimal checksum read from the checksum file and report the established exact success or mismatch result."
+      },
+      "target_id": "req-r001-036"
+    },
+    {
+      "id": "req-r005-002",
+      "modality": "must",
+      "operation": "supersede",
+      "semantic_key": "manifest.generation",
+      "source_clause_ids": [
+        "r005-c004",
+        "r005-c005"
+      ],
+      "spec": {
+        "algorithm": [
+          "Recursively scan <dir> for .csv files.",
+          "For each file, compute its relative path, CSV row count, raw byte size, and standard BLAKE2b-256 digest over its raw bytes.",
+          "Encode each digest as 64 lowercase hexadecimal characters and store it in the manifest entry's sha256 field.",
+          "Sort file entries lexicographically by path.",
+          "Set generated_at to the actual current UTC generation time and write the manifest to <output>."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "generated_at reflects wall-clock time and remains the determinism exception for manifest output."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "files[].sha256",
+            "value": "Exactly 64 lowercase hexadecimal characters."
+          },
+          {
+            "key": "generated_at",
+            "value": "RFC 3339 UTC timestamp."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "files[].sha256",
+            "value": "lowercase_hex(BLAKE2b-256(raw_file_bytes))"
+          },
+          {
+            "key": "files[].size_bytes",
+            "value": "length(raw_file_bytes)"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "scan_filter",
+            "value": "All files under <dir> whose names end in .csv."
+          },
+          {
+            "key": "digest_algorithm",
+            "value": "Standard 256-bit BLAKE2b (BLAKE2b-256)."
+          }
+        ],
+        "integration": [
+          {
+            "key": "verify_compatibility",
+            "value": "Manifest checksums use the same BLAKE2b-256 algorithm as the verify command."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Manifest file checksums are BLAKE2b-256, not SHA-256."
+        ],
+        "notes": [
+          "The existing JSON field name sha256 is retained because the instruction changes the digest contents but does not rename the field."
+        ],
+        "ordering": [
+          "The files array is sorted by path ascending lexicographically."
+        ],
+        "output_schema": [
+          {
+            "key": "generated_at",
+            "value": "RFC 3339 UTC timestamp reflecting the actual generation time."
+          },
+          {
+            "key": "files",
+            "value": "Array of objects containing path, sha256, rows, and size_bytes."
+          },
+          {
+            "key": "files[].path",
+            "value": "File path relative to <dir>."
+          },
+          {
+            "key": "files[].sha256",
+            "value": "BLAKE2b-256 digest of the file's raw bytes, despite the retained field name sha256; exactly 64 lowercase hexadecimal characters."
+          },
+          {
+            "key": "files[].rows",
+            "value": "CSV row count."
+          },
+          {
+            "key": "files[].size_bytes",
+            "value": "File size in bytes."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Recursively inventory CSV files into a path-sorted JSON manifest using BLAKE2b-256 checksums and the actual UTC generation time."
+      },
+      "target_id": "req-r001-038"
+    },
+    {
+      "id": "req-r005-003",
+      "modality": "must",
+      "operation": "supersede",
+      "semantic_key": "ingest.output_checksum",
+      "source_clause_ids": [
+        "r005-c004",
+        "r005-c005"
+      ],
+      "spec": {
+        "algorithm": [
+          "Do not create or write <output>.sha256.",
+          "If <output>.sha256 exists from a previous run, remove it."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "If no stale <output>.sha256 exists, no sidecar action is required."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "ingest_output",
+            "value": "The valid output CSV and rejected-row behavior remain governed by their active requirements; only checksum-sidecar production is removed."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "After ingest completes, it has not produced a .sha256 sidecar and a pre-existing <output>.sha256 has been removed."
+        ],
+        "notes": [],
+        "ordering": [
+          "Remove any stale <output>.sha256 as part of ingest processing so the completed command leaves no sidecar."
+        ],
+        "output_schema": [
+          {
+            "key": "<output>.sha256",
+            "value": "Must not exist after a successful ingest run."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Do not produce an ingest checksum sidecar and remove a stale <output>.sha256 file if it exists."
+      },
+      "target_id": "req-r001-009"
+    },
+    {
+      "id": "req-r005-004",
+      "modality": "must",
+      "operation": "supersede",
+      "semantic_key": "transform.output_and_checksum",
+      "source_clause_ids": [
+        "r005-c004",
+        "r005-c005"
+      ],
+      "spec": {
+        "algorithm": [
+          "Serialize the current transformed dataset as CSV to <output>.",
+          "Do not create or write <output>.sha256.",
+          "If <output>.sha256 exists from a previous run, remove it."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "If no stale <output>.sha256 exists, no sidecar action is required."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "<output>",
+            "value": "CSV"
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "transform_pipeline",
+            "value": "The output CSV remains available to later recipe or pipeline consumers."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Transform produces the requested CSV but no .sha256 checksum sidecar.",
+          "A pre-existing <output>.sha256 is absent after completion."
+        ],
+        "notes": [],
+        "ordering": [
+          "Write the transform result and ensure the stale sidecar is removed before command completion."
+        ],
+        "output_schema": [
+          {
+            "key": "<output>",
+            "value": "Final transformed CSV."
+          },
+          {
+            "key": "<output>.sha256",
+            "value": "Must not exist after a successful transform run."
+          }
+        ],
+        "preconditions": [
+          "All recipe operations completed successfully."
+        ],
+        "summary": "Write the final transformed CSV without a checksum sidecar and remove a stale <output>.sha256 file if present."
+      },
+      "target_id": "req-r001-034"
+    },
+    {
+      "id": "req-r005-005",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.cli_interface",
+      "source_clause_ids": [
+        "r005-c007",
+        "r005-c010"
+      ],
+      "spec": {
+        "algorithm": [],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "configuration_format",
+            "value": "Uses the pipeline command's JSON configuration format."
+          }
+        ],
+        "interface": [
+          {
+            "key": "syntax",
+            "value": "dpipe lineage --config <path> --output <path>"
+          },
+          {
+            "key": "--config",
+            "value": "Path to a pipeline JSON configuration file in the same format accepted by the pipeline command."
+          },
+          {
+            "key": "--output",
+            "value": "Path for the lineage report JSON file."
+          }
+        ],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Expose the lineage command with pipeline configuration and lineage-report output paths."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-006",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.analysis_execution",
+      "source_clause_ids": [
+        "r005-c008",
+        "r005-c012"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read the pipeline configuration.",
+          "Analyze each configured step to determine its input file paths and optional output file path.",
+          "Build nodes, dependency edges, and step summaries from those paths.",
+          "Do not execute any pipeline step while producing lineage."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Terminal steps with no output remain in the steps summary but produce no output node or dependency edges."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "config",
+            "value": "Pipeline JSON configuration containing an ordered steps array."
+          }
+        ],
+        "integration": [
+          {
+            "key": "pipeline",
+            "value": "Lineage inspects pipeline configuration but does not invoke pipeline execution."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The resulting dependency graph is a DAG.",
+          "Lineage analysis has no pipeline-step execution side effects."
+        ],
+        "notes": [],
+        "ordering": [
+          "Pipeline step positions are numbered from 1 in configuration order."
+        ],
+        "output_schema": [
+          {
+            "key": "report",
+            "value": "A dependency DAG represented by nodes, edges, and step summaries."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Analyze pipeline steps without executing them and build a directed acyclic graph of file dependencies."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-007",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.step_io_mapping",
+      "source_clause_ids": [
+        "r005-c014"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each step, resolve inputs in the exact order declared for its type.",
+          "Resolve the output field for every non-terminal mapped type.",
+          "For verify, set output to null and treat the step as terminal."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "The manifest dir value is represented as one file-type node rather than recursively expanded.",
+          "Verify has no output."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "ingest",
+            "value": "input = field file; output = field output."
+          },
+          {
+            "key": "transform",
+            "value": "inputs = fields input then recipe; output = field output."
+          },
+          {
+            "key": "profile",
+            "value": "input = field input; output = field output."
+          },
+          {
+            "key": "compare",
+            "value": "inputs = fields left then right; output = field output."
+          },
+          {
+            "key": "manifest",
+            "value": "input = field dir, treated as a single node; output = field output."
+          },
+          {
+            "key": "verify",
+            "value": "inputs = fields file then checksum; output = none."
+          },
+          {
+            "key": "validate",
+            "value": "inputs = fields input then schema; output = field output."
+          },
+          {
+            "key": "drift",
+            "value": "inputs = fields baseline then current; output = field output."
+          }
+        ],
+        "integration": [
+          {
+            "key": "supported_step_types",
+            "value": "ingest, transform, profile, compare, manifest, verify, validate, drift"
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [
+          "The lineage mapping explicitly names the ingest input field file."
+        ],
+        "ordering": [
+          "Within a step, inputs are ordered as listed: transform input,recipe; compare left,right; verify file,checksum; validate input,schema; drift baseline,current."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Map each supported pipeline step type to its exact lineage input fields and optional output field."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-008",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.nodes",
+      "source_clause_ids": [
+        "r005-c017",
+        "r005-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "Collect every input path from all step summaries.",
+          "Collect every non-null output path from all step summaries.",
+          "Deduplicate paths by exact string equality.",
+          "For each unique path, set type to file and set produced_by to its producing step index, or null if no analyzed step produces it.",
+          "Do not create an output node for a step whose output is null."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A path mentioned only as an input has produced_by=null.",
+          "A verify step contributes its file and checksum inputs as nodes but contributes no output node."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A transform consumes data.csv and recipe.json and produces clean.csv; a profile produces report.json.",
+            "name": "lineage nodes",
+            "notes": "The complete nodes array also contains recipe.json because every unique input path is a node.",
+            "output": "[{\"id\":\"data.csv\",\"type\":\"file\",\"produced_by\":null},{\"id\":\"clean.csv\",\"type\":\"file\",\"produced_by\":1},{\"id\":\"report.json\",\"type\":\"file\",\"produced_by\":2}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Each exact path occurs at most once in nodes.",
+          "Every node's type is file."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "nodes",
+            "value": "Array containing one object per unique input or output path across all analyzed steps."
+          },
+          {
+            "key": "nodes[].id",
+            "value": "String file path."
+          },
+          {
+            "key": "nodes[].type",
+            "value": "Literal string file."
+          },
+          {
+            "key": "nodes[].produced_by",
+            "value": "The 1-based index of the step that produces this path, or null when no step produces it and it is an external input."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one file node for every unique path mentioned as a lineage input or output."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-009",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.edges",
+      "source_clause_ids": [
+        "r005-c018",
+        "r005-c019"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each step having a non-null output, emit one edge for each input path.",
+          "Set from to the input path, to to the step output path, and step to the step's 1-based index.",
+          "For a step with null output, emit no edges."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Verify and any other step with no output produce no edges."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "Step 1 consumes data.csv and produces clean.csv; step 2 consumes clean.csv and produces report.json.",
+            "name": "lineage edges",
+            "notes": "",
+            "output": "[{\"from\":\"data.csv\",\"to\":\"clean.csv\",\"step\":1},{\"from\":\"clean.csv\",\"to\":\"report.json\",\"step\":2}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "edge_count_per_output_step",
+            "value": "length(step.inputs)"
+          }
+        ],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [
+          "Every edge corresponds to exactly one input of an output-producing step."
+        ],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [
+          {
+            "key": "edges",
+            "value": "Array of dependency-edge objects."
+          },
+          {
+            "key": "edges[].from",
+            "value": "String input file path."
+          },
+          {
+            "key": "edges[].to",
+            "value": "String output file path."
+          },
+          {
+            "key": "edges[].step",
+            "value": "1-based index of the step represented by the edge."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one dependency edge from every step input to that step's output."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-010",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.steps",
+      "source_clause_ids": [
+        "r005-c019",
+        "r005-c020"
+      ],
+      "spec": {
+        "algorithm": [
+          "Traverse configured steps in configuration order.",
+          "Assign index 1 to the first step and increment by one.",
+          "Copy the step type.",
+          "Resolve inputs and output using the lineage step-type mapping.",
+          "Use null as output for verify or another mapped terminal step with no output."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A no-output step is still included and has output=null."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "A transform followed by a profile.",
+            "name": "lineage step summaries",
+            "notes": "",
+            "output": "[{\"index\":1,\"type\":\"transform\",\"inputs\":[\"data.csv\",\"recipe.json\"],\"output\":\"clean.csv\"},{\"index\":2,\"type\":\"profile\",\"inputs\":[\"clean.csv\"],\"output\":\"report.json\"}]"
+          }
+        ],
+        "formatting": [],
+        "formulas": [
+          {
+            "key": "index",
+            "value": "zero_based_configuration_position + 1"
+          }
+        ],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "mapping",
+            "value": "Use req-r005-007."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "The steps array contains exactly one entry per configured step."
+        ],
+        "notes": [],
+        "ordering": [
+          "Input arrays retain the order prescribed by the step-type mapping."
+        ],
+        "output_schema": [
+          {
+            "key": "steps",
+            "value": "Array containing one summary per configured pipeline step."
+          },
+          {
+            "key": "steps[].index",
+            "value": "1-based integer step index."
+          },
+          {
+            "key": "steps[].type",
+            "value": "String pipeline step type."
+          },
+          {
+            "key": "steps[].inputs",
+            "value": "Array of input path strings resolved in the prescribed order."
+          },
+          {
+            "key": "steps[].output",
+            "value": "Output path string, or null when the step has no output."
+          }
+        ],
+        "preconditions": [],
+        "summary": "Emit one complete lineage summary object for each configured pipeline step."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-011",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.ordering",
+      "source_clause_ids": [
+        "r005-c022"
+      ],
+      "spec": {
+        "algorithm": [
+          "Sort nodes by id ascending lexicographically.",
+          "Sort edges by step ascending, then by from ascending lexicographically.",
+          "Sort steps by index ascending."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [
+          "nodes: id ascending lexicographically.",
+          "edges: step ascending, then from ascending lexicographically.",
+          "steps: index ascending."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Order lineage nodes, edges, and step summaries deterministically."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-012",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.invalid_config_error",
+      "source_clause_ids": [
+        "r005-c024"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse the lineage configuration as pipeline JSON.",
+          "If the JSON is invalid, terminate with exit code 1."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [
+          {
+            "condition": "The lineage configuration contains invalid JSON.",
+            "exit_code": 1,
+            "stderr": "ERROR: invalid pipeline config: <path>",
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [
+          {
+            "key": "missing_config",
+            "value": "A missing configuration file uses exit code 1 and stderr ERROR: file not found: <path> under the active generic missing-file requirement."
+          }
+        ],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Fail lineage with an exact path-bearing error when its pipeline configuration contains invalid JSON."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-013",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "lineage.json_formatting",
+      "source_clause_ids": [
+        "r005-c025"
+      ],
+      "spec": {
+        "algorithm": [
+          "Encode the complete nodes, edges, and steps report as JSON."
+        ],
+        "defaults": [],
+        "edge_cases": [],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "indentation",
+            "value": "2 spaces."
+          },
+          {
+            "key": "terminator",
+            "value": "One trailing newline."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [],
+        "integration": [],
+        "interface": [],
+        "invariants": [],
+        "notes": [],
+        "ordering": [],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Serialize lineage reports as two-space-indented JSON with a trailing newline."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r005-014",
+      "modality": "must",
+      "operation": "revise",
+      "semantic_key": "pipeline.config_schema",
+      "source_clause_ids": [
+        "r005-c027",
+        "r005-c028",
+        "r005-c029"
+      ],
+      "spec": {
+        "algorithm": [
+          "Parse seed and steps from JSON.",
+          "Execute steps sequentially in array order using the corresponding command behavior.",
+          "Dispatch ingest, transform, verify, manifest, profile, compare, drift, and validate steps using their established fields and semantics.",
+          "For a lineage step, run the lineage command using config and output from the step."
+        ],
+        "defaults": [
+          {
+            "key": "drift.threshold",
+            "value": "0.1 when threshold is omitted or equals 0."
+          }
+        ],
+        "edge_cases": [
+          "A drift-step threshold of 0 selects default 0.1, not a zero threshold."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"type\":\"lineage\",\"config\":\"pipeline.json\",\"output\":\"lineage.json\"}",
+            "name": "lineage pipeline step",
+            "notes": "Runs dpipe lineage with the corresponding config and output paths.",
+            "output": ""
+          }
+        ],
+        "formatting": [],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "seed",
+            "value": "Pipeline transform seed."
+          },
+          {
+            "key": "steps",
+            "value": "Ordered array of step objects."
+          },
+          {
+            "key": "ingest",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "transform",
+            "value": "{type,input,recipe,output}"
+          },
+          {
+            "key": "verify",
+            "value": "{type,file,checksum}"
+          },
+          {
+            "key": "manifest",
+            "value": "{type,dir,output}"
+          },
+          {
+            "key": "profile",
+            "value": "{type,input,output}"
+          },
+          {
+            "key": "compare",
+            "value": "{type,left,right,key,output}"
+          },
+          {
+            "key": "drift",
+            "value": "{type,baseline,current,output,threshold?}"
+          },
+          {
+            "key": "validate",
+            "value": "{type,input,schema,output}"
+          },
+          {
+            "key": "lineage",
+            "value": "{type,config,output}"
+          },
+          {
+            "key": "lineage.config",
+            "value": "Path to the pipeline configuration to analyze."
+          },
+          {
+            "key": "lineage.output",
+            "value": "Output path for the lineage JSON report."
+          }
+        ],
+        "integration": [
+          {
+            "key": "transform_seed",
+            "value": "Pipeline seed supplies deterministic transform sampling where applicable."
+          },
+          {
+            "key": "profile_step",
+            "value": "Runs dpipe profile."
+          },
+          {
+            "key": "compare_step",
+            "value": "Runs dpipe compare."
+          },
+          {
+            "key": "drift_step",
+            "value": "Runs dpipe drift with baseline, current, output, and effective threshold."
+          },
+          {
+            "key": "validate_step",
+            "value": "Runs dpipe validate with input, schema, and output."
+          },
+          {
+            "key": "lineage_step",
+            "value": "Runs dpipe lineage with config and output."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Sequential execution, first-failure stopping, and terminal-status behavior remain unchanged."
+        ],
+        "notes": [],
+        "ordering": [
+          "The steps array order is pipeline execution order."
+        ],
+        "output_schema": [],
+        "preconditions": [],
+        "summary": "Read pipeline JSON containing a seed and ordered ingest, transform, verify, manifest, profile, compare, drift, validate, or lineage steps."
+      },
+      "target_id": "req-r004-018"
+    }
+  ],
+  "round": 5
+}

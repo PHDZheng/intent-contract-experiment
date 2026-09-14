@@ -1,0 +1,32 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.venv/
+**/*.egg-info/
+
+# Experiment output and agent traces
+runs/
+**/harbor_jobs/
+**/trial.log
+**/trajectory.json
+*.log
+
+# Large generated archives
+*.tar
+*.tar.gz
+*.tar.zst
+*.zip
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+

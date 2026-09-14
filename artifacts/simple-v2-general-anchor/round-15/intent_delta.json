@@ -1,0 +1,465 @@
+{
+  "clause_dispositions": [
+    {
+      "clause_id": "r015-c001",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c002",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c003",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r015-001"
+      ]
+    },
+    {
+      "clause_id": "r015-c004",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r015-001",
+        "req-r013-002",
+        "req-r013-003",
+        "req-r013-004"
+      ]
+    },
+    {
+      "clause_id": "r015-c005",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c006",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c007",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r015-002",
+        "req-r015-003"
+      ]
+    },
+    {
+      "clause_id": "r015-c008",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r015-003"
+      ]
+    },
+    {
+      "clause_id": "r015-c009",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c010",
+      "kind": "example",
+      "requirement_ids": [
+        "req-r015-002",
+        "req-r015-003"
+      ]
+    },
+    {
+      "clause_id": "r015-c011",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c012",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r015-002",
+        "req-r015-003"
+      ]
+    },
+    {
+      "clause_id": "r015-c013",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c014",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r015-002",
+        "req-r015-003",
+        "req-r015-004"
+      ]
+    },
+    {
+      "clause_id": "r015-c015",
+      "kind": "context",
+      "requirement_ids": []
+    },
+    {
+      "clause_id": "r015-c016",
+      "kind": "normative",
+      "requirement_ids": [
+        "req-r015-004"
+      ]
+    }
+  ],
+  "instruction_sha256": "319e26c1c259ff4b11ba3919a2f6cb3b384f56288f82ad3534b6975436ae2839",
+  "ir_version": 2,
+  "operations": [
+    {
+      "id": "req-r015-001",
+      "modality": "must",
+      "operation": "supersede",
+      "semantic_key": "snapshot.row_hash",
+      "source_clause_ids": [
+        "r015-c003",
+        "r015-c004"
+      ],
+      "spec": {
+        "algorithm": [
+          "For each data row, join all cell values with the literal comma character to form one row string.",
+          "Sort all row strings ascending lexicographically.",
+          "Join the sorted row strings with newline characters and no separately specified trailing newline.",
+          "Compute SHA-256 over the exact bytes of the resulting joined string.",
+          "Encode the digest as lowercase hexadecimal and store it in row_hash."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "Original data-row order does not affect row_hash.",
+          "Repeated data rows remain repeated row strings in the hash input.",
+          "No trailing newline is added by the specified join operation.",
+          "The header does not participate in row_hash."
+        ],
+        "errors": [],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "row_separator",
+            "value": "One newline character between adjacent sorted row strings."
+          },
+          {
+            "key": "digest",
+            "value": "Exactly 64 lowercase hexadecimal characters."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "row_string",
+            "value": "join(row cell values, \",\")"
+          },
+          {
+            "key": "sorted_row_content",
+            "value": "join(lexicographically_sorted(row_strings), \"\\n\")"
+          },
+          {
+            "key": "row_hash",
+            "value": "lowercase_hex(SHA-256(bytes(sorted_row_content)))"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "data_rows",
+            "value": "All parsed CSV data rows, excluding the header."
+          },
+          {
+            "key": "cell_serialization",
+            "value": "Use each parsed cell value as its string value."
+          },
+          {
+            "key": "digest_algorithm",
+            "value": "SHA-256."
+          }
+        ],
+        "integration": [
+          {
+            "key": "snapshot_output",
+            "value": "Replaces only the row_hash digest algorithm and length; active snapshot row_count, column_count, column statistics, and header-order requirements remain unchanged."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Identical multisets of parsed data rows produce identical row_hash values.",
+          "row_hash uses SHA-256 rather than MD5.",
+          "No snapshot output field other than row_hash is changed by this migration."
+        ],
+        "notes": [],
+        "ordering": [
+          "Row strings are sorted ascending lexicographically before joining and hashing.",
+          "All existing snapshot output-field and sorting rules remain unchanged."
+        ],
+        "output_schema": [
+          {
+            "key": "row_hash",
+            "value": "Exactly 64 lowercase hexadecimal characters encoding the SHA-256 digest of the sorted row-content string."
+          }
+        ],
+        "preconditions": [
+          "The input CSV has been parsed and the header excluded from data_rows."
+        ],
+        "summary": "Compute snapshot row_hash as lowercase SHA-256 over the same lexicographically sorted, comma-joined data-row content previously used for snapshot hashing."
+      },
+      "target_id": "req-r013-005"
+    },
+    {
+      "id": "req-r015-002",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "transform.tag_interface_and_layout",
+      "source_clause_ids": [
+        "r015-c007",
+        "r015-c010",
+        "r015-c012",
+        "r015-c014"
+      ],
+      "spec": {
+        "algorithm": [
+          "Read value as a literal string; do not parse or evaluate it as an expression.",
+          "Append a new header column whose name is the as field.",
+          "For every current data row, append the tag value produced by the literal-assignment requirement."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "A dataset with zero data rows still receives the appended header column.",
+          "The tag operation does not remove or modify existing columns."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"tag\",\"value\":\"production\",\"as\":\"env\"}",
+            "name": "production environment tag",
+            "notes": "Every data row receives production in the appended column.",
+            "output": "A final column named env is appended."
+          }
+        ],
+        "formatting": [
+          {
+            "key": "value_type",
+            "value": "Raw string value."
+          }
+        ],
+        "formulas": [],
+        "input_schema": [
+          {
+            "key": "op",
+            "value": "tag"
+          },
+          {
+            "key": "value",
+            "value": "String constant to stamp on every data row."
+          },
+          {
+            "key": "as",
+            "value": "String name of the new column to append."
+          },
+          {
+            "key": "recipe",
+            "value": "{\"op\":\"tag\",\"value\":\"production\",\"as\":\"env\"}"
+          }
+        ],
+        "integration": [
+          {
+            "key": "recipe_execution",
+            "value": "Runs as one operation in the ordered transform recipe chain."
+          },
+          {
+            "key": "assignment",
+            "value": "Use req-r015-003 for every appended data cell."
+          },
+          {
+            "key": "as_validation",
+            "value": "Use req-r015-004 before modifying the dataset."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Exactly one new column is appended on success.",
+          "Existing rows and cells retain their relative order and values."
+        ],
+        "notes": [],
+        "ordering": [
+          "Preserve current data-row order.",
+          "Preserve all existing column order and append the as column last."
+        ],
+        "output_schema": [
+          {
+            "key": "header",
+            "value": "All existing columns in their existing order followed by one new column named by as."
+          },
+          {
+            "key": "rows",
+            "value": "One output row per current input row, with the tag result appended."
+          }
+        ],
+        "preconditions": [
+          "The as field is present and non-empty."
+        ],
+        "summary": "Provide a tag transform that accepts a literal string and appends a named column to the current dataset."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r015-003",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "tag.literal_assignment",
+      "source_clause_ids": [
+        "r015-c007",
+        "r015-c008",
+        "r015-c010",
+        "r015-c012",
+        "r015-c014"
+      ],
+      "spec": {
+        "algorithm": [
+          "Treat value as a literal string rather than a derive expression.",
+          "For each data row, append the exact value string.",
+          "Do not vary or recompute the value between rows."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "An empty value string is stamped as an empty cell on every row.",
+          "No expression operators, functions, or column references are evaluated within value.",
+          "With zero data rows, no data cells are produced."
+        ],
+        "errors": [],
+        "examples": [
+          {
+            "input": "{\"op\":\"tag\",\"value\":\"production\",\"as\":\"env\"}",
+            "name": "literal tag assignment",
+            "notes": "production is copied literally.",
+            "output": "Every row's env cell is exactly \"production\"."
+          }
+        ],
+        "formatting": [
+          {
+            "key": "copy_rule",
+            "value": "Preserve the configured string exactly."
+          }
+        ],
+        "formulas": [
+          {
+            "key": "tag_cell_i",
+            "value": "value for every data-row index i"
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "value",
+            "value": "The tag operation's string value field."
+          },
+          {
+            "key": "rows",
+            "value": "All current data rows."
+          }
+        ],
+        "integration": [
+          {
+            "key": "layout",
+            "value": "The result is written to the last column appended by req-r015-002."
+          },
+          {
+            "key": "derive_distinction",
+            "value": "Unlike derive, tag performs no expression evaluation."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "Every output row receives the same exact configured string.",
+          "Tag assignment is independent of all existing row values."
+        ],
+        "notes": [],
+        "ordering": [
+          "Process and emit rows in their current order."
+        ],
+        "output_schema": [
+          {
+            "key": "tag_cell",
+            "value": "The exact configured value string, copied without expression evaluation or numeric conversion."
+          }
+        ],
+        "preconditions": [
+          "The tag operation passed as-field validation."
+        ],
+        "summary": "Copy the configured tag value literally and identically into the appended cell of every data row."
+      },
+      "target_id": null
+    },
+    {
+      "id": "req-r015-004",
+      "modality": "must",
+      "operation": "add",
+      "semantic_key": "tag.missing_as_error",
+      "source_clause_ids": [
+        "r015-c014",
+        "r015-c016"
+      ],
+      "spec": {
+        "algorithm": [
+          "Before appending the header or modifying rows, determine whether as is missing or equals the empty string.",
+          "If as is missing or empty, return the exact error text and do not execute the tag assignment.",
+          "Otherwise continue with the tag operation."
+        ],
+        "defaults": [],
+        "edge_cases": [
+          "An explicitly empty as value is treated the same as an omitted as field."
+        ],
+        "errors": [
+          {
+            "condition": "The tag as field is missing or empty.",
+            "exit_code": null,
+            "stderr": null,
+            "stdout": null
+          }
+        ],
+        "examples": [],
+        "formatting": [
+          {
+            "key": "exact_error",
+            "value": "ERROR: invalid recipe: missing 'as' field"
+          }
+        ],
+        "formulas": [
+          {
+            "key": "invalid_as",
+            "value": "as is absent or as == \"\""
+          }
+        ],
+        "input_schema": [
+          {
+            "key": "as",
+            "value": "Required non-empty string naming the appended tag column."
+          }
+        ],
+        "integration": [
+          {
+            "key": "tag_transform",
+            "value": "Precondition for req-r015-002 and req-r015-003."
+          }
+        ],
+        "interface": [],
+        "invariants": [
+          "A missing or empty as field never produces a tagged dataset.",
+          "The returned error text is exactly ERROR: invalid recipe: missing 'as' field."
+        ],
+        "notes": [
+          "The instruction specifies the returned error text but does not specify an exit code or stdout/stderr channel."
+        ],
+        "ordering": [
+          "Validate as before changing the dataset."
+        ],
+        "output_schema": [
+          {
+            "key": "error_text",
+            "value": "ERROR: invalid recipe: missing 'as' field"
+          }
+        ],
+        "preconditions": [],
+        "summary": "Reject a tag operation whose as field is missing or empty with the exact specified error text."
+      },
+      "target_id": null
+    }
+  ],
+  "round": 15
+}
