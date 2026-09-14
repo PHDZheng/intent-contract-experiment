@@ -1,13 +1,11 @@
 # Intent Contract Experiment
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 This repository is the public, reproducible package for the 15-round `dpipe`
 sequential software-evolution experiment. It contains the Intent IR compiler,
 the control and `v2 general-anchor` task variants, the exact compiled artifacts,
 the evaluation utilities, and the Sol/Luna experiment report.
-
-本仓库是 `dpipe` 15 轮顺序演化实验的可公开复现版本，包含 Intent IR
-编译器、control 与 `v2 general-anchor` 任务、15 轮编译产物、评测工具以及
-Sol/Luna 实验报告。
 
 ## Included scope
 
@@ -122,4 +120,3 @@ The evaluation harness and task format are derived from EvoCodeBench. Its MIT
 license is preserved in `third_party/EvoCodeBench-LICENSE`; see
 `THIRD_PARTY_NOTICES.md`. No separate license is granted for the remaining
 project-specific material unless the repository owner adds one.
-
